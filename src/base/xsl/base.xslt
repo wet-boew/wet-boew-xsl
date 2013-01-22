@@ -4,8 +4,11 @@
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 	wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
 	
+	<xsl:variable name="lang" select="/html/@lang" />
+	<xsl:variable name="strings" select="document('i18n.xml')/strings" />
+
 	<xsl:param name="wet_root" />
-	
+
     <xsl:template match="/html">
 		<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
 </xsl:text>
@@ -51,8 +54,8 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 			<div id="wb-body">
 				<div id="wb-skip">
 				<ul id="wb-tphp">
-				<li id="wb-skip1"><a href="#wb-cont">Skip to main content</a></li>
-				<li id="wb-skip2"><a href="#wb-nav">Skip to footer</a></li>
+				<li id="wb-skip1"><a href="#wb-cont"><xsl:value-of select="$strings/string[@id='%tmpl-skip-main']/value[lang($lang)]"/></a></li>
+				<li id="wb-skip2"><a href="#wb-nav"><xsl:value-of select="$strings/string[@id='%tmpl-skip-main']/value[lang($lang)]"/></a></li>
 				</ul>
 				</div>
 
