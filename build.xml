@@ -13,6 +13,8 @@
 	</target>
 
 	<target name="clean">
-		
+		<subant target="clean">
+			<fileset dir="${src.dir}" includes="**/build.xml"/>
+		</subant>
 	</target>
 </project>
