@@ -7,6 +7,8 @@
 	<xsl:param name="wet_root" />
 	
     <xsl:template match="/html">
+		<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
+</xsl:text>
 		<xsl:comment>[if IE 7]&gt;&lt;html lang="<xsl:value-of select="@lang"/>" class="no-js ie7"&gt;&lt;![endif]</xsl:comment>
 		<xsl:comment>[if IE 8]&gt;&lt;html lang="<xsl:value-of select="@lang"/>" class="no-js ie8"&gt;&lt;![endif]</xsl:comment>
 		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment>
