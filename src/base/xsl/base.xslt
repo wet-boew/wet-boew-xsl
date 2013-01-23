@@ -12,9 +12,12 @@
     <xsl:template match="/html">
 		<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
 </xsl:text>
-		<xsl:comment>[if IE 7]&gt;&lt;html lang="<xsl:value-of select="@lang"/>" class="no-js ie7"&gt;&lt;![endif]</xsl:comment>
-		<xsl:comment>[if IE 8]&gt;&lt;html lang="<xsl:value-of select="@lang"/>" class="no-js ie8"&gt;&lt;![endif]</xsl:comment>
-		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment>
+		<xsl:comment>[if IE 7]&gt;&lt;html lang="<xsl:value-of select="@lang"/>" class="no-js ie7"&gt;&lt;![endif]</xsl:comment><xsl:text>
+</xsl:text>
+		<xsl:comment>[if IE 8]&gt;&lt;html lang="<xsl:value-of select="@lang"/>" class="no-js ie8"&gt;&lt;![endif]</xsl:comment><xsl:text>
+</xsl:text>
+		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment><xsl:text>
+</xsl:text>
 		<xsl:copy>
 			<xsl:for-each select="@*">
 				<xsl:copy-of select="."/>
@@ -23,7 +26,7 @@
 			<xsl:apply-templates />
 		</xsl:copy>
 	</xsl:template>
-	
+
 	<xsl:template match="head">
 		<xsl:copy>
 			<meta charset="utf-8" />
@@ -48,7 +51,26 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 			<xsl:comment> CustomScriptsCSSEnd </xsl:comment>
 		</xsl:copy>
 	</xsl:template>
-	
+
+	<xsl:template match="head" mode="resources">
+		<xsl:comment>[if lte IE 8]&gt;
+&lt;script src="<xsl:value-of select="$wet_root"/>/js/jquery-ie.min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$wet_root"/>/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/grids/css/util-ie-min.css" /&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/js/css/pe-ap-ie-min.css" /&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/<xsl:value-of select="$theme"/>/css/theme-ie-min.css" /&gt;
+&lt;![endif]</xsl:comment><xsl:text>
+</xsl:text>
+		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment><xsl:text>
+</xsl:text>
+		<script src="{$wet_root}/js/jquery.min.js"><xsl:text> </xsl:text></script>
+		<link rel="stylesheet" href="{$wet_root}/grids/css/util-min.css" />
+		<link rel="stylesheet" href="{$wet_root}/js/css/pe-ap-min.css" />
+		<link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-min.css" />
+		<xsl:comment>&lt;![endif]</xsl:comment>
+		<noscript><link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-ns-min.css" /></noscript>
+	</xsl:template>
+
 	<xsl:template match="body">
 		<xsl:copy>
 			<div id="wb-body">
@@ -86,32 +108,66 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 			<xsl:comment> ScriptsEnd </xsl:comment>
 		</xsl:copy>
 	</xsl:template>
-	
-	<xsl:template match="head" mode="resources">
-		<xsl:comment>[if lte IE 8]&gt;
-&lt;script src="../../dist/js/jquery-ie.min.js"&gt;&lt;/script&gt;
-&lt;script src="../../dist/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="../../dist/grids/css/util-ie-min.css" /&gt;
-&lt;link rel="stylesheet" href="../../dist/js/css/pe-ap-ie-min.css" /&gt;
-&lt;link rel="stylesheet" href="../../dist/<xsl:value-of select="$theme"/>/css/theme-ie-min.css" /&gt;
-&lt;![endif]</xsl:comment><xsl:text>
-</xsl:text>
-		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment><xsl:text>
-</xsl:text>
-		<script src="{$wet_root}/js/jquery.min.js"><xsl:text> </xsl:text></script>
-		<link rel="stylesheet" href="{$wet_root}/grids/css/util-min.css" />
-		<link rel="stylesheet" href="{$wet_root}/js/css/pe-ap-min.css" />
-		<link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-min.css" />
-		<xsl:comment>&lt;![endif]</xsl:comment>
-		<noscript><link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-ns-min.css" /></noscript>
+
+	<xsl:template match="body" mode="header">
+		<xsl:apply-templates select="." mode="banner-top" />
+
+		<xsl:apply-templates select="." mode="banner" />
+
+		<nav role="navigation">
+		<xsl:apply-templates select="." mode="navigation" />
+
+		<xsl:apply-templates select="." mode="breadcrumb" />
+		</nav>
+	</xsl:template>
+
+	<xsl:template match="body" mode="banner">
+		<div id="{$theme-prefix}-bnr" role="banner"><div id="{$theme-prefix}-bnr-in">
+		<div id="{$theme-prefix}-title"><p id="{$theme-prefix}-title-in"><a href="../../index-eng.html">Web Experience Toolkit&#160;(WET)</a></p></div>
+
+		<xsl:apply-templates select="." mode="global_search" />
+		</div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="global_search">
+		<section role="search"><div id="{$theme-prefix}-srchbx"><h2><xsl:value-of select="$strings/string[@id='%tmpl-search']/value[lang($lang)]"/></h2>
+		<form action="#" method="post"><div id="{$theme-prefix}-srchbx-in">
+		<label for="{$theme-prefix}-srch"><xsl:value-of select="$strings/string[@id='%tmpl-search-site']/value[lang($lang)]"/></label><input id="{$theme-prefix}-srch" name="{$theme-prefix}-srch" type="search" value="" size="27" maxlength="150" />
+		<input id="{$theme-prefix}-srch-submit" name="{$theme-prefix}-srch-submit" type="submit" value="Search" data-icon="search" />
+		</div></form>
+		</div></section>
 	</xsl:template>
 	
+	<xsl:template match="body" mode="navigation">
+		<div id="{$theme-prefix}-psnb"><h2><span>Site </span>menu</h2><div id="{$theme-prefix}-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+		<ul class="mb-menu" data-ajax-replace="../includes/menu-eng.txt">
+		<li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
+		<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
+		<li><div><a href="#">Section 3</a></div></li>
+		<li><div><a href="#">Section 4</a></div></li>
+		<li><div><a href="#">Section 5</a></div></li>
+		<li><div><a href="#">Section 6</a></div></li>
+		<li><div><a href="#">Section 7</a></div></li>
+		</ul>
+		</div></div></div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="breadcrumb">
+		<div id="{$theme-prefix}-bc"><h2><xsl:value-of select="$strings/string[@id='%tmpl-bcrumb']/value[lang($lang)]"/></h2><div id="{$theme-prefix}-bc-in">
+		<ol>
+		<li><a href="../../index-eng.html">Home</a></li>
+		<li><a href="../index-eng.html">Working examples</a></li>
+		<li>Base theme</li>
+		</ol>
+		</div></div>
+	</xsl:template>
+
 	<xsl:template match="body" mode="resources">
 		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
 		<script src="{$wet_root}/js/settings.js"></script>
 		<script src="{$wet_root}/js/pe-ap-min.js"></script>
 	</xsl:template>
-	
+
 	<!--Fix bug that causes script tag to be output as an empty element (<script/>)-->
 	<xsl:template match="script">
 		<xsl:copy>
