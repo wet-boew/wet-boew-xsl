@@ -12,7 +12,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] &&  [ "$TRAVIS_REPO_SLUG" == "wet-boew/
 	git fetch -qn upstream > /dev/null
 
 	#Update working example
-	if [ "$TRAVIS_BRANCH" == "build" ]; then
+	if [ "$TRAVIS_BRANCH" == "master" ]; then
 		echo -e "Updating working examples...\n"
 
 		git add -f demos/.
