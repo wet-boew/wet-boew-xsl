@@ -3,7 +3,7 @@
 	<dirname property="tasks.basedir" file="${ant.file.build-tasks}"/>
 	<property file="${tasks.basedir}/build-tasks.properties"/>
 	
-	<property name="wet_root" value="../../dist"/>
+	<property name="wet_root" value="../../wet-boew/dist"/>
 	
 	<path id="wet-boew-anttaks.classpath">
 		<pathelement location="${wet-boew-anttasks.jar}" />
