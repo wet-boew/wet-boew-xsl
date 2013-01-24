@@ -163,9 +163,9 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 	</xsl:template>
 
 	<xsl:template match="body" mode="resources">
-		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
-		<script src="{$wet_root}/js/settings.js"></script>
-		<script src="{$wet_root}/js/pe-ap-min.js"></script>
+		<script src="{$wet_root}/{$theme}/js/theme-min.js"><xsl:text> </xsl:text></script>
+		<script src="{$wet_root}/js/settings.js"><xsl:text> </xsl:text></script>
+		<script src="{$wet_root}/js/pe-ap-min.js"><xsl:text> </xsl:text></script>
 	</xsl:template>
 
 	<!--Fix bug that causes script tag to be output as an empty element (<script/>)-->
