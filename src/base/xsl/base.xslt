@@ -95,7 +95,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 				</div></div>
 				</div></div>
 
-				<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav">Footer</h2>
+				<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav"><xsl:value-of select="$strings/string[@id='%tmpl-foot']/value[lang($lang)]"/></h2>
 				<xsl:comment> FooterStart </xsl:comment>
 					<xsl:apply-templates select="." mode="footer"/>
 				<xsl:comment> FooterEnd </xsl:comment>
