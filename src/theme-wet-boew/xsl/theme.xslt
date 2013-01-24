@@ -6,38 +6,36 @@
 
 	<xsl:output method="xml" indent="yes" omit-xml-declaration="yes" encoding="utf-8"/>
 
-	<xsl:variable name="theme" select="'theme-base'" />
-	<xsl:variable name="theme-prefix" select="'base'"/>
+	<xsl:variable name="theme" select="'theme-wet-boew'" />
+	<xsl:variable name="theme-prefix" select="'wet'"/>
 	<xsl:import href="../../base/xsl/base.xslt"/>
 
 	<xsl:template match="body" mode="banner-top">
-		<section><div id="base-fullhd"><h2>Full-width header area</h2>
-		<p>id="base-fullhd"</p>
-		<div id="base-fullhd-in">
-		<p class="float-left">id="base-fullhd-in"</p>
+		<section><div id="wet-fullhd"><div id="wet-fullhd-in">
 		<ul>
-		<li id="base-fullhd-lang"><a href="index-fra.html" lang="fr">Français</a></li>
+		<li id="wet-fullhd-lang-current">English</li>
+		<li id="wet-fullhd-lang"><a href="index-fra.html" lang="fr">Français</a></li>
 		</ul>
 		</div>
 		</div></section>
 	</xsl:template>
 
 	<xsl:template match="body" mode="footer">
-		<nav role="navigation"><div id="base-sft"><h3>Site footer</h3><div id="base-sft-in">
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">About us</a></h4>
+		<nav role="navigation"><div id="wet-sft"><h3>Site footer</h3><div id="wet-sft-in">
+		<section><div class="span-2"><h4 classid="wet-col-head"><a href="#">About us</a></h4>
 		<ul>
 		<li><a href="#">Our mandate</a></li>
 		<li><a href="#">Our history</a></li>
 		</ul>
 		</div></section>
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">News</a></h4>
+		<section><div class="span-2"><h4 classid="wet-col-head"><a href="#">News</a></h4>
 		<ul>
 		<li><a href="#">News releases</a></li>
 		<li><a href="#">Media advisories</a></li>
 		<li><a href="#">Multimedia</a></li>
 		</ul>
 		</div></section>
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Contact us</a></h4>
+		<section><div class="span-2"><h4 classid="wet-col-head"><a href="#">Contact us</a></h4>
 		<address>
 		<ul>
 		<li><a href="#">Phone numbers</a></li>
@@ -45,7 +43,7 @@
 		</ul>
 		</address>
 		</div></section>
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Stay connected</a></h4>
+		<section><div class="span-2"><h4 classid="wet-col-head"><a href="#">Stay connected</a></h4>
 		<ul>
 		<li><a rel="external" href="#">YouTube</a></li>
 		<li><a rel="external" href="#">Twitter</a></li>
@@ -54,9 +52,9 @@
 		</div></section>
 		</div></div></nav>
 
-		<section><div id="base-fullft"><h3>Full-width footer area</h3>
-		<p>id="base-fullft"</p>
-		<div id="base-fullft-in"><p>id="base-fullft-in"</p></div>
+		<section><div id="wet-fullft"><h3>Full-width footer area</h3>
+
+		<div id="wet-fullft-in"></div>
 		</div></section>
 	</xsl:template>
 
