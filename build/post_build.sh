@@ -19,7 +19,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] &&  [ "$TRAVIS_REPO_SLUG" == "wet-boew/
 		git stash
 		git checkout gh-pages
 		git rebase --committer-date-is-author-date master
-		git rm -r dist/.
+		git rm -r demos/.
 		git stash pop
 		git add -f demos/.
 		git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
