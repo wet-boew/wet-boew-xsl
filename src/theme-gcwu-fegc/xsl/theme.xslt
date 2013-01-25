@@ -4,7 +4,7 @@
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 	wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
 
-	<xsl:output method="xml" indent="yes" omit-xml-declaration="yes" encoding="utf-8"/>
+	<xsl:output method="html" indent="yes" omit-xml-declaration="yes" encoding="utf-8"/>
 
 	<xsl:variable name="theme" select="'theme-gcwu-fegc'" />
 	<xsl:variable name="theme-prefix" select="'gcwu'"/>

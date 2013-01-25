@@ -4,19 +4,19 @@
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 	wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
 	
-	<xsl:output method="xml" indent="yes" omit-xml-declaration="yes" encoding="utf-8"/>
+	<xsl:output method="html" indent="yes" omit-xml-declaration="yes" encoding="utf-8"/>
 	
 	<xsl:variable name="theme" select="'theme-clf2-nsi2'" />
 	<xsl:variable name="theme-prefix" select="'cn'"/>
 	<xsl:import href="../../base/xsl/base.xslt"/>
 
 	<xsl:template match="body" mode="banner-top">
-		<div id="cn-sig"><img src="{$wet_root}/theme-clf2-nsi2/images/sig-eng.gif" width="372" height="20" alt="Government of Canada" title="Government of Canada" /><xsl:text> </xsl:text></div>
-		<div id="cn-wmms"><img src="{$wet_root}/theme-clf2-nsi2/images/wmms.gif" width="83" height="20" alt="Symbol of the Government of Canada" title="Symbol of the Government of Canada" /><xsl:text> </xsl:text></div>
+		<div id="cn-sig"><img src="{$wet_root}/theme-clf2-nsi2/images/sig-eng.gif" width="372" height="20" alt="Government of Canada" title="Government of Canada" /></div>
+		<div id="cn-wmms"><img src="{$wet_root}/theme-clf2-nsi2/images/wmms.gif" width="83" height="20" alt="Symbol of the Government of Canada" title="Symbol of the Government of Canada" /></div>
 	</xsl:template>
 
 	<xsl:template match="body" mode="banner">
-		<div id="cn-leaf"><xsl:text> </xsl:text></div>
+		<div id="cn-leaf"></div>
 		<div id="cn-banner" role="banner">
 		<p id="cn-banner-text">Name of Institution</p>
 		<p>[www.]mainsite-siteprimaire.gc.ca</p>

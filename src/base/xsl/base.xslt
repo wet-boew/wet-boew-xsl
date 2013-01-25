@@ -63,7 +63,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 </xsl:text>
 		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment><xsl:text>
 </xsl:text>
-		<script src="{$wet_root}/js/jquery.min.js"><xsl:text> </xsl:text></script>
+		<script src="{$wet_root}/js/jquery.min.js"></script>
 		<link rel="stylesheet" href="{$wet_root}/grids/css/util-min.css" />
 		<link rel="stylesheet" href="{$wet_root}/js/css/pe-ap-min.css" />
 		<link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-min.css" />
@@ -163,21 +163,12 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 	</xsl:template>
 
 	<xsl:template match="body" mode="resources">
-		<script src="{$wet_root}/{$theme}/js/theme-min.js"><xsl:text> </xsl:text></script>
-		<script src="{$wet_root}/js/settings.js"><xsl:text> </xsl:text></script>
-		<script src="{$wet_root}/js/pe-ap-min.js"><xsl:text> </xsl:text></script>
+		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
+		<script src="{$wet_root}/js/settings.js"></script>
+		<script src="{$wet_root}/js/pe-ap-min.js"></script>
 	</xsl:template>
 
 	<!--Fix bug that causes script tag to be output as an empty element (<script/>)-->
-	<xsl:template match="script">
-		<xsl:copy>
-			<xsl:for-each select="@*">
-				<xsl:copy-of select="."/>
-			</xsl:for-each>
-			<xsl:text> </xsl:text>
-			<xsl:apply-templates />
-		</xsl:copy>
-	</xsl:template>
   
 	<!-- Pass the comment of the original document to the transformed document-->
 	<xsl:template match="comment()">
