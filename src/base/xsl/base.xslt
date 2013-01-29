@@ -8,6 +8,9 @@
 	<xsl:variable name="strings" select="document('i18n.xml')/strings" />
 
 	<xsl:param name="wet_root" />
+	<xsl:param name="use_cdn" />
+	<xsl:param name="cdn_jquery"/>
+	<xsl:param name="cdn_jquery_ie"/>
 
     <xsl:template match="/html">
 		<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
@@ -54,7 +57,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 
 	<xsl:template match="head" mode="resources">
 		<xsl:comment>[if lte IE 8]&gt;
-&lt;script src="<xsl:value-of select="$wet_root"/>/js/jquery-ie.min.js"&gt;&lt;/script&gt;
+<xsl:choose>
+			<xsl:when test="boolean($use_cdn) = true() and $cdn_jquery_ie != ''">&lt;script src="<xsl:value-of select="$cdn_jquery_ie"/>"&gt;&lt;/script&gt;</xsl:when>
+			<xsl:otherwise>&lt;script src="<xsl:value-of select="$wet_root"/>/js/jquery-ie.min.js"&gt;&lt;/script&gt;</xsl:otherwise>
+		</xsl:choose>
 &lt;script src="<xsl:value-of select="$wet_root"/>/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/grids/css/util-ie-min.css" /&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/js/css/pe-ap-ie-min.css" /&gt;
@@ -63,7 +69,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 </xsl:text>
 		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment><xsl:text>
 </xsl:text>
-		<script src="{$wet_root}/js/jquery.min.js"></script>
+<xsl:choose>
+	<xsl:when test="boolean($use_cdn) = true() and $cdn_jquery != ''"><script src="{$cdn_jquery}"></script></xsl:when>
+	<xsl:otherwise><script src="{$wet_root}/js/jquery.min.js"></script></xsl:otherwise>
+</xsl:choose>
 		<link rel="stylesheet" href="{$wet_root}/grids/css/util-min.css" />
 		<link rel="stylesheet" href="{$wet_root}/js/css/pe-ap-min.css" />
 		<link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-min.css" />
