@@ -142,13 +142,31 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 		<section role="search"><div id="{$theme-prefix}-srchbx"><h2><xsl:value-of select="$strings/string[@id='%tmpl-search']/value[lang($lang)]"/></h2>
 		<form action="#" method="post"><div id="{$theme-prefix}-srchbx-in">
 		<label for="{$theme-prefix}-srch"><xsl:value-of select="$strings/string[@id='%tmpl-search-site']/value[lang($lang)]"/></label><input id="{$theme-prefix}-srch" name="{$theme-prefix}-srch" type="search" value="" size="27" maxlength="150" />
-		<input id="{$theme-prefix}-srch-submit" name="{$theme-prefix}-srch-submit" type="submit" value="Search" data-icon="search" />
+		<input id="{$theme-prefix}-srch-submit" name="{$theme-prefix}-srch-submit" type="submit" value="{$strings/string[@id='%tmpl-search']/value[lang($lang)]}" data-icon="search" />
 		</div></form>
 		</div></section>
 	</xsl:template>
 	
 	<xsl:template match="body" mode="navigation">
-		<div id="{$theme-prefix}-psnb"><h2><span>Site </span>menu</h2><div id="{$theme-prefix}-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+		<div id="{$theme-prefix}-psnb"><h2><xsl:value-of select="$strings/string[@id='%tmpl-site-menu']/value[lang($lang)]" disable-output-escaping="yes"/></h2><div id="{$theme-prefix}-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+			<xsl:apply-templates select="." mode="navigation-inner"/><!--TODO: Replace with a way to load the menu -->
+		</div></div></div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="breadcrumb">
+		<div id="{$theme-prefix}-bc"><h2><xsl:value-of select="$strings/string[@id='%tmpl-bcrumb']/value[lang($lang)]"/></h2><div id="{$theme-prefix}-bc-in">
+			<xsl:apply-templates select="." mode="breadcrumb-inner"/><!--TODO: Replace with a way to load the breadcrumb -->
+		</div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="resources">
+		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
+		<script src="{$wet_root}/js/settings.js"></script>
+		<script src="{$wet_root}/js/pe-ap-min.js"></script>
+	</xsl:template>
+
+	<!--TODO: Remove this template -->
+	<xsl:template match="body" mode="navigation-inner">
 		<ul class="mb-menu" data-ajax-replace="../includes/menu-eng.txt">
 		<li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
 		<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
@@ -158,23 +176,14 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 		<li><div><a href="#">Section 6</a></div></li>
 		<li><div><a href="#">Section 7</a></div></li>
 		</ul>
-		</div></div></div></div>
 	</xsl:template>
 
-	<xsl:template match="body" mode="breadcrumb">
-		<div id="{$theme-prefix}-bc"><h2><xsl:value-of select="$strings/string[@id='%tmpl-bcrumb']/value[lang($lang)]"/></h2><div id="{$theme-prefix}-bc-in">
+	<xsl:template match="body" mode="breadcrumb-inner">
 		<ol>
 		<li><a href="../../index-eng.html">Home</a></li>
 		<li><a href="../index-eng.html">Working examples</a></li>
 		<li>Base theme</li>
 		</ol>
-		</div></div>
-	</xsl:template>
-
-	<xsl:template match="body" mode="resources">
-		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
-		<script src="{$wet_root}/js/settings.js"></script>
-		<script src="{$wet_root}/js/pe-ap-min.js"></script>
 	</xsl:template>
 
 	<!--Fix bug that causes script tag to be output as an empty element (<script/>)-->
