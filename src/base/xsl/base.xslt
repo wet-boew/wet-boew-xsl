@@ -146,17 +146,29 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 		</div></form>
 		</div></section>
 	</xsl:template>
-	
+
 	<xsl:template match="body" mode="navigation">
 		<div id="{$theme-prefix}-psnb"><h2><xsl:value-of select="$strings/string[@id='%tmpl-site-menu']/value[lang($lang)]" disable-output-escaping="yes"/></h2><div id="{$theme-prefix}-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
-			<xsl:apply-templates select="." mode="navigation-inner"/><!--TODO: Replace with a way to load the menu -->
+			<xsl:apply-templates select="." mode="navigation_inner"/><!--TODO: Replace with a way to load the menu -->
 		</div></div></div></div>
 	</xsl:template>
 
 	<xsl:template match="body" mode="breadcrumb">
 		<div id="{$theme-prefix}-bc"><h2><xsl:value-of select="$strings/string[@id='%tmpl-bcrumb']/value[lang($lang)]"/></h2><div id="{$theme-prefix}-bc-in">
-			<xsl:apply-templates select="." mode="breadcrumb-inner"/><!--TODO: Replace with a way to load the breadcrumb -->
+			<xsl:apply-templates select="." mode="breadcrumb_inner"/><!--TODO: Replace with a way to load the breadcrumb -->
 		</div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="footer">
+		<nav role="navigation"><div id="{$theme-prefix}-sft"><h3><xsl:value-of select="$strings/string[@id='%tmpl-site-foot']/value[lang($lang)]"/></h3><div id="{$theme-prefix}-sft-in">
+			<xsl:apply-templates select="." mode="site_footer"/>
+		</div></div></nav>
+
+		<xsl:apply-templates select="." mode="global_footer"/>
+	</xsl:template>
+
+	<xsl:template match="body" mode="site_footer">
+		<xsl:apply-templates select="." mode="site_footer_inner"/><!--TODO: Replace with a way to load the breadcrumb -->
 	</xsl:template>
 
 	<xsl:template match="body" mode="resources">
@@ -166,7 +178,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 	</xsl:template>
 
 	<!--TODO: Remove this template -->
-	<xsl:template match="body" mode="navigation-inner">
+	<xsl:template match="body" mode="navigation_inner">
 		<ul class="mb-menu" data-ajax-replace="../includes/menu-eng.txt">
 		<li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
 		<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
@@ -178,12 +190,45 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 		</ul>
 	</xsl:template>
 
-	<xsl:template match="body" mode="breadcrumb-inner">
+	<!--TODO: Remove this template -->
+	<xsl:template match="body" mode="breadcrumb_inner">
 		<ol>
 		<li><a href="../../index-eng.html">Home</a></li>
 		<li><a href="../index-eng.html">Working examples</a></li>
 		<li>Base theme</li>
 		</ol>
+	</xsl:template>
+	
+	<!--TODO: Remove this template -->
+	<xsl:template match="body" mode="site_footer_inner">
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">About us</a></h4>
+		<ul>
+		<li><a href="#">Our mandate</a></li>
+		<li><a href="#">Our history</a></li>
+		</ul>
+		</div></section>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">News</a></h4>
+		<ul>
+		<li><a href="#">News releases</a></li>
+		<li><a href="#">Media advisories</a></li>
+		<li><a href="#">Multimedia</a></li>
+		</ul>
+		</div></section>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Contact us</a></h4>
+		<address>
+		<ul>
+		<li><a href="#">Phone numbers</a></li>
+		<li><a href="#">Office locations</a></li>
+		</ul>
+		</address>
+		</div></section>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Stay connected</a></h4>
+		<ul>
+		<li><a rel="external" href="#">YouTube</a></li>
+		<li><a rel="external" href="#">Twitter</a></li>
+		<li><a href="#">Feeds</a></li>
+		</ul>
+		</div></section>
 	</xsl:template>
 
 	<!--Fix bug that causes script tag to be output as an empty element (<script/>)-->
