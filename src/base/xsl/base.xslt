@@ -8,6 +8,9 @@
 	<xsl:variable name="strings" select="document('i18n.xml')/strings" />
 
 	<xsl:param name="wet_root" />
+	<xsl:param name="use_cdn" />
+	<xsl:param name="cdn_jquery"/>
+	<xsl:param name="cdn_jquery_ie"/>
 
     <xsl:template match="/html">
 		<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
@@ -54,7 +57,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 
 	<xsl:template match="head" mode="resources">
 		<xsl:comment>[if lte IE 8]&gt;
-&lt;script src="<xsl:value-of select="$wet_root"/>/js/jquery-ie.min.js"&gt;&lt;/script&gt;
+<xsl:choose>
+			<xsl:when test="boolean($use_cdn) = true() and $cdn_jquery_ie != ''">&lt;script src="<xsl:value-of select="$cdn_jquery_ie"/>"&gt;&lt;/script&gt;</xsl:when>
+			<xsl:otherwise>&lt;script src="<xsl:value-of select="$wet_root"/>/js/jquery-ie.min.js"&gt;&lt;/script&gt;</xsl:otherwise>
+		</xsl:choose>
 &lt;script src="<xsl:value-of select="$wet_root"/>/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/grids/css/util-ie-min.css" /&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$wet_root"/>/js/css/pe-ap-ie-min.css" /&gt;
@@ -63,7 +69,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 </xsl:text>
 		<xsl:comment>[if gt IE 8]&gt;&lt;!</xsl:comment><xsl:text>
 </xsl:text>
-		<script src="{$wet_root}/js/jquery.min.js"></script>
+<xsl:choose>
+	<xsl:when test="boolean($use_cdn) = true() and $cdn_jquery != ''"><script src="{$cdn_jquery}"></script></xsl:when>
+	<xsl:otherwise><script src="{$wet_root}/js/jquery.min.js"></script></xsl:otherwise>
+</xsl:choose>
 		<link rel="stylesheet" href="{$wet_root}/grids/css/util-min.css" />
 		<link rel="stylesheet" href="{$wet_root}/js/css/pe-ap-min.css" />
 		<link rel="stylesheet" href="{$wet_root}/{$theme}/css/theme-min.css" />
@@ -133,13 +142,43 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 		<section role="search"><div id="{$theme-prefix}-srchbx"><h2><xsl:value-of select="$strings/string[@id='%tmpl-search']/value[lang($lang)]"/></h2>
 		<form action="#" method="post"><div id="{$theme-prefix}-srchbx-in">
 		<label for="{$theme-prefix}-srch"><xsl:value-of select="$strings/string[@id='%tmpl-search-site']/value[lang($lang)]"/></label><input id="{$theme-prefix}-srch" name="{$theme-prefix}-srch" type="search" value="" size="27" maxlength="150" />
-		<input id="{$theme-prefix}-srch-submit" name="{$theme-prefix}-srch-submit" type="submit" value="Search" data-icon="search" />
+		<input id="{$theme-prefix}-srch-submit" name="{$theme-prefix}-srch-submit" type="submit" value="{$strings/string[@id='%tmpl-search']/value[lang($lang)]}" data-icon="search" />
 		</div></form>
 		</div></section>
 	</xsl:template>
-	
+
 	<xsl:template match="body" mode="navigation">
-		<div id="{$theme-prefix}-psnb"><h2><span>Site </span>menu</h2><div id="{$theme-prefix}-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+		<div id="{$theme-prefix}-psnb"><h2><xsl:value-of select="$strings/string[@id='%tmpl-site-menu']/value[lang($lang)]" disable-output-escaping="yes"/></h2><div id="{$theme-prefix}-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+			<xsl:apply-templates select="." mode="navigation_inner"/><!--TODO: Replace with a way to load the menu -->
+		</div></div></div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="breadcrumb">
+		<div id="{$theme-prefix}-bc"><h2><xsl:value-of select="$strings/string[@id='%tmpl-bcrumb']/value[lang($lang)]"/></h2><div id="{$theme-prefix}-bc-in">
+			<xsl:apply-templates select="." mode="breadcrumb_inner"/><!--TODO: Replace with a way to load the breadcrumb -->
+		</div></div>
+	</xsl:template>
+
+	<xsl:template match="body" mode="footer">
+		<nav role="navigation"><div id="{$theme-prefix}-sft"><h3><xsl:value-of select="$strings/string[@id='%tmpl-site-foot']/value[lang($lang)]"/></h3><div id="{$theme-prefix}-sft-in">
+			<xsl:apply-templates select="." mode="site_footer"/>
+		</div></div></nav>
+
+		<xsl:apply-templates select="." mode="global_footer"/>
+	</xsl:template>
+
+	<xsl:template match="body" mode="site_footer">
+		<xsl:apply-templates select="." mode="site_footer_inner"/><!--TODO: Replace with a way to load the breadcrumb -->
+	</xsl:template>
+
+	<xsl:template match="body" mode="resources">
+		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
+		<script src="{$wet_root}/js/settings.js"></script>
+		<script src="{$wet_root}/js/pe-ap-min.js"></script>
+	</xsl:template>
+
+	<!--TODO: Remove this template -->
+	<xsl:template match="body" mode="navigation_inner">
 		<ul class="mb-menu" data-ajax-replace="../includes/menu-eng.txt">
 		<li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
 		<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
@@ -149,23 +188,47 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 		<li><div><a href="#">Section 6</a></div></li>
 		<li><div><a href="#">Section 7</a></div></li>
 		</ul>
-		</div></div></div></div>
 	</xsl:template>
 
-	<xsl:template match="body" mode="breadcrumb">
-		<div id="{$theme-prefix}-bc"><h2><xsl:value-of select="$strings/string[@id='%tmpl-bcrumb']/value[lang($lang)]"/></h2><div id="{$theme-prefix}-bc-in">
+	<!--TODO: Remove this template -->
+	<xsl:template match="body" mode="breadcrumb_inner">
 		<ol>
 		<li><a href="../../index-eng.html">Home</a></li>
 		<li><a href="../index-eng.html">Working examples</a></li>
 		<li>Base theme</li>
 		</ol>
-		</div></div>
 	</xsl:template>
-
-	<xsl:template match="body" mode="resources">
-		<script src="{$wet_root}/{$theme}/js/theme-min.js"></script>
-		<script src="{$wet_root}/js/settings.js"></script>
-		<script src="{$wet_root}/js/pe-ap-min.js"></script>
+	
+	<!--TODO: Remove this template -->
+	<xsl:template match="body" mode="site_footer_inner">
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">About us</a></h4>
+		<ul>
+		<li><a href="#">Our mandate</a></li>
+		<li><a href="#">Our history</a></li>
+		</ul>
+		</div></section>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">News</a></h4>
+		<ul>
+		<li><a href="#">News releases</a></li>
+		<li><a href="#">Media advisories</a></li>
+		<li><a href="#">Multimedia</a></li>
+		</ul>
+		</div></section>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Contact us</a></h4>
+		<address>
+		<ul>
+		<li><a href="#">Phone numbers</a></li>
+		<li><a href="#">Office locations</a></li>
+		</ul>
+		</address>
+		</div></section>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Stay connected</a></h4>
+		<ul>
+		<li><a rel="external" href="#">YouTube</a></li>
+		<li><a rel="external" href="#">Twitter</a></li>
+		<li><a href="#">Feeds</a></li>
+		</ul>
+		</div></section>
 	</xsl:template>
 
 	<!--Fix bug that causes script tag to be output as an empty element (<script/>)-->

@@ -22,38 +22,7 @@
 		</div></section>
 	</xsl:template>
 
-	<xsl:template match="body" mode="footer">
-		<nav role="navigation"><div id="base-sft"><h3>Site footer</h3><div id="base-sft-in">
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">About us</a></h4>
-		<ul>
-		<li><a href="#">Our mandate</a></li>
-		<li><a href="#">Our history</a></li>
-		</ul>
-		</div></section>
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">News</a></h4>
-		<ul>
-		<li><a href="#">News releases</a></li>
-		<li><a href="#">Media advisories</a></li>
-		<li><a href="#">Multimedia</a></li>
-		</ul>
-		</div></section>
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Contact us</a></h4>
-		<address>
-		<ul>
-		<li><a href="#">Phone numbers</a></li>
-		<li><a href="#">Office locations</a></li>
-		</ul>
-		</address>
-		</div></section>
-		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Stay connected</a></h4>
-		<ul>
-		<li><a rel="external" href="#">YouTube</a></li>
-		<li><a rel="external" href="#">Twitter</a></li>
-		<li><a href="#">Feeds</a></li>
-		</ul>
-		</div></section>
-		</div></div></nav>
-
+	<xsl:template match="body" mode="global_footer">
 		<section><div id="base-fullft"><h3>Full-width footer area</h3>
 		<p>id="base-fullft"</p>
 		<div id="base-fullft-in"><p>id="base-fullft-in"</p></div>
