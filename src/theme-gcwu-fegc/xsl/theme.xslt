@@ -31,29 +31,27 @@
 		</div></div>
 	</xsl:template>
 
-	<xsl:template match="body" mode="footer">
-		<nav role="navigation"><div id="gcwu-sft"><h3>Site footer</h3><div id="gcwu-sft-in">
+	<xsl:template match="body" mode="site_footer">
 		<div id="gcwu-tctr">
 		<ul>
 		<li class="gcwu-tc"><a href="#" rel="license">Terms and conditions</a></li>
 		<li class="gcwu-tr"><a href="#">Transparency</a></li>
 		</ul>
 		</div>
-		<div class="clear"></div>
-		<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">About us</a></h4>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">About us</a></h4>
 		<ul>
-		<li><a href="#">Our Mandate</a></li>
-		<li><a href="#">The Minister</a></li>
+		<li><a href="#">Our mandate</a></li>
+		<li><a href="#">Our history</a></li>
 		</ul>
 		</div></section>
-		<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">News</a></h4>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">News</a></h4>
 		<ul>
 		<li><a href="#">News releases</a></li>
 		<li><a href="#">Media advisories</a></li>
 		<li><a href="#">Multimedia</a></li>
 		</ul>
 		</div></section>
-		<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">Contact us</a></h4>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Contact us</a></h4>
 		<address>
 		<ul>
 		<li><a href="#">Phone numbers</a></li>
@@ -61,15 +59,16 @@
 		</ul>
 		</address>
 		</div></section>
-		<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">Stay connected</a></h4>
+		<section><div class="span-2"><h4 class="base-col-head"><a href="#">Stay connected</a></h4>
 		<ul>
 		<li><a rel="external" href="#">YouTube</a></li>
 		<li><a rel="external" href="#">Twitter</a></li>
 		<li><a href="#">Feeds</a></li>
 		</ul>
 		</div></section>
-		</div></div></nav>
+	</xsl:template>
 
+	<xsl:template match="body" mode="global_footer">
 		<nav role="navigation"><div id="gcwu-gcft"><h3>Government of Canada footer</h3><div id="gcwu-gcft-in"><div id="gcwu-gcft-fip">
 		<ul>
 		<li><a rel="external" href="http://healthycanadians.gc.ca/index-eng.php"><span>Health</span><br />healthycanadians.gc.ca</a></li>
