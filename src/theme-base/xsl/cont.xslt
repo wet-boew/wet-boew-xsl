@@ -8,255 +8,255 @@
 	<xsl:output method="text" encoding="utf-8"/>
 	<xsl:variable name="root" select="'cont'"/>
 
-	<xsl:template match="/strings" mode="output"><![CDATA[<!DOCTYPE html>
-<!--[if IE 7]><html dir="rtl" lang="ar" class="no-js ie7"><![endif]-->
-<!--[if IE 8]><html dir="rtl" lang="ar" class="no-js ie8"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html dir="rtl" lang="ar" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
-<title>Content page - Base theme - Working examples - Web Experience Toolkit (WET)</title>
+	<xsl:template match="value" mode="output">&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 7]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(./@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(./@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(./@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js"&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt --&gt;
+&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(./@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(./@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(./@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(./@xml:lang)]"/>&lt;/title&gt;
 
-<link rel="shortcut icon" href="../../../dist/theme-base/images/favicon.ico" />
-<meta name="description" content="English description / Description en anglais" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+&lt;link rel="shortcut icon" href="../../../dist/theme-base/images/favicon.ico" /&gt;
+&lt;meta name="description" content="<xsl:value-of select="/strings/string[@id='%lang-eng']/value[lang(./@xml:lang)]"/>description / Description en <xsl:value-of select="/strings/string[@id='%lang-fra']/value[lang(./@xml:lang)]"/>" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
 
-<!--[if lte IE 8]>
-<script src="../../../dist/js/jquery-ie.min.js"></script>
-<script src="../../../dist/js/polyfills/html5shiv-min.js"></script>
-<link rel="stylesheet" href="../../../dist/grids/css/util-ie-min.css" />
-<link rel="stylesheet" href="../../../dist/js/css/pe-ap-ie-min.css" />
-<link rel="stylesheet" href="../../../dist/theme-base/css/theme-ie-min.css" />
-<noscript><link rel="stylesheet" href="../../../dist/theme-base/css/theme-ns-ie-min.css" /></noscript>
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<script src="../../../dist/js/jquery.min.js"></script>
-<link rel="stylesheet" href="../../../dist/grids/css/util-min.css" />
-<link rel="stylesheet" href="../../../dist/js/css/pe-ap-min.css" />
-<link rel="stylesheet" href="../../../dist/theme-base/css/theme-min.css" />
-<noscript><link rel="stylesheet" href="../../../dist/theme-base/css/theme-ns-min.css" /></noscript>
-<!--<![endif]-->
+&lt;!--[if lte IE 8]&gt;
+&lt;script src="../../../dist/js/jquery-ie.min.js"&gt;&lt;/script&gt;
+&lt;script src="../../../dist/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="../../../dist/grids/css/util-ie-min.css" /&gt;
+&lt;link rel="stylesheet" href="../../../dist/js/css/pe-ap-ie-min.css" /&gt;
+&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-ie-min.css" /&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-ns-ie-min.css" /&gt;&lt;/noscript&gt;
+&lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+&lt;script src="../../../dist/js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="../../../dist/grids/css/util-min.css" /&gt;
+&lt;link rel="stylesheet" href="../../../dist/js/css/pe-ap-min.css" /&gt;
+&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-min.css" /&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-ns-min.css" /&gt;&lt;/noscript&gt;
+&lt;!--&lt;![endif]--&gt;
 
-<!-- CustomCSSStart -->
-<!-- CustomCSSEnd -->
-</head>
+&lt;!-- CustomCSSStart --&gt;
+&lt;!-- CustomCSSEnd --&gt;
+&lt;/head&gt;
 
-<body><div id="wb-body">
-<div id="wb-skip">
-<ul id="wb-tphp">
-<li id="wb-skip1"><a href="#wb-cont">Skip to main content</a></li>
-<li id="wb-skip2"><a href="#wb-nav">Skip to footer</a></li>
-</ul>
-</div>
+&lt;body&gt;&lt;div id="wb-body"&gt;
+&lt;div id="wb-skip"&gt;
+&lt;ul id="wb-tphp"&gt;
+&lt;li id="wb-skip1"&gt;&lt;a href="#wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-skip-main']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="wb-skip2"&gt;&lt;a href="#wb-nav"&gt;<xsl:value-of select="/strings/string[@id='Skip to footer']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 
-<div id="wb-head"><div id="wb-head-in"><header>
-<!-- HeaderStart -->
-<section><div id="base-fullhd"><h2>Full-width header area</h2>
-<p>id="base-fullhd"</p>
-<div id="base-fullhd-in">
-<p class="float-right">id="base-fullhd-in"</p>
-<ul>
-<li id="base-fullhd-lang"><a href="../cont-fra.html" lang="fr">Français</a></li>
-<li id="base-fullhd-lang-2"><a href="../cont-eng.html" lang="en">English</a></li>
-</ul>
-</div>
-</div></section>
+&lt;div id="wb-head"&gt;&lt;div id="wb-head-in"&gt;&lt;header&gt;
+&lt;!-- HeaderStart --&gt;
+&lt;section&gt;&lt;div id="base-fullhd"&gt;&lt;h2&gt;Full-width header area&lt;/h2&gt;
+&lt;p&gt;id="base-fullhd"&lt;/p&gt;
+&lt;div id="base-fullhd-in"&gt;
+&lt;p class="float-right"&gt;id="base-fullhd-in"&lt;/p&gt;
+&lt;ul&gt;
+&lt;li id="base-fullhd-lang"&gt;&lt;a href="../cont-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="../cont-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
 
-<div id="base-bnr" role="banner"><div id="base-bnr-in">
-<div id="base-title"><p id="base-title-in"><a href="../../../index-eng.html">Web Experience Toolkit</a></p></div>
+&lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
+&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="../../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 
-<section role="search"><div id="base-srchbx"><h2>Search</h2>
-<form action="#" method="post"><div id="base-srchbx-in">
-<label for="base-srch">Search website</label><input id="base-srch" name="base-srch" type="search" value="" size="27" maxlength="150" />
-<input id="base-srch-submit" name="base-srch-submit" type="submit" value="Search" />
-</div></form>
-</div></section>
-</div></div>
+&lt;section role="search"&gt;&lt;div id="base-srchbx"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-search']/value[lang(./@xml:lang)]"/>&lt;/h2&gt;
+&lt;form action="#" method="post"&gt;&lt;div id="base-srchbx-in"&gt;
+&lt;label for="base-srch"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-search-site']/value[lang(./@xml:lang)]"/>&lt;/label&gt;&lt;input id="base-srch" name="base-srch" type="search" value="" size="27" maxlength="150" /&gt;
+&lt;input id="base-srch-submit" name="base-srch-submit" type="submit" value="<xsl:value-of select="/strings/string[@id='%tmpl-search']/value[lang(./@xml:lang)]"/>" /&gt;
+&lt;/div&gt;&lt;/form&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/div&gt;&lt;/div&gt;
 
-<nav role="navigation">
-<div id="base-psnb"><h2>Site menu</h2><div id="base-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
-<ul class="mb-menu" data-ajax-replace="../../includes/menu-ara.txt">
-<li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
-<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
-<li><div><a href="#">Section 3</a></div></li>
-<li><div><a href="#">Section 4</a></div></li>
-<li><div><a href="#">Section 5</a></div></li>
-<li><div><a href="#">Section 6</a></div></li>
-<li><div><a href="#">Section 7</a></div></li>
-</ul>
-</div></div></div></div>
+&lt;nav role="navigation"&gt;
+&lt;div id="base-psnb"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-menu']/value[lang(./@xml:lang)]"/>&lt;/h2&gt;&lt;div id="base-psnb-in"&gt;&lt;div class="wet-boew-menubar mb-mega"&gt;&lt;div&gt;
+&lt;ul class="mb-menu" data-ajax-replace="../../includes/menu-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang(./@xml:lang)]"/>.txt"&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.com/wet-boew/index-eng.html"&gt;WET project&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(./@xml:lang)]"/> 2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(./@xml:lang)]"/> 3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(./@xml:lang)]"/> 4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(./@xml:lang)]"/> 5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(./@xml:lang)]"/> 6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(./@xml:lang)]"/> 7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
-<div id="base-bc"><h2>Breadcrumb trail</h2><div id="base-bc-in">
-<ol>
-<li><a href="../../../index-eng.html">Home</a></li>
-<li><a href="../../index-eng.html">Working examples</a></li>
-<li><a href="../index-eng.html">Base theme</a></li>
-<li>Content page</li>
-</ol>
-</div></div>
-</nav>
-<!-- HeaderEnd -->
-</header></div></div>
+&lt;div id="base-bc"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-bcrumb']/value[lang(./@xml:lang)]"/>&lt;/h2&gt;&lt;div id="base-bc-in"&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="../../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%home']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(./@xml:lang)]"/>&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/nav&gt;
+&lt;!-- HeaderEnd --&gt;
+&lt;/header&gt;&lt;/div&gt;&lt;/div&gt;
 
-<div id="wb-core"><div id="wb-core-in" class="equalize">
-<div id="wb-main" role="main"><div id="wb-main-in">
-<!-- MainContentStart -->
-<h1 id="wb-cont">Content page - Base theme</h1>
+&lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
+&lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
+&lt;!-- MainContentStart --&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(./@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(./@xml:lang)]"/>&lt;/h1&gt;
 
-<section><h2>Heading 2 (<code>h2</code>) default appearance</h2>
-	<section><h3>Heading 3 (<code>h3</code>) default appearance</h3>
-		<section><h4>Heading 4 (<code>h4</code>) default appearance</h4>
-			<section><h5>Heading 5 (<code>h5</code>) default appearance</h5>
-				<section><h6>Heading 6 (<code>h6</code>) default appearance</h6>
-					<p>Paragraph default appearance</p>
-				</section>
-			</section>
-		</section>
-	</section>
-</section>
+&lt;section&gt;&lt;h2&gt;Heading 2 (&lt;code&gt;h2&lt;/code&gt;) default appearance&lt;/h2&gt;
+	&lt;section&gt;&lt;h3&gt;Heading 3 (&lt;code&gt;h3&lt;/code&gt;) default appearance&lt;/h3&gt;
+		&lt;section&gt;&lt;h4&gt;Heading 4 (&lt;code&gt;h4&lt;/code&gt;) default appearance&lt;/h4&gt;
+			&lt;section&gt;&lt;h5&gt;Heading 5 (&lt;code&gt;h5&lt;/code&gt;) default appearance&lt;/h5&gt;
+				&lt;section&gt;&lt;h6&gt;Heading 6 (&lt;code&gt;h6&lt;/code&gt;) default appearance&lt;/h6&gt;
+					&lt;p&gt;Paragraph default appearance&lt;/p&gt;
+				&lt;/section&gt;
+			&lt;/section&gt;
+		&lt;/section&gt;
+	&lt;/section&gt;
+&lt;/section&gt;
 
-<p><a href="#">Link default appearance</a></p>
-<p><a href="mailto:"><code>mailto:</code> link default appearance</a></p>
-<p><a href="http://www." rel="external">Third party <code>http://www.</code> link default appearance</a></p>
-<p><a href=".doc">Link to file downloads based on file type <code>.doc</code>, <code>.psd</code>, <code>.zip</code>, <code>.pdf</code>, <code>.xls</code>, <code>.xlt</code>, <code>.rtf</code> and <code>.txt</code> default appearance</a></p>
-<p>Abbreviation default appearance: <abbr title="Treasury Board">TBS</abbr>.</p>
+&lt;p&gt;&lt;a href="#"&gt;Link default appearance&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:"&gt;&lt;code&gt;mailto:&lt;/code&gt; link default appearance&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www." rel="external"&gt;Third party &lt;code&gt;http://www.&lt;/code&gt; link default appearance&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=".doc"&gt;Link to file downloads based on file type &lt;code&gt;.doc&lt;/code&gt;, &lt;code&gt;.psd&lt;/code&gt;, &lt;code&gt;.zip&lt;/code&gt;, &lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.xls&lt;/code&gt;, &lt;code&gt;.xlt&lt;/code&gt;, &lt;code&gt;.rtf&lt;/code&gt; and &lt;code&gt;.txt&lt;/code&gt; default appearance&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abbreviation default appearance: &lt;abbr title="Treasury Board"&gt;TBS&lt;/abbr&gt;.&lt;/p&gt;
 
-<ul>
-<li>unordered list (<code>ul</code>) first level default appearance
-	<ul>
-	<li>unordered list (<code>ul</code>) second level default appearance
-		<ul>
-		<li>unordered list (<code>ul</code>) third level default appearance</li>
-		</ul>
-	</li>
-	</ul>
-</li>
-</ul>
+&lt;ul&gt;
+&lt;li&gt;unordered list (&lt;code&gt;ul&lt;/code&gt;) first level default appearance
+	&lt;ul&gt;
+	&lt;li&gt;unordered list (&lt;code&gt;ul&lt;/code&gt;) second level default appearance
+		&lt;ul&gt;
+		&lt;li&gt;unordered list (&lt;code&gt;ul&lt;/code&gt;) third level default appearance&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-<ol>
-<li>ordered list (<code>ol</code>) first level default appearance</li>
-<li>ordered list (<code>ol</code>) first level default appearance
-	<ol>
-	<li>ordered list (<code>ol</code>) second level default appearance</li>
-	<li>ordered list (<code>ol</code>) second level default appearance
-		<ol>
-		<li>ordered list (<code>ol</code>) third level default appearance</li>
-		<li>ordered list (<code>ol</code>) third level default appearance</li>
-		</ol>
-	</li>
-	</ol>
-</li>
-</ol>
+&lt;ol&gt;
+&lt;li&gt;ordered list (&lt;code&gt;ol&lt;/code&gt;) first level default appearance&lt;/li&gt;
+&lt;li&gt;ordered list (&lt;code&gt;ol&lt;/code&gt;) first level default appearance
+	&lt;ol&gt;
+	&lt;li&gt;ordered list (&lt;code&gt;ol&lt;/code&gt;) second level default appearance&lt;/li&gt;
+	&lt;li&gt;ordered list (&lt;code&gt;ol&lt;/code&gt;) second level default appearance
+		&lt;ol&gt;
+		&lt;li&gt;ordered list (&lt;code&gt;ol&lt;/code&gt;) third level default appearance&lt;/li&gt;
+		&lt;li&gt;ordered list (&lt;code&gt;ol&lt;/code&gt;) third level default appearance&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
-<table>
-<caption>Table caption default appearance</caption>
-<thead>
-<tr>
-<th scope="col">Table header (<code>th</code>) default appearance</th>
-<th scope="col">Table header (<code>th</code>) default appearance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Table data (<code>td</code>) default appearance</td>
-<td>Table data (<code>td</code>) default appearance</td>
-</tr>
-</tbody>
-</table>
+&lt;table&gt;
+&lt;caption&gt;Table caption default appearance&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col"&gt;Table header (&lt;code&gt;th&lt;/code&gt;) default appearance&lt;/th&gt;
+&lt;th scope="col"&gt;Table header (&lt;code&gt;th&lt;/code&gt;) default appearance&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Table data (&lt;code&gt;td&lt;/code&gt;) default appearance&lt;/td&gt;
+&lt;td&gt;Table data (&lt;code&gt;td&lt;/code&gt;) default appearance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
-<form action="#" method="post">
-<div><label for="data1">Form input default appearance:</label> <input name="data1" type="text" id="data1" /></div>
-<div><label for="data2">Form text area default appearance:</label> <textarea name="data2" cols="15" rows="3" id="data2"></textarea></div>
-<div><label for="data4">Form <code>select</code> default appearance:</label> 
-<select id="data4" name="data4">
-<option value="Option 1">Option 1</option>
-<option value="Option 2">Option 2</option>
-<option value="Option 3">Option 3</option>
-<option value="Option 4">Option 4</option>
-</select></div>
-<fieldset><legend>Form <code>legend</code>, <code>fieldset</code> and <code>checkbox</code> default appearance</legend>
-<div><input name="checkbox" type="checkbox" id="data5" value="checkbox" />&#160;<label for="data5">Option 1</label>&#160;&#160;
-<input name="checkbox" type="checkbox" id="data6" value="checkbox" />&#160;<label for="data6">Option 2</label>&#160;&#160;
-<input name="checkbox" type="checkbox" id="data7" value="checkbox" />&#160;<label for="data7">Option 3</label>&#160;&#160;
-<input name="checkbox" type="checkbox" id="data8" value="checkbox" />&#160;<label for="data8">Option 4</label></div>
-</fieldset>
-<div><input name="submit" type="submit" id="submit" value="Submit default appearance" />
-<input name="reset" type="reset" id="reset" value="Reset default appearance" /></div>
-</form>
+&lt;form action="#" method="post"&gt;
+&lt;div&gt;&lt;label for="data1"&gt;Form input default appearance:&lt;/label&gt; &lt;input name="data1" type="text" id="data1" /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;label for="data2"&gt;Form text area default appearance:&lt;/label&gt; &lt;textarea name="data2" cols="15" rows="3" id="data2"&gt;&lt;/textarea&gt;&lt;/div&gt;
+&lt;div&gt;&lt;label for="data4"&gt;Form &lt;code&gt;select&lt;/code&gt; default appearance:&lt;/label&gt; 
+&lt;select id="data4" name="data4"&gt;
+&lt;option value="Option 1"&gt;Option 1&lt;/option&gt;
+&lt;option value="Option 2"&gt;Option 2&lt;/option&gt;
+&lt;option value="Option 3"&gt;Option 3&lt;/option&gt;
+&lt;option value="Option 4"&gt;Option 4&lt;/option&gt;
+&lt;/select&gt;&lt;/div&gt;
+&lt;fieldset&gt;&lt;legend&gt;Form &lt;code&gt;legend&lt;/code&gt;, &lt;code&gt;fieldset&lt;/code&gt; and &lt;code&gt;checkbox&lt;/code&gt; default appearance&lt;/legend&gt;
+&lt;div&gt;&lt;input name="checkbox" type="checkbox" id="data5" value="checkbox" /&gt;&#160;&lt;label for="data5"&gt;Option 1&lt;/label&gt;&#160;&#160;
+&lt;input name="checkbox" type="checkbox" id="data6" value="checkbox" /&gt;&#160;&lt;label for="data6"&gt;Option 2&lt;/label&gt;&#160;&#160;
+&lt;input name="checkbox" type="checkbox" id="data7" value="checkbox" /&gt;&#160;&lt;label for="data7"&gt;Option 3&lt;/label&gt;&#160;&#160;
+&lt;input name="checkbox" type="checkbox" id="data8" value="checkbox" /&gt;&#160;&lt;label for="data8"&gt;Option 4&lt;/label&gt;&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;div&gt;&lt;input name="submit" type="submit" id="submit" value="Submit default appearance" /&gt;
+&lt;input name="reset" type="reset" id="reset" value="Reset default appearance" /&gt;&lt;/div&gt;
+&lt;/form&gt;
 
-<blockquote>
-<p>&quot;Blockquote default appearance&quot;.</p>
-</blockquote>
+&lt;blockquote&gt;
+&lt;p&gt;&quot;Blockquote default appearance&quot;.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-<dl id="base-date-mod" role="contentinfo">
-<dt>Date modified:</dt><dd><span><time>2012-09-17</time></span></dd>
-</dl>
-<div class="clear"></div>
-<!-- MainContentEnd -->
-</div></div>
-</div></div>
+&lt;dl id="base-date-mod" role="contentinfo"&gt;
+&lt;dt&gt;<xsl:value-of select="/strings/string[@id='%tmpl-date-mod']/value[lang(./@xml:lang)]"/>:&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;2012-09-17&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;!-- MainContentEnd --&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
 
-<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav">Footer</h2>
-<!-- FooterStart -->
-<nav role="navigation"><div id="base-sft"><h3>Site footer</h3><div id="base-sft-in">
-<section><div class="span-2"><h4 class="base-col-head"><a href="#">About us</a></h4>
-<ul>
-<li><a href="#">Our mandate</a></li>
-<li><a href="#">Our history</a></li>
-</ul>
-</div></section>
-<section><div class="span-2"><h4 class="base-col-head"><a href="#">News</a></h4>
-<ul>
-<li><a href="#">News releases</a></li>
-<li><a href="#">Media advisories</a></li>
-<li><a href="#">Multimedia</a></li>
-</ul>
-</div></section>
-<section><div class="span-2"><h4 class="base-col-head"><a href="#">Contact us</a></h4>
-<address>
-<ul>
-<li><a href="#">Phone numbers</a></li>
-<li><a href="#">Office locations</a></li>
-</ul>
-</address>
-</div></section>
-<section><div class="span-2"><h4 class="base-col-head"><a href="#">Stay connected</a></h4>
-<ul>
-<li><a rel="external" href="#">YouTube</a></li>
-<li><a rel="external" href="#">Twitter</a></li>
-<li><a href="#">Feeds</a></li>
-</ul>
-</div></section>
-</div></div></nav>
+&lt;div id="wb-foot"&gt;&lt;div id="wb-foot-in"&gt;&lt;footer&gt;&lt;h2 id="wb-nav"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-foot']/value[lang(./@xml:lang)]"/>&lt;/h2&gt;
+&lt;!-- FooterStart --&gt;
+&lt;nav role="navigation"&gt;&lt;div id="base-sft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-foot']/value[lang(./@xml:lang)]"/>&lt;/h3&gt;&lt;div id="base-sft-in"&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-our-mandate']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-our-history']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news-rel']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-media-avisories']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-multimedia']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;address&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-phone-nums']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-office-loc']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/address&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel="external" href="#"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel="external" href="#"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-feeds']/value[lang(./@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 
-<section><div id="base-fullft"><h3>Full-width footer area</h3>
-<p class="mobile-hide">id="base-fullft"</p>
-<div id="base-fullft-in"><p class="mobile-hide">id="base-fullft-in"</p></div>
-</div></section>
-<!-- FooterEnd -->
-</footer>
-</div></div></div>
+&lt;section&gt;&lt;div id="base-fullft"&gt;&lt;h3&gt;Full-width footer area&lt;/h3&gt;
+&lt;p class="mobile-hide"&gt;id="base-fullft"&lt;/p&gt;
+&lt;div id="base-fullft-in"&gt;&lt;p class="mobile-hide"&gt;id="base-fullft-in"&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;!-- FooterEnd --&gt;
+&lt;/footer&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
-<!-- ScriptsStart -->
-<script src="../../../dist/js/settings.js"></script>
-<!--[if lte IE 8]>
-<script src="../../../dist/theme-base/js/theme-ie-min.js"></script>
-<script src="../../../dist/js/pe-ap-ie-min.js"></script>
-<script src="../../../dist/js/jquerymobile/jquery.mobile-ie.min.js"></script>
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<script src="../../../dist/theme-base/js/theme-min.js"></script>
-<script src="../../../dist/js/pe-ap-min.js"></script>
-<script src="../../../dist/js/jquerymobile/jquery.mobile.min.js"></script>
-<!--<![endif]-->
-<!-- ScriptsEnd -->
+&lt;!-- ScriptsStart --&gt;
+&lt;script src="../../../dist/js/settings.js"&gt;&lt;/script&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;script src="../../../dist/theme-base/js/theme-ie-min.js"&gt;&lt;/script&gt;
+&lt;script src="../../../dist/js/pe-ap-ie-min.js"&gt;&lt;/script&gt;
+&lt;script src="../../../dist/js/jquerymobile/jquery.mobile-ie.min.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+&lt;script src="../../../dist/theme-base/js/theme-min.js"&gt;&lt;/script&gt;
+&lt;script src="../../../dist/js/pe-ap-min.js"&gt;&lt;/script&gt;
+&lt;script src="../../../dist/js/jquerymobile/jquery.mobile.min.js"&gt;&lt;/script&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;!-- ScriptsEnd --&gt;
 
-<!-- CustomScriptsStart -->
-<!-- CustomScriptsEnd -->
-</body>
-</html>]]></xsl:template>
+&lt;!-- CustomScriptsStart --&gt;
+&lt;!-- CustomScriptsEnd --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</xsl:template>
 	
 </xsl:stylesheet>

@@ -10,7 +10,7 @@
 
 	<xsl:template match="/strings">
 		<xsl:for-each select="string[@id='%lang-code-iso-639-2']/value">
-			<xsl:result-document href="{$root}-{.}.html" format="text"><xsl:apply-templates select="/strings" mode="output" /></xsl:result-document>
+			<xsl:result-document href="{$root}-{.}.html" format="text"><xsl:apply-templates select="." mode="output" /></xsl:result-document>
 		</xsl:for-each>
 	</xsl:template>
 	
