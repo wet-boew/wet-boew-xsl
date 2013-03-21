@@ -8,8 +8,8 @@
 	<xsl:output method="text" encoding="utf-8"/>
 	<xsl:variable name="root" select="'cont'"/>
 
-	<xsl:template match="value" mode="output">&lt;!DOCTYPE html&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[compare(@xml:lang, ./@xml:lang) = 0]"/>
-&lt;!--[if IE 7]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[string(@xml:lang) = string(./@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
+	<xsl:template match="value" mode="output">&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 7]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
 &lt;!--[if IE 8]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
 &lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js"&gt;
