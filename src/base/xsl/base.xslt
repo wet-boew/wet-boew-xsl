@@ -10,7 +10,14 @@
 
 	<xsl:template match="/strings">
 		<xsl:for-each select="string[@id='%lang-code-iso-639-2']/value">
-			<xsl:result-document href="{$root}-{.}.html" format="text"><xsl:apply-templates select="." mode="output" /></xsl:result-document>
+			<xsl:choose>
+				<xsl:when test=". = 'eng' or . = 'fra'">
+					<xsl:result-document href="{$root}-{.}.html" format="text"><xsl:apply-templates select="." mode="output" /></xsl:result-document>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:result-document href="{.}/{$root}-{.}.html" format="text"><xsl:apply-templates select="." mode="output" /></xsl:result-document>
+				</xsl:otherwise>
+			</xsl:choose>
 		</xsl:for-each>
 	</xsl:template>
 	
