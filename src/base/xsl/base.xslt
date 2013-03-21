@@ -31,5 +31,12 @@
 			</xsl:with-param>
 		</xsl:apply-templates></xsl:result-document>
 	</xsl:template>
+
+	<xsl:template match="value" mode="content_output">
+		<xsl:choose>
+			<xsl:when test=". = 'fra' or . = 'spa'"><xsl:value-of select="unparsed-text(concat('content-', .,'.txt'), 'UTF-8')"/></xsl:when>
+			<xsl:otherwise><xsl:value-of select="unparsed-text('content-eng.txt', 'UTF-8')"/></xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
 	
 </xsl:stylesheet>
