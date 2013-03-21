@@ -8,7 +8,8 @@
 	<xsl:output method="text" encoding="utf-8"/>
 	<xsl:variable name="root" select="'cont-nosearchlangsitemenubc'"/>
 
-	<xsl:template match="value" mode="output">&lt;!DOCTYPE html&gt;
+	<xsl:template match="value" mode="output">
+		<xsl:param name="path_correction"/>&lt;!DOCTYPE html&gt;
 &lt;!--[if IE 7]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
 &lt;!--[if IE 8]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
@@ -20,24 +21,24 @@
 wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt --&gt;
 &lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nosearchlangsitemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
 
-&lt;link rel="shortcut icon" href="../../../dist/theme-base/images/favicon.ico" /&gt;
+&lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/images/favicon.ico" /&gt;
 &lt;meta name="description" content="<xsl:value-of select="/strings/string[@id='%lang-eng']/value[lang(current()/@xml:lang)]"/>description / Description en <xsl:value-of select="/strings/string[@id='%lang-fra']/value[lang(current()/@xml:lang)]"/>" /&gt;
 &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
 
 &lt;!--[if lte IE 8]&gt;
-&lt;script src="../../../dist/js/jquery-ie.min.js"&gt;&lt;/script&gt;
-&lt;script src="../../../dist/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="../../../dist/grids/css/util-ie-min.css" /&gt;
-&lt;link rel="stylesheet" href="../../../dist/js/css/pe-ap-ie-min.css" /&gt;
-&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-ie-min.css" /&gt;
-&lt;noscript&gt;&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-ns-ie-min.css" /&gt;&lt;/noscript&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquery-ie.min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/grids/css/util-ie-min.css" /&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/js/css/pe-ap-ie-min.css" /&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-ie-min.css" /&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-ns-ie-min.css" /&gt;&lt;/noscript&gt;
 &lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
-&lt;script src="../../../dist/js/jquery.min.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="../../../dist/grids/css/util-min.css" /&gt;
-&lt;link rel="stylesheet" href="../../../dist/js/css/pe-ap-min.css" /&gt;
-&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-min.css" /&gt;
-&lt;noscript&gt;&lt;link rel="stylesheet" href="../../../dist/theme-base/css/theme-ns-min.css" /&gt;&lt;/noscript&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/grids/css/util-min.css" /&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/js/css/pe-ap-min.css" /&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-min.css" /&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-ns-min.css" /&gt;&lt;/noscript&gt;
 &lt;!--&lt;![endif]--&gt;
 
 &lt;!-- CustomCSSStart --&gt;
@@ -62,7 +63,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/div&gt;&lt;/section&gt;
 
 &lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
-&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="../../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;
@@ -207,16 +208,16 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;!-- ScriptsStart --&gt;
-&lt;script src="../../../dist/js/settings.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/settings.js"&gt;&lt;/script&gt;
 &lt;!--[if lte IE 8]&gt;
-&lt;script src="../../../dist/theme-base/js/theme-ie-min.js"&gt;&lt;/script&gt;
-&lt;script src="../../../dist/js/pe-ap-ie-min.js"&gt;&lt;/script&gt;
-&lt;script src="../../../dist/js/jquerymobile/jquery.mobile-ie.min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/theme-base/js/theme-ie-min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/pe-ap-ie-min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquerymobile/jquery.mobile-ie.min.js"&gt;&lt;/script&gt;
 &lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
-&lt;script src="../../../dist/theme-base/js/theme-min.js"&gt;&lt;/script&gt;
-&lt;script src="../../../dist/js/pe-ap-min.js"&gt;&lt;/script&gt;
-&lt;script src="../../../dist/js/jquerymobile/jquery.mobile.min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/theme-base/js/theme-min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/pe-ap-min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquerymobile/jquery.mobile.min.js"&gt;&lt;/script&gt;
 &lt;!--&lt;![endif]--&gt;
 &lt;!-- ScriptsEnd --&gt;
 

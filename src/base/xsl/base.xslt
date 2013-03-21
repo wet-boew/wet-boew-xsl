@@ -9,16 +9,27 @@
 	<xsl:variable name="root" select="'unamed'"/>
 
 	<xsl:template match="/strings">
-		<xsl:for-each select="string[@id='%lang-code-iso-639-2']/value">
-			<xsl:choose>
-				<xsl:when test=". = 'eng' or . = 'fra'">
-					<xsl:result-document href="{$root}-{.}.html" format="text"><xsl:apply-templates select="." mode="output" /></xsl:result-document>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:result-document href="{.}/{$root}-{.}.html" format="text"><xsl:apply-templates select="." mode="output" /></xsl:result-document>
-				</xsl:otherwise>
-			</xsl:choose>
+		<xsl:for-each select="string[@id='%lang-code-iso-639-2']">
+			<xsl:apply-templates />
 		</xsl:for-each>
+	</xsl:template>
+
+	<xsl:template match="value">
+		<xsl:param name="fname">
+			<xsl:choose>
+				<xsl:when test=". = 'eng' or . = 'fra'"><xsl:value-of select="$root"/>-<xsl:value-of select="."/>.html</xsl:when>
+				<xsl:otherwise><xsl:value-of select="."/>/<xsl:value-of select="$root"/>-<xsl:value-of select="."/>.html</xsl:otherwise>
+			</xsl:choose>
+		</xsl:param>
+
+		<xsl:result-document href="{$fname}" format="text"><xsl:apply-templates select="." mode="output">
+			<xsl:with-param name="path_correction">
+				<xsl:choose>
+					<xsl:when test=". = 'eng' or . = 'fra'"></xsl:when>
+					<xsl:otherwise>../</xsl:otherwise>
+				</xsl:choose>
+			</xsl:with-param>
+		</xsl:apply-templates></xsl:result-document>
 	</xsl:template>
 	
 </xsl:stylesheet>
