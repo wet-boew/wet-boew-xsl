@@ -18,7 +18,7 @@
 		<xsl:param name="fname">
 			<xsl:choose>
 				<xsl:when test=". = 'eng' or . = 'fra'"><xsl:value-of select="$root"/>-<xsl:value-of select="."/>.html</xsl:when>
-				<xsl:otherwise><xsl:value-of select="."/>/<xsl:value-of select="$root"/>-<xsl:value-of select="."/>.html</xsl:otherwise>
+				<xsl:otherwise><xsl:value-of select="./@xml:lang"/>/<xsl:value-of select="$root"/>-<xsl:value-of select="./@xml:lang"/>.html</xsl:otherwise>
 			</xsl:choose>
 		</xsl:param>
 

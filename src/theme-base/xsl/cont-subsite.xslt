@@ -60,8 +60,8 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="base-fullhd-in"&gt;
 &lt;p class="float-right"&gt;id="base-fullhd-in"&lt;/p&gt;
 &lt;ul&gt;
-&lt;li id="base-fullhd-lang"&gt;&lt;a href="cont-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="cont-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="base-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/section&gt;
@@ -97,7 +97,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%home']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-sub-site']/value[lang(current()/@xml:lang)]"/>&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;/div&gt;
@@ -182,17 +182,17 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;option value="Option 4"&gt;Option 4&lt;/option&gt;
 &lt;/select&gt;&lt;/div&gt;
 &lt;fieldset&gt;&lt;legend&gt;Form &lt;code&gt;legend&lt;/code&gt;, &lt;code&gt;fieldset&lt;/code&gt; and &lt;code&gt;checkbox&lt;/code&gt; default appearance&lt;/legend&gt;
-&lt;div&gt;&lt;input name="checkbox" type="checkbox" id="data5" value="checkbox" /&gt;&#160;&lt;label for="data5"&gt;Option 1&lt;/label&gt;&#160;&#160;
-&lt;input name="checkbox" type="checkbox" id="data6" value="checkbox" /&gt;&#160;&lt;label for="data6"&gt;Option 2&lt;/label&gt;&#160;&#160;
-&lt;input name="checkbox" type="checkbox" id="data7" value="checkbox" /&gt;&#160;&lt;label for="data7"&gt;Option 3&lt;/label&gt;&#160;&#160;
-&lt;input name="checkbox" type="checkbox" id="data8" value="checkbox" /&gt;&#160;&lt;label for="data8"&gt;Option 4&lt;/label&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input name="checkbox" type="checkbox" id="data5" value="checkbox" /&gt;&amp;#160;&lt;label for="data5"&gt;Option 1&lt;/label&gt;&amp;#160;&amp;#160;
+&lt;input name="checkbox" type="checkbox" id="data6" value="checkbox" /&gt;&amp;#160;&lt;label for="data6"&gt;Option 2&lt;/label&gt;&amp;#160;&amp;#160;
+&lt;input name="checkbox" type="checkbox" id="data7" value="checkbox" /&gt;&amp;#160;&lt;label for="data7"&gt;Option 3&lt;/label&gt;&amp;#160;&amp;#160;
+&lt;input name="checkbox" type="checkbox" id="data8" value="checkbox" /&gt;&amp;#160;&lt;label for="data8"&gt;Option 4&lt;/label&gt;&lt;/div&gt;
 &lt;/fieldset&gt;
 &lt;div&gt;&lt;input name="submit" type="submit" id="submit" value="Submit default appearance" /&gt;
 &lt;input name="reset" type="reset" id="reset" value="Reset default appearance" /&gt;&lt;/div&gt;
 &lt;/form&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&quot;Blockquote default appearance&quot;.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Blockquote default appearance&amp;quot;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;dl id="base-date-mod" role="contentinfo"&gt;
