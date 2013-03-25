@@ -57,9 +57,9 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-head"&gt;&lt;div id="wb-head-in"&gt;&lt;header&gt;
 &lt;!-- HeaderStart --&gt;
 &lt;section&gt;&lt;div id="base-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-head']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
-&lt;p&gt;id="base-fullhd"&lt;/p&gt;
+&lt;p class="mobile-hide"&gt;id="base-fullhd"&lt;/p&gt;
 &lt;div id="base-fullhd-in"&gt;
-&lt;p class="float-right"&gt;id="base-fullhd-in"&lt;/p&gt;
+&lt;p class="mobile-hide"&gt;id="base-fullhd-in"&lt;/p&gt;
 &lt;ul&gt;
 &lt;li id="base-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="base-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;
