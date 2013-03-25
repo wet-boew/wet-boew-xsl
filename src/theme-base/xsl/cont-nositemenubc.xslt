@@ -83,7 +83,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - No site menu or breadcrumb trail - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nositemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
 <xsl:apply-templates select="." mode="content_output"/>
 
