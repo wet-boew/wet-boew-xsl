@@ -9,7 +9,8 @@
 	<xsl:variable name="root" select="'cont-nosearchlangsitemenubc'"/>
 
 	<xsl:template match="value" mode="output">
-		<xsl:param name="path_correction"/>&lt;!DOCTYPE html&gt;
+		<xsl:param name="path_correction"/>
+		<xsl:param name="wet_fallback_language"/>&lt;!DOCTYPE html&gt;
 &lt;!--[if IE 7]&gt;&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
 &lt;!--[if IE 8]&gt;&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
@@ -63,7 +64,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/div&gt;&lt;/section&gt;
 
 &lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
-&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="$wet_fallback_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;

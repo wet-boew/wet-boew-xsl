@@ -29,6 +29,16 @@
 					<xsl:otherwise>../</xsl:otherwise>
 				</xsl:choose>
 			</xsl:with-param>
+			<xsl:with-param name="wet_fallback_language">
+				<xsl:choose>
+					<xsl:when test=". = 'fra'">
+						<xsl:value-of select="." />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>eng</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:with-param>
 		</xsl:apply-templates></xsl:result-document>
 	</xsl:template>
 
