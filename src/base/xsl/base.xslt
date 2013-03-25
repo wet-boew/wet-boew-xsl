@@ -39,7 +39,7 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:with-param>
-			<xsl:with-param name="menu_lang">
+			<xsl:with-param name="menu_language">
 				<xsl:choose>
 					<xsl:when test=". = 'eng' or . = 'fra'">
 						<xsl:value-of select="."/>
