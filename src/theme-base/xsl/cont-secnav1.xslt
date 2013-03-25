@@ -142,7 +142,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4.2.4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
-&lt;section&gt;&lt;h3&gt;&lt;a href="section4/section43/index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4.3&lt;/a&gt;&lt;/h3&gt;
+&lt;section&gt;&lt;h3&gt;&lt;a href="section4/section43/index-<xsl:value-of select="$wet_fallback_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4.3&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4.3.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4.3.2&lt;/a&gt;&lt;/li&gt;

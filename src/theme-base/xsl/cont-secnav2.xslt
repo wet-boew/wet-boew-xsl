@@ -122,7 +122,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-sec"&gt;&lt;div id="wb-sec-in"&gt;&lt;nav role="navigation"&gt;&lt;h2 id="wb-nav"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;div class="wb-sec-def"&gt;
 &lt;!-- SecNavStart --&gt;
-&lt;section&gt;&lt;h3 class="top-section"&gt;&lt;a href="section4/index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4&lt;/a&gt;&lt;/h3&gt;
+&lt;section&gt;&lt;h3 class="top-section"&gt;&lt;a href="section4/index-<xsl:value-of select="$wet_fallback_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4&lt;/a&gt;&lt;/h3&gt;
 &lt;div&gt;&lt;ul&gt;
 &lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4a&lt;/a&gt;&lt;/li&gt;
 &lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4b&lt;/a&gt;&lt;/li&gt;
@@ -143,7 +143,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4.2.4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
-&lt;section&gt;&lt;h4&gt;&lt;a href="section4/section43/index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4.3&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;h4&gt;&lt;a href="section4/section43/index-<xsl:value-of select="$wet_fallback_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4.3&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4.3.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/> 4.3.2&lt;/a&gt;&lt;/li&gt;
