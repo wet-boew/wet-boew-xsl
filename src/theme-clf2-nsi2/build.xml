@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project name="wet-boew.theme-clf2-nsi2" default="default" basedir=".">
-	<description>WET-BOEW CLF2 Theme</description>
-
-	<property file="build.properties"/>
-	<import file="${build.dir}/../build-tasks.xml"/>
-
-	<target name="default" depends="clean,build" description="Performs a clean and build when calling ant without any target"></target>
-</project>
