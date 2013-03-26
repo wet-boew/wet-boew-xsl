@@ -44,7 +44,7 @@
 				</fileset>
 			</path>
 			<sequential>
-				<xslt_saxon in="${src.dir}/../base/xsl/i18n.xml" out="${demo.out.dir}/out.xml" style="@{file}"/>
+				<xslt_saxon in="${src.dir}/../base/xsl/i18n.xml" out="${demo.dir}/out.xml" style="@{file}"/>
 			</sequential>
 		</for>
 	</target>
