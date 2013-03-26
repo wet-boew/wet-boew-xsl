@@ -9,17 +9,19 @@
 	<xsl:variable name="root" select="'cont-nositemenubc'"/>
 
 	<xsl:template match="value" mode="output">
-		<xsl:param name="path_correction"/>&lt;!DOCTYPE html&gt;
-&lt;!--[if IE 7]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
-&lt;!--[if IE 8]&gt;&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
+		<xsl:param name="path_correction"/>
+		<xsl:param name="wet_fallback_language"/>
+		<xsl:param name="menu_language"/>&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 7]&gt;&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
-&lt;html dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" lang="<xsl:value-of select="./@xml:lang"/>" class="no-js"&gt;
+&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js"&gt;
 &lt;!--&lt;![endif]--&gt;
 &lt;head&gt;
 &lt;meta charset="utf-8" /&gt;
 &lt;!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt --&gt;
-&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - No site menu or breadcrumb trail - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
+&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nositemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
 
 &lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/images/favicon.ico" /&gt;
 &lt;meta name="description" content="<xsl:value-of select="/strings/string[@id='%lang-eng']/value[lang(current()/@xml:lang)]"/> description / Description en <xsl:value-of select="/strings/string[@id='%lang-fra']/value[lang(current()/@xml:lang)]"/>" /&gt;
@@ -55,19 +57,25 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 
 &lt;div id="wb-head"&gt;&lt;div id="wb-head-in"&gt;&lt;header&gt;
 &lt;!-- HeaderStart --&gt;
-&lt;section&gt;&lt;div id="base-fullhd"&gt;&lt;h2&gt;Full-width header area&lt;/h2&gt;
-&lt;p&gt;id="base-fullhd"&lt;/p&gt;
+&lt;section&gt;&lt;div id="base-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-head']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;p class="mobile-hide"&gt;id="base-fullhd"&lt;/p&gt;
 &lt;div id="base-fullhd-in"&gt;
-&lt;p class="float-right"&gt;id="base-fullhd-in"&lt;/p&gt;
+&lt;p class="mobile-hide"&gt;id="base-fullhd-in"&lt;/p&gt;
 &lt;ul&gt;
-&lt;li id="base-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;
+<xsl:choose>
+	<xsl:when test="lang('en')">&lt;li id="base-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>es/<xsl:value-of select="$root"/>-es.html" lang="es"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('es')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:when>
+	<xsl:when test="lang('fr')">&lt;li id="base-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>es/<xsl:value-of select="$root"/>-es.html" lang="es"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('es')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:when>
+	<xsl:otherwise>&lt;li id="base-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="base-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:otherwise>
+</xsl:choose>
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/section&gt;
 
 &lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
-&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 
 &lt;section role="search"&gt;&lt;div id="base-srchbx"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-search']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;form action="#" method="post"&gt;&lt;div id="base-srchbx-in"&gt;
@@ -82,7 +90,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - No site menu or breadcrumb trail - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nositemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
 <xsl:apply-templates select="." mode="content_output"/>
 
@@ -127,7 +135,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/div&gt;&lt;/section&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 
-&lt;section&gt;&lt;div id="base-fullft"&gt;&lt;h3&gt;Full-width footer area&lt;/h3&gt;
+&lt;section&gt;&lt;div id="base-fullft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;
 &lt;p class="mobile-hide"&gt;id="base-fullft"&lt;/p&gt;
 &lt;div id="base-fullft-in"&gt;&lt;p class="mobile-hide"&gt;id="base-fullft-in"&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/section&gt;

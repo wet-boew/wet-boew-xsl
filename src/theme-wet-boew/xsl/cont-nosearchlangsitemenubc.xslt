@@ -21,9 +21,9 @@
 &lt;meta charset="utf-8" /&gt;
 &lt;!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt --&gt;
-&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nosearchlangsitemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
+&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nosearchlangsitemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
 
-&lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/images/favicon.ico" /&gt;
+&lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/images/favicon.ico" /&gt;
 &lt;meta name="description" content="<xsl:value-of select="/strings/string[@id='%lang-eng']/value[lang(current()/@xml:lang)]"/> description / Description en <xsl:value-of select="/strings/string[@id='%lang-fra']/value[lang(current()/@xml:lang)]"/>" /&gt;
 &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
 
@@ -32,15 +32,15 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/polyfills/html5shiv-min.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/grids/css/util-ie-min.css" /&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/js/css/pe-ap-ie-min.css" /&gt;
-&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-ie-min.css" /&gt;
-&lt;noscript&gt;&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-ns-ie-min.css" /&gt;&lt;/noscript&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/css/theme-ie-min.css" /&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/css/theme-ns-ie-min.css" /&gt;&lt;/noscript&gt;
 &lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquery.min.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/grids/css/util-min.css" /&gt;
 &lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/js/css/pe-ap-min.css" /&gt;
-&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-min.css" /&gt;
-&lt;noscript&gt;&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-base/css/theme-ns-min.css" /&gt;&lt;/noscript&gt;
+&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/css/theme-min.css" /&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/css/theme-ns-min.css" /&gt;&lt;/noscript&gt;
 &lt;!--&lt;![endif]--&gt;
 
 &lt;!-- CustomCSSStart --&gt;
@@ -57,15 +57,13 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 
 &lt;div id="wb-head"&gt;&lt;div id="wb-head-in"&gt;&lt;header&gt;
 &lt;!-- HeaderStart --&gt;
-&lt;section&gt;&lt;div id="base-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-head']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
-&lt;p class="mobile-hide"&gt;id="base-fullhd"&lt;/p&gt;
-&lt;div id="base-fullhd-in"&gt;
-&lt;p class="mobile-hide"&gt;id="base-fullhd-in"&lt;/p&gt;
+&lt;section&gt;&lt;div id="wet-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-head']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;div id="wet-fullhd-in"&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/section&gt;
 
-&lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
-&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="wet-bnr" role="banner"&gt;&lt;div id="wet-bnr-in"&gt;
+&lt;div id="wet-title"&gt;&lt;p id="wet-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;&lt;object data="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/images/logo.svg" role="img" tabindex="-1" type="image/svg+xml"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/images/logo.png" alt="" /&gt;&lt;/object&gt; &lt;span&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;
@@ -73,11 +71,11 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nosearchlangsitemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-nosearchlangsitemenubc']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
 <xsl:apply-templates select="." mode="content_output"/>
 
-&lt;dl id="base-date-mod" role="contentinfo"&gt;
+&lt;dl id="wet-date-mod" role="contentinfo"&gt;
 &lt;dt&gt;<xsl:value-of select="/strings/string[@id='%tmpl-date-mod']/value[lang(current()/@xml:lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;2012-09-17&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;div class="clear"&gt;&lt;/div&gt;
@@ -87,21 +85,21 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 
 &lt;div id="wb-foot"&gt;&lt;div id="wb-foot-in"&gt;&lt;footer&gt;&lt;h2 id="wb-nav"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;!-- FooterStart --&gt;
-&lt;nav role="navigation"&gt;&lt;div id="base-sft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div id="base-sft-in"&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;nav role="navigation"&gt;&lt;div id="wet-sft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div id="wet-sft-in"&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-our-mandate']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-our-history']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news-rel']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-media-avisories']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-multimedia']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
 &lt;address&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-phone-nums']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
@@ -109,7 +107,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/ul&gt;
 &lt;/address&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="base-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel="external" href="#"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="#"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
@@ -118,9 +116,8 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/div&gt;&lt;/section&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 
-&lt;section&gt;&lt;div id="base-fullft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;
-&lt;p class="mobile-hide"&gt;id="base-fullft"&lt;/p&gt;
-&lt;div id="base-fullft-in"&gt;&lt;p class="mobile-hide"&gt;id="base-fullft-in"&lt;/p&gt;&lt;/div&gt;
+&lt;section&gt;&lt;div id="wet-fullft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;
+&lt;div id="wet-fullft-in"&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;!-- FooterEnd --&gt;
 &lt;/footer&gt;
@@ -129,12 +126,12 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;!-- ScriptsStart --&gt;
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/settings.js"&gt;&lt;/script&gt;
 &lt;!--[if lte IE 8]&gt;
-&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/theme-base/js/theme-ie-min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/js/theme-ie-min.js"&gt;&lt;/script&gt;
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/pe-ap-ie-min.js"&gt;&lt;/script&gt;
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquerymobile/jquery.mobile-ie.min.js"&gt;&lt;/script&gt;
 &lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
-&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/theme-base/js/theme-min.js"&gt;&lt;/script&gt;
+&lt;script src="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/js/theme-min.js"&gt;&lt;/script&gt;
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/pe-ap-min.js"&gt;&lt;/script&gt;
 &lt;script src="<xsl:value-of select="$path_correction"/>../../dist/js/jquerymobile/jquery.mobile.min.js"&gt;&lt;/script&gt;
 &lt;!--&lt;![endif]--&gt;
