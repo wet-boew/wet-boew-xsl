@@ -1,4 +1,4 @@
-﻿,String code,English,French,Arabic,Bulgarian,Chinese,Chinese (Simplified),Czech,Dutch,Estonian,German,Greek,Hungarian,Icelandic,Indonesian,Italian,Japanese,Korean,Latvian,Lithuanian,Polish,Portuguese,Portuguese (Brazilian),Russian,Slovak,Spanish,Thai,Turkish,Ukrainian,Vietnamese
+,String code,English,French,Arabic,Bulgarian,Chinese,Chinese (Simplified),Czech,Dutch,Estonian,German,Greek,Hungarian,Icelandic,Indonesian,Italian,Japanese,Korean,Latvian,Lithuanian,Polish,Portuguese,Portuguese (Brazilian),Russian,Slovak,Spanish,Thai,Turkish,Ukrainian,Vietnamese
 Language code (ISO 639-1),%lang-code,en,fr,ar,bg,zh,zh-Hans,cs,nl,et,de,el,hu,is,id,it,ja,ko,lv,lt,pl,pt,pt-BR,ru,sk,es,th,tr,uk,vi
 Language code (ISO 639-2/T),%lang-code-iso-639-2,eng,fra,ara,bul,zho,zho-Hans,cze,nld,est,deu,ell,hun,isl,ind,ita,jpn,kor,lav,lit,pol,por,por-BR,rus,slk,spa,tha,tur,ukr,vie
 Language direction,%lang-dir,ltr,ltr,rtl,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr,ltr
@@ -114,8 +114,6 @@ Calendar,%calendar-weekDayNames-1,Sunday,Dimanche,,,星期天,星期天,,Zondag,
 ,%calendar-previousMonth,Previous Month:,Mois précédent :,,,上一月,上个月,,Vorige maand:,Eelmine kuu,,,Előző hónap:,,Bulan sebelumnya,,前月,,Iepriekšējais mēnesis:,Ankstesnis mėnuo:,Poprzedni miesiąc:,Mês anterior:,,Предыдущий месяц:,,Mes anterior:,,Önceki ay:,Попередній місяць:,
 ,%calendar-nextMonth,Next Month:,Mois suivant :,,,下一月,下个月,,Volgende maand:,Järgmine kuu,,,Következő hónap:,,Bulan berikutnya,,翌月,,Nākošais mēnesis:,Sekantis mėnuo:,Następny miesiąc:,Próximo mês:,,Следующий месяц:,,Mes siguiente:,,Sonraki ay:,Наступний місяць:,
 Slideout,%show-toc,Show,Afficher,,,顯示,展示,,Toon,Näita,,,Mutat,,Tampilkan,,表示,,Rādīt,Rodyti,Pokaż,Exibir,,Показать,,Mostrar,,Göster,Показати,
-,%show-image,show.png,afficher.png,,,,,,,,,,,,,,,,,,,,,,,mostrar.png,,,,
-,%hide-image,hide.png,cacher.png,,,,,,,,,,,,,,,,,,,,,,,ocultar.png,,,,
 ,%show-text,Show table of contents,Afficher la table des matières,,,,,,,,,,,,,,,,,,,,,,,Mostrar el índice,,,,
 ,%hide-text,Hide table of contents,Cacher la table des matières,,,,,,,,,,,,,,,,,,,,,,,Ocultar el índice,,,,
 ,%table-contents,table of contents,la table des matières,,,目錄,内容表,,inhoudstafel,sisukord,,,tartalomjegyzék,,daftar isi,,目次,,saturs,turinys,spis treści,conteúdo,,оглавление,,índice,,içindekiler,зміст,
@@ -149,16 +147,17 @@ Table enhancement,%sSortAscending,: activate for ascending sort,&#160;: activer 
 ,%sInfoThousands,&#44;,&#160;,,,,,,,,,,,,,,,,,,,,,,,.,,,,
 ,%sLengthMenu,Show _MENU_ entries,Montrer _MENU_ entrées,,,,,,,,,,,,,,,,,,,,,,,Muestre _MENU_ entradas,,,,
 Geomap,%geo-mapcontrol,Map control,Contrôle de la carte,,,,,,,,,,,,,,,,,,,,,,,Control de mapa,,,,
-,%geo-panup,Pan up,Déplacer vers le haut,,,,,,,,,,,,,,,,,,,,,,,Desplazar a la cima,,,,
-,%geo-pandown,Pan down,Déplacer vers le bas,,,,,,,,,,,,,,,,,,,,,,,Desplazar al fondo,,,,
-,%geo-panleft,Pan left,Déplacer vers la gauche,,,,,,,,,,,,,,,,,,,,,,,Desplazar a la izquierda,,,,
-,%geo-panright,Pan right,Déplacer vers la droite,,,,,,,,,,,,,,,,,,,,,,,Desplazar a la derecha,,,,
-,%geo-zoomin,Zoom in,Zoom avant,,,,,,,,,,,,,,,,,,,,,,,Acercar,,,,
-,%geo-zoomout,Zoom out,Zoom arrière,,,,,,,,,,,,,,,,,,,,,,,Alejar,,,,
-,%geo-zoomworld,Zoom to map extent,Zoom sur l'étendue de la carte,,,,,,,,,,,,,,,,,,,,,,,Alejar al mapa completo,,,,
-,%geo-zoomfeature,Zoom to feature,Zoom à l\'élément,,,,,,,,,,,,,,,,,,,,,,,Alejar al elemento,,,,
+,%geo-panup,Pan up,Déplacer vers le haut,تدوير محوري لأعلى,Панорама нагоре,向上平移,向上平移,Posunout nahoru,Naar boven schuiven,Panoraami üles,Nach oben verschieben,Οπτική γωνία: επάνω,Felfelé görgetés,Hliðrun upp,Telusur ke atas,Spostati verso l'alto,上へ,위로 이동,Panoramēt uz augšu,Pakreipti aukštyn,Przesuń w górę,Panorâmica para cima,Mover para cima,Передвинуть вверх,Posunúť nahor,Vista panorámica hacia arriba,หันขึ้นด้านบน,Yukarı git,Панорамування вгору,Dời bản đồ lên trên
+,%geo-pandown,Pan down,Déplacer vers le bas,تدوير محوري لأسفل,Панорама надолу,向下平移,向下平移,Posunout dolů,Naar beneden schuiven,Panoraami alla,Nach unten verschieben,Οπτική γωνία: κάτω,Lefelé görgetés,Hliðrun niður,Telusur ke bawah,Spostati verso il basso,下へ,아래로 이동,Panoramēt uz leju,Pereiti žemyn,Przesuń w dół,Panorâmica para baixo,Mover para baixo,Передвинуть вниз,Posunúť dolu,Vista panorámica hacia abajo,หันลงด้านล่าง,Aşağı git,Панорамування вниз,Dời bản đồ xuống dưới
+,%geo-panleft,Pan left,Déplacer vers la gauche,تدوير محوري لليسار,Панорама наляво,向左平移,向左平移,Posunout doleva,Naar links schuiven,Pan jäänud,Nach links verschieben,Οπτική γωνία: αριστερά,Balra görgetés,Hliðrun til vinstri,Telusur ke kiri,Spostati verso sinistra,左へ,좌측으로 이동,Panoramēt pa kreisi,Pakreipti kairėn,Przesuń w lewo,Panorâmica para a esquerda,Mover para a esquerda,Передвинуть влево,Posunúť doľava,Vista panorámica a la izquierda,หันไปทางซ้าย,Sola git,Панорамування вліво,Dời bản đồ sang trái
+,%geo-panright,Pan right,Déplacer vers la droite,تدوير محوري لليمين,Панорама надясно,向右平移,向右平移,Posunout doprava,Naar rechts schuiven,Pan õigus,Nach rechts verschieben,Οπτική γωνία: δεξιά,Jobbra görgetés,Hliðrun til hægri,Telusur ke bawah,Spostati verso destra,右へ,우측으로 이동,Panoramēt pa labi,Pakreipti dešinėn,Przesuń w prawo,Panorâmica para a direita,Mover para a direita,Передвинуть вправо,Posunúť doprava,Vista panorámica a la derecha,หันไปทางขวา,Sağa git,Панорамування вправо,Dời bản đồ sang phải
+,%geo-zoomin,Zoom in,Zoom avant,تكبير,Увеличаване на мащаба,放大,放大,Přiblížit,Inzoomen,Zoom,Vergrößern,Μεγέθυνση,Nagyítás,Auka aðdrátt,Perbesar,Zoom avanti,詳細,확대,Pievelciet,Artinti,Powiększ,Ampliar,Mais zoom,Приблизить,Priblížiť,Aumentar,ขยาย,Yakınlaştır,Збільшити,Phóng to
+,%geo-zoomout,Zoom out,Zoom arrière,تصغير,Намаляване на мащаба,缩小,缩小,Oddálit,Uitzoomen,Vähenda,Verkleinern,Σμίκρυνση,Kicsinyítés,Minnka aðdrátt,Perkecil,Zoom indietro,広域,축소,Attāliniet,Tolinti,Pomniejsz,Reduzir,Menos zoom,Отдалить,Vzdialiť,Reducir,ย่อ,Uzaklaştır,Зменшити,Thu nhỏ
+,%geo-zoomworld,Zoom to map extent,Zoom sur l'étendue de la carte,,,,,,,,,,,,,,,,,,,,,,,Reducir al mapa completo,,,,
+,%geo-zoomslider,Drag to zoom,Faites glisser pour faire un zoom,السحب للتكبير/التصغير,"Плъзнете, за да увеличите мащаба",拖动缩放,拖动缩放,Přetažením mapu přiblížíte nebo oddálíte,Sleep de muis om in of uit te zoomen,Lohistage suumimiseks,Ziehen zum Zoomen,Σύρετε για μεγέθυνση,Nagyításhoz húzza az egeret,dragðu til að auka eða minnka aðdrátt,Tarik untuk zoom,Trascina per eseguire zoom,ドラッグして拡大,끌어서 확대/축소,"Pavelciet, lai mainītu attālumu","Vilkite, jei norite pakeisti mastelį","Przeciągnij myszką, aby przybliżyć lub oddalić",Arrastar para aplicar zoom,Arraste para dar zoom,"Перетащите, чтобы изменить масштаб",Pretiahnutím mapu priblížite,Arrastra para ampliar o reducir,ลากเพื่อซูม,Yakınlaştırmak için sürükleyin,Потягніть для зміни масштабування,Kéo để thu phóng
+,%geo-zoomfeature,Zoom to feature,Zoom à l\'élément,,,,,,,,,,,,,,,,,,,,,,,Aumentar al elemento,,,,
 ,%geo-ariamap,Map object. The descriptions of the map features are in the table below.,Objet de la carte. Les descriptions des caractéristiques de la carte se trouvent dans la table ci-dessous.,,,,,,,,,,,,,,,,,,,,,,,Objeto del mapa. Las descripciones de las características del mapa están en la tabla a continuación.,,,,
-,%geo-accessibilize,Keyboard users:</strong> Use the arrow keys to move the map and use plus and minus to zoom.,Utilisateurs de clavier :</strong> Utiliser les touches flèches pour déplacer la carte et utiliser les touches plus et négatif pour faire un zoom.,,,,,,,,,,,,,,,,,,,,,,,Los usuarios de teclado:</strong> Utilice las teclas de flecha para mover el mapa y utilizar el más y menos para ampliar.,,,,
+,%geo-accessibilize,"Keyboard users:</strong> When the map is in focus, use the arrow keys to pan the map and the plus and minus keys to zoom. The arrow keys will not pan the map when zoomed to the map extent.","Utilisateurs de clavier :</strong> Lorsque la carte est mise au point, utiliser les touches flèches pour déplacer la carte et utiliser les touches flèches plus et négatif pour faire un zoom. Les touches flèches ne pouvez pas déplacer la carte lors d'un zoom à l'étendue de la carte.",,,,,,,,,,,,,,,,,,,,,,,"Los usuarios de teclado:</strong> Cuando el mapa está en foco, utilice las teclas de flecha para mover el mapa y las teclas más y menos para aumentar. Las teclas de flecha no se desplazará el mapa cuando se encuentra reducida al mapa completo.",,,,
 ,%geo-togglelayer,Toggle the display of the layer,Basculer l'affichage de la couche,,,,,,,,,,,,,,,,,,,,,,,Cambiar la visualización de la capa,,,,
 ,%geo-hiddenlayer,This layer is currently hidden!,Cette couche est présentement cachée!,,,,,,,,,,,,,,,,,,,,,,,Esta capa está oculta!,,,,
 ,%geo-basemapurl,http://geogratis.gc.ca/maps/CBMT,http://geogratis.gc.ca/cartes/CBCT,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -178,6 +177,9 @@ Template strings (Generic),%tmpl-skip-main,Skip to main content,Passer au conten
 ,%tmpl-foot,Footer,Pied de page,,,,注脚,,Pagina-onderkant,Jalus,,,,,,,フッター,,,,Stopka,,,,,Pie de página,,,,
 ,%tmpl-date-mod,Date modified:,Date de modification&#160;:,,,,,,,,,,,,,,,,,,,,,,,Modificado el:,,,,
 ,%tmpl-version,Version:,Version&#160;:,,,,,,,,,,,,,,,,,,,,,,,Versión:,,,,
+,%tmpl-signin,Sign In,Ouvrir une session,,,,,,,,,,,,,,,,,,,,,,,Iniciar sesión,,,,
+,%tmpl-signout,Sign Out,Fermer la session,,,,,,,,,,,,,,,,,,,,,,,Cerrar sesión,,,,
+,%tmpl-youraccount,Your account,Votre compte,,,,,,,,,,,,,,,,,,,,,,,Su cuenta,,,,
 Template strings (GC Web Usability theme),%tmpl-gc-navbar,Government of Canada navigation bar,Barre de navigation du gouvernement du Canada,,,,,,,,,,,,,,,,,,,,,,,Barra de navegación del Gobierno de Canadá,,,,
 ,%tmpl-gc-sig,Government of Canada,Gouvernement du Canada,,,,,,,,,,,,,,,,,,,,,,,Gobierno de Canadá,,,,
 ,%tmpl-gc-wmms,Symbol of the Government of Canada,Symbole du gouvernement du Canada,,,,,,,,,,,,,,,,,,,,,,,Símbolo del Gobierno de Canadá,,,,
@@ -198,13 +200,14 @@ Filler content (Generic),%tmpl-sub-site-name,Sub-site name,Nom du sous-site,,,,,
 ,%tmpl-wet,Web Experience Toolkit&#160;(WET),Boîte à outils de l'expérience Web&#160;(BOEW),Web Experience Toolkit,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,%tmpl-base-theme,Base theme,Thème base,,,,,,,,,,,,,,,,,,,,,,,Tema de base,,,,
 ,%tmpl-gcwu-theme,GC Web Usability theme,Thème de la facilité d'emploi Web GC,,,,,,,,,,,,,,,,,,,,,,,Tema de facilidad de empleo del Gobierno de Canadá,,,,
-,%tmpl-gcwu-intranet-theme,GC Web Usability intranet theme,Thème d'intranet de la facilité d'emploi Web GC,,,,,,,,,,,,,,,,,,,,,,,Tema intranet de facilidad de empleo del Gobierno de Canadá,,,,
+,%tmpl-gcwu-intranet-theme,GC Web Usability Intranet theme,Thème d'intranet de la facilité d'emploi Web GC,,,,,,,,,,,,,,,,,,,,,,,Tema intranet de facilidad de empleo del Gobierno de Canadá,,,,
 ,%tmpl-wet-theme,WET theme,Thème de la BOEW,,,,,,,,,,,,,,,,,,,,,,,Tema de WET,,,,
 ,%tmpl-cont-page,Content page,Page de contenu,,,,,,,,,,,,,,,,,,,,,,,Página de contenido,,,,
 ,%tmpl-nosearchlang,No search or language selection link,Sans recherche ou lien de sélection de la langue,,,,,,,,,,,,,,,,,,,,,,,Ningún búsqueda ni enlace de selección de idioma,,,,
 ,%tmpl-nositemenubc,No site menu or breadcrumb trail,Sans menu du site ou fil d'Ariane,,,,,,,,,,,,,,,,,,,,,,,Ningún menú de sitio ni hilo de Ariadna,,,,
 ,%tmpl-nosearchlangsitemenubc,"No search, language selection link, site menu or breadcrumb trail","Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane",,,,,,,,,,,,,,,,,,,,,,,"Ningún búsqueda, enlace de selección de idioma, menú de sitio ni hilo de Ariadna",,,,
-,%tmpl-web-application,Web application; Application Web,,,,,,,,,,,,,,,,,,,,,,,Aplicación web,,,,
+,%tmpl-web-application,Application template,Modèle pour applications,,,,,,,,,,,,,,,,,,,,,,,Plantilla de aplicación,,,,
+,%tmpl-multilingual,Multilingual,Multilingue,,,,,,,,,,,,,,,,,,,,,,,Plurilingüe,,,,
 ,%tmpl-site-title,Site title,Titre du site,,,,,,,,,,,,,,,,,,,,,,,Título del sitio,,,,
 ,%tmpl-sub-site,Sub-site,Sous-site,,,,,,,,,,,,,,,,,,,,,,,Sitio secundario,,,,
 ,%tmpl-wet-project,WET project,Projet de la BOEW,,,,,,,,,,,,,,,,,,,,,,,Proyecto de WET,,,,
@@ -229,7 +232,7 @@ Filler content (Generic),%tmpl-sub-site-name,Sub-site name,Nom du sous-site,,,,,
 ,%tmpl-submit,Submit,Soumettre,,,,,,,,,,,,,,,,,,,,,,,Enviar,,,,
 ,%tmpl-reset,Reset,Réinitialiser,,,,,,,,,,,,,,,,,,,,,,,Resetear,,,,
 ,%tmpl-about-us,About us,À propos de nous,,,,,,,,,,,,,,,,,,,,,,,Acerca de nosotros,,,,
-,%tmpl-our-mandate,Our mandate,Notre mandat,,,,,,,,,,,,,,,,,,,,,,,Nuestro mandato,,,,
+,%tmpl-our-mandate,Our Mandate,Notre mandat,,,,,,,,,,,,,,,,,,,,,,,Nuestro mandato,,,,
 ,%tmpl-our-history,Our history,Notre histoire,,,,,,,,,,,,,,,,,,,,,,,Nuestra historia,,,,
 ,%tmpl-minister,The Minister,Le ministre,,,,,,,,,,,,,,,,,,,,,,,El ministro,,,,
 ,%tmpl-news,News,Nouvelles,,,,,,,,,,,,,,,,,,,,,,,Noticias,,,,
