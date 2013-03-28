@@ -121,7 +121,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-web-application']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/> 2 - <xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/> 1&lt;/h1&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-web-application']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/> 2 - <xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/> 2&lt;/h1&gt;
 
 <xsl:apply-templates select="." mode="content_output"/>
 
@@ -193,10 +193,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="clear"&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 
 &lt;nav role="navigation"&gt;&lt;div id="gcwu-gcft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div id="gcwu-gcft-in"&gt;&lt;div id="gcwu-gcft-fip"&gt;

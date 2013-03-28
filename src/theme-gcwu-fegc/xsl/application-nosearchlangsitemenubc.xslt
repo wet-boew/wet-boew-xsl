@@ -111,10 +111,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="clear"&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a href="#" target="_blank"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-about-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-contact-us']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="span-2"&gt;&lt;div class="gcwu-col-head"&gt;&lt;a target="_blank" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 
 &lt;nav role="navigation"&gt;&lt;div id="gcwu-gcft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div id="gcwu-gcft-in"&gt;&lt;div id="gcwu-gcft-fip"&gt;
