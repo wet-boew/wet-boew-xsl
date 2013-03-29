@@ -73,4 +73,11 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template match="value" mode="serv_output">
+		<xsl:choose>
+			<xsl:when test=". = 'fra' or . = 'spa'"><xsl:value-of select="unparsed-text(concat('serv-', .,'.txt'), 'UTF-8')"/></xsl:when>
+			<xsl:otherwise><xsl:value-of select="unparsed-text('serv-eng.txt', 'UTF-8')"/></xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
 </xsl:stylesheet>
