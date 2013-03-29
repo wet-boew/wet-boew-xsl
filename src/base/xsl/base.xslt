@@ -66,4 +66,11 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template match="value" mode="index_output">
+		<xsl:choose>
+			<xsl:when test=". = 'fra'"><xsl:value-of select="unparsed-text(concat('index-', .,'.txt'), 'UTF-8')"/></xsl:when>
+			<xsl:otherwise><xsl:value-of select="unparsed-text('index-eng.txt', 'UTF-8')"/></xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
 </xsl:stylesheet>
