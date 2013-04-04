@@ -1,4 +1,4 @@
-[submodule "wet-boew"]
+[submodule "wet-boew-dist"]
 	path = wet-boew
-	url = git://github.com/wet-boew/wet-boew.git
+	url = git://github.com/wet-boew/wet-boew-dist.git
 	ignore = dirty
