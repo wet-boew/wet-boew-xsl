@@ -8,16 +8,8 @@
 	<target name="default" depends="clean,build" description="Performs a clean and build when calling ant without any target"></target>
 
 	<target name="-transform" extensionOf="build">
-		<for param="file">
-			<path>
-				<fileset dir="${demo.dir}">
-					<include name="*/*.html"/>
-					<exclude name="theme-*/*"/>
-				</fileset>
-			</path>
-			<sequential>
-				<xslt_saxon in="@{file}" out="@{file}.test" style="../theme-wet-boew/xsl/working-examples.xslt"/>
-			</sequential>
-		</for>
+		<xslt_saxon basedir="${demo.src.dir}" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
+			<mapper type="glob" from="*.html" to="*.html.test"/>
+		</xslt_saxon>
 	</target>
 </project>
