@@ -71,7 +71,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;!-- MainContentStart --&gt;
 &lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-msg-title']/value[lang(current()/@xml:lang)]"/> (h1)&lt;/h1&gt;
 
-<xsl:apply-templates select="." mode="serv_output"/>
+<xsl:apply-templates select="." mode="content_output">
+	<xsl:with-param name="prefix" select="'serv'"/>
+</xsl:apply-templates>
+
 &lt;!-- MainContentEnd --&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
