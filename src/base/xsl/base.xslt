@@ -53,31 +53,14 @@
 	</xsl:template>
 
 	<xsl:template match="value" mode="content_output">
-		<xsl:choose>
-			<xsl:when test=". = 'fra' or . = 'spa'"><xsl:value-of select="unparsed-text(concat('content-', .,'.txt'), 'UTF-8')"/></xsl:when>
-			<xsl:otherwise><xsl:value-of select="unparsed-text('content-eng.txt', 'UTF-8')"/></xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-
-	<xsl:template match="value" mode="home_output">
-		<xsl:choose>
-			<xsl:when test=". = 'fra' or . = 'spa'"><xsl:value-of select="unparsed-text(concat('home-', .,'.txt'), 'UTF-8')"/></xsl:when>
-			<xsl:otherwise><xsl:value-of select="unparsed-text('home-eng.txt', 'UTF-8')"/></xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-
-	<xsl:template match="value" mode="index_output">
-		<xsl:choose>
-			<xsl:when test=". = 'fra'"><xsl:value-of select="unparsed-text(concat('index-', .,'.txt'), 'UTF-8')"/></xsl:when>
-			<xsl:otherwise><xsl:value-of select="unparsed-text('index-eng.txt', 'UTF-8')"/></xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-
-	<xsl:template match="value" mode="serv_output">
-		<xsl:choose>
-			<xsl:when test=". = 'fra' or . = 'spa'"><xsl:value-of select="unparsed-text(concat('serv-', .,'.txt'), 'UTF-8')"/></xsl:when>
-			<xsl:otherwise><xsl:value-of select="unparsed-text('serv-eng.txt', 'UTF-8')"/></xsl:otherwise>
-		</xsl:choose>
+		<xsl:param name="prefix" select="'content'"/>
+		<xsl:param name="lang">
+			<xsl:choose>
+				<xsl:when test=". = 'fra' or . = 'spa'"><xsl:value-of select="."/></xsl:when>
+				<xsl:otherwise>eng</xsl:otherwise>
+			</xsl:choose>
+		</xsl:param>
+		<xsl:value-of select="unparsed-text(concat($prefix, '-',$lang, '.txt') , 'UTF-8')"/>
 	</xsl:template>
 
 </xsl:stylesheet>

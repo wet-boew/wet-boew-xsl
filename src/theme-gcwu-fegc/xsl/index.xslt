@@ -122,7 +122,15 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;!-- MainContentStart --&gt;
 &lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
-<xsl:apply-templates select="." mode="index_output"/>
+<xsl:apply-templates select="." mode="content_output">
+	<xsl:with-param name="prefix" select="'index'"/>
+	<xsl:with-param name="lang">
+		<xsl:choose>
+			<xsl:when test=". = 'fra'"><xsl:value-of select="."/></xsl:when>
+			<xsl:otherwise>eng</xsl:otherwise>
+		</xsl:choose>
+	</xsl:with-param>
+</xsl:apply-templates>
 
 &lt;dl id="gcwu-date-mod" role="contentinfo"&gt;
 &lt;dt&gt;<xsl:value-of select="/strings/string[@id='%tmpl-date-mod']/value[lang(current()/@xml:lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;2012-09-17&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
