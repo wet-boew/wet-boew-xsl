@@ -9,7 +9,7 @@
 
 	<target name="-transform" extensionOf="build">
 		<xslt_saxon basedir="${demo.src.dir}" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
-			<mapper type="glob" from="*.html" to="*.html.test"/>
+			<mapper type="glob" from="*.html" to="*.html"/>
 		</xslt_saxon>
 	</target>
 </project>
