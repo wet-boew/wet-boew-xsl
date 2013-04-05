@@ -5,7 +5,7 @@
 	wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
 	<xsl:output method="text" encoding="utf-8"/>
 	<xsl:output method="html" name="html" indent="no" omit-xml-declaration="yes" encoding="utf-8"/>
-	<xsl:variable name="root" select="'cont'"/>
+	<xsl:variable name="root" select="string-join(tokenize(tokenize(base-uri(), '/')[last()], '-')[position() &lt; last()],'-')"/>
 	<xsl:variable name="strings" select="document('../../base/xsl/i18n.xml')/strings"/>
 
 	<xsl:template match="/html">
