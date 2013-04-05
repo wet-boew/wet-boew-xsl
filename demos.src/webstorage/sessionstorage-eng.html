@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Session storage (sessionStorage polyfill) - Web Storage (HTML5)</title>
+<div class="module-info span-4"><section>
+<h2><span class="color-dark">Session duration</h2>
+<p id="update">Demonstration of the sessionStorage polyfill.</p>
+</section></div>
+<div class="clear"></div>
+
+<h2>Overview</h2>
+<div class="module-note span-8"><section>
+<h3><span class="color-dark">Note</span></h3>
+<p>This polyfill is dependent upon cookies so will not work where cookies can't be used (e.g., viewing the page offline).</p>
+</section></div>
+
+<p>The HTML5 sessionStorage object is used to store data for the current session. This component adds support for this object in browsers that do not already have native support.</p>
+<p>This working example demonstrates how HTML5 sessionStorage works. It starts a session and maintains the session data for the duration of the session, even after navigating away from the page. 
+Test this out by navigating to a new page (in the same tab/window) then either hitting the back button or manually navigating to the original page. Upon return, the timer will continue to show how long the session has been active since it was first initialized.</p>
+</body>
+</html>

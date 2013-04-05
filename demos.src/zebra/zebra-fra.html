@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Rayage du zèbre</title>
+<ul class="button-group">
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Zebra-striping" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions ou commentaires?</a></li>
+</ul>
+
+<div class="grid-12">
+<section><h2>Exemples - Tableaux</h2>
+<div class="span-4"><section><h3>Apparence par défaut d'un tableau</h3>
+<table>
+<caption class="align-left">Exemple 1</caption>
+<colgroup><col /><col /></colgroup>
+<thead>
+<tr><th id="tbl5">En-tête</th><th id="tbl6">En-tête</th></tr>
+</thead>
+<tbody>
+<tr><td headers="tbl5">Données</td><td headers="tbl6">Données</td></tr>
+<tr><td headers="tbl5">Données</td><td headers="tbl6">Données</td></tr>
+<tr><td headers="tbl5">Données</td><td headers="tbl6">Données</td></tr>
+<tr><td headers="tbl5">Données</td><td headers="tbl6">Données</td></tr>
+<tr><td headers="tbl5">Données</td><td headers="tbl6">Données</td></tr>
+<tr><td headers="tbl5">Données</td><td headers="tbl6">Données</td></tr>
+</tbody>
+</table>
+
+<table>
+<caption class="align-left">Exemple 2</caption>
+<colgroup><col /></colgroup><colgroup><col /><col /></colgroup>
+<thead>
+<tr><th id="tbla5">1</th><th id="tbla6">2</th><th id="tbla7">3</th></tr>
+</thead>
+<tbody>
+<tr><th id="tbla11" headers="tbla5">A</th><td headers="tbla6 tbla11">-</td><td headers="tbla7 tbla11">-</td></tr>
+<tr><th id="tbla22" headers="tbla5">B</th><td headers="tbla6 tbla22">-</td><td headers="tbla7 tbla22">-</td></tr>
+<tr><th id="tbla28" headers="tbla5">C</th><td headers="tbla6 tbla28">-</td><td headers="tbla7 tbla28">-</td></tr>
+</tbody>
+</table>
+</section></div>
+
+<div class="span-4"><section><h3>Tableaux avec la classe &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187;</h3>
+<table class="wet-boew-zebra">
+<caption class="align-left">Exemple 1</caption>
+<colgroup><col /><col /></colgroup>
+<thead>
+<tr><th id="tblb5">En-tête</th><th id="tblb6">En-tête</th></tr>
+</thead>
+<tbody>
+<tr><td headers="tblb5">Données</td><td headers="tblb6">Données</td></tr>
+<tr><td headers="tblb5">Données</td><td headers="tblb6">Données</td></tr>
+<tr><td headers="tblb5">Données</td><td headers="tblb6">Données</td></tr>
+<tr><td headers="tblb5">Données</td><td headers="tblb6">Données</td></tr>
+<tr><td headers="tblb5">Données</td><td headers="tblb6">Données</td></tr>
+<tr><td headers="tblb5">Données</td><td headers="tblb6">Données</td></tr>
+</tbody>
+</table>
+
+<table class="wet-boew-zebra">
+<caption class="align-left">Exemple 2</caption>
+<colgroup><col /></colgroup><colgroup><col /><col /></colgroup>
+<thead>
+<tr><th id="tblc5">1</th><th id="tblc6">2</th><th id="tblc7">3</th></tr>
+</thead>
+<tbody>
+<tr><th id="tblc11" headers="tblc5">A</th><td headers="tblc6 tblc11">-</td><td headers="tblc7 tblc11">-</td></tr>
+<tr><th id="tblc22" headers="tblc5">B</th><td headers="tblc6 tblc22">-</td><td headers="tblc7 tblc22">-</td></tr>
+<tr><th id="tblc28" headers="tblc5">C</th><td headers="tblc6 tblc28">-</td><td headers="tblc7 tblc28">-</td></tr>
+</tbody>
+</table>
+</section></div>
+
+<div class="span-4"><section><h3>Tableaux avec les classes &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187; et &#171;&#160;<code lang="en">table-accent</code>&#160;&#187;</h3>
+<table class="wet-boew-zebra table-accent">
+<caption class="align-left">Exemple 1</caption>
+<colgroup><col /><col /></colgroup>
+<thead>
+<tr><th id="tbld5">En-tête</th><th id="tbld6">En-tête</th></tr>
+</thead>
+<tbody>
+<tr><td headers="tbld5">Données</td><td headers="tbld6">Données</td></tr>
+<tr><td headers="tbld5">Données</td><td headers="tbld6">Données</td></tr>
+<tr><td headers="tbld5">Données</td><td headers="tbld6">Données</td></tr>
+<tr><td headers="tbld5">Données</td><td headers="tbld6">Données</td></tr>
+<tr><td headers="tbld5">Données</td><td headers="tbld6">Données</td></tr>
+<tr><td headers="tbld5">Données</td><td headers="tbld6">Données</td></tr>
+</tbody>
+</table>
+
+<table class="wet-boew-zebra table-accent">
+<caption class="align-left">Exemple 2</caption>
+<colgroup><col /></colgroup><colgroup><col /><col /></colgroup>
+<thead>
+<tr><th id="tble5">1</th><th id="tble6">2</th><th id="tble7">3</th></tr>
+</thead>
+<tbody>
+<tr><th id="tble11" headers="tble5">A</th><td headers="tble6 tble11">-</td><td headers="tble7 tble11">-</td></tr>
+<tr><th id="tble22" headers="tble5">B</th><td headers="tble6 tble22">-</td><td headers="tble7 tble22">-</td></tr>
+<tr><th id="tble28" headers="tble5">C</th><td headers="tble6 tble28">-</td><td headers="tble7 tble28">-</td></tr>
+</tbody>
+</table>
+</section></div>
+<div class="clear"></div>				
+</section>
+</div>
+
+<section><h2 style="border-top:1px solid #333;padding-top:40px">Exemples - Listes</h2>
+<div class="span-4"><section><h3>Apparence par défaut d'une liste</h3>
+<ol>
+<li>
+<div>Jessica</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.
+	<ol>
+	<li>
+	<div>Brian</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros. 
+		<ol>
+		<li>
+		<div>Elizabeth</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.  
+		</li>
+		<li>
+		<div>Chris</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.   
+		</li>
+		</ol>  
+	</li>
+	<li>
+	<div>Laura</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.  
+	</li>
+	</ol>
+</li>
+<li>
+<div>Mihn</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.
+</li>
+<li>
+<div>Eddie</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.
+	<ol>
+	<li>
+	<div>Bob</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	</li>
+	</ol> 
+</li>
+<li>
+<div>Sarah</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Donec iaculis diam eget sem bibendum consequat. 
+</li>
+</ol>
+</section></div>
+
+<div class="span-4"><section><h3>Apparence par défaut d'une liste</h3>
+<ul>
+<li>
+<div>Jessica</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.
+	<ul>
+	<li>
+	<div>Brian</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros. 
+		<ul>
+		<li>
+		<div>Elizabeth</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.  
+		</li>
+		<li>
+		<div>Chris</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.   
+		</li>
+		</ul> 
+	</li>
+	<li>
+	<div>Laura</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.  
+	</li>
+	</ul>
+</li>
+<li>
+<div>Mihn</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.
+</li>
+<li>
+<div>Eddie</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.
+	<ul>
+	<li>
+	<div>Bob</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	</li>
+	</ul> 
+</li>
+<li>
+<div>Sarah</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Donec iaculis diam eget sem bibendum consequat. 
+</li>
+</ul>
+</section></div>
+<div class="clear"></div>
+
+<div class="span-4"><section><h3>Liste ordonné avec la classe &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187;</h3>
+<ol class="wet-boew-zebra">
+<li>
+<div>Jessica</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.
+	<ol>
+	<li>
+	<div>Brian</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros. 
+		<ol>
+		<li>
+		<div>Elizabeth</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.  
+		</li>
+		<li>
+		<div>Chris</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.   
+		</li>
+		</ol>  
+	</li>
+	<li>
+	<div>Laura</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.  
+	</li>
+	</ol>
+</li>
+<li>
+<div>Mihn</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.
+</li>
+<li>
+<div>Eddie</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.
+	<ol>
+	<li>
+	<div>Bob</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	</li>
+	</ol>
+</li>
+<li>
+<div>Sarah</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Donec iaculis diam eget sem bibendum consequat. 
+</li>
+</ol>
+</section></div>
+
+<div class="span-4"><section><h3>Liste ordonné avec les classes &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187; et &#171;&#160;<code lang="en">module-comment</code>&#160;&#187;</h3>
+<ol class="wet-boew-zebra module-comment">
+<li>
+<div>Jessica</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.
+	<ol>
+	<li>
+	<div>Brian</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros. 
+		<ol>
+		<li>
+		<div>Elizabeth</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.  
+		</li>
+		<li>
+		<div>Chris</div>
+		<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+		Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.   
+		</li>
+		</ol>  
+	</li>
+	<li>
+	<div>Laura</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.  
+	</li>
+	</ol>
+</li>
+<li>
+<div>Mihn</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.
+</li>
+<li>
+<div>Eddie</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.
+	<ol>
+	<li>
+	<div>Bob</div>
+	<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	</li>
+	</ol>
+</li>
+<li>
+<div>Sarah</div>
+<div><time datetime="2009-11-19">19 novembre 2009</time></div>
+Donec iaculis diam eget sem bibendum consequat. 
+</li>
+</ol>
+</section></div>
+
+
+
+
+<div class="clear"></div>
+
+
+
+
+<div class="span-4"><section><h3>Liste non ordonnée avec la classe &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187; et &#171;&#160;<code lang="en">alterwg</code>&#160;&#187;</h3>
+<ul class="wet-boew-zebra alterwg">
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.</li>
+<li>Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros.</li>
+<li>Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.</li>
+<li>Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.</li>
+<li>Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.</li>
+<li>Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.</li>
+<li>Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.</li>
+</ul>
+</section></div>
+
+
+
+<div class="span-4"><section><h3>Liste non ordonnée avec la classe &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187;, &#171;&#160;<code lang="en">alterwg</code>&#160;&#187; et &#171;&#160;<code lang="en">nohover</code>&#160;&#187;</h3>
+<ul class="wet-boew-zebra alterwg nohover">
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.</li>
+<li>Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros.</li>
+<li>Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.</li>
+<li>Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.</li>
+<li>Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.</li>
+<li>Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.</li>
+<li>Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.</li>
+</ul>
+</section></div>
+  
+
+
+
+
+<div class="clear"></div>
+
+
+<div class="span-4"><section><h3>Apparence par défaut d'une liste de définition</h3>
+
+<dl>
+	<dt>Item A</dt>
+	<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.</dd>
+	<dt>Item B</dt>
+	<dd>Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros.</dd>
+	<dt>Item C</dt>
+	<dd>Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.</dd>
+	<dt>Item D</dt>
+	<dd>Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.</dd>
+	<dd>Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.</dd>
+	<dt>Item E</dt>
+	<dd>Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.</dd>
+	<dd>Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.</dd>
+</dl>
+</section></div>
+
+<div class="span-4"><section><h3>Liste de définition avec la classe &#171;&#160;<code lang="en">wet-boew-zebra</code>&#160;&#187;</h3>
+
+<dl class="wet-boew-zebra">
+	<dt>Item A</dt>
+	<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum massa quis velit rutrum commodo.</dd>
+	<dt>Item B</dt>
+	<dd>Duis dictum lacus ac turpis gravida in interdum mauris adipiscing. Mauris leo lorem, lobortis eu malesuada a, molestie sed eros.</dd>
+	<dt>Item C</dt>
+	<dd>Vestibulum et dui ut velit dictum iaculis. Curabitur auctor viverra rutrum. Quisque id quam urna. Mauris quis urna in leo accumsan ultricies vitae sit amet felis.</dd>
+	<dt>Item D</dt>
+	<dd>Ut vel risus tellus. Suspendisse potenti. Sed est urna, venenatis at auctor eu, vulputate bibendum sem.</dd>
+	<dd>Aliquam erat volutpat. Maecenas aliquam dignissim urna nec viverra. Nulla fringilla fringilla orci, eget consectetur massa vulputate in. Morbi consectetur aliquam lacus, nec sollicitudin lorem molestie ut. Pellentesque scelerisque nulla eget mauris eleifend ac rutrum ligula scelerisque.</dd>
+	<dt>Item E</dt>
+	<dd>Aenean id elit in metus consectetur bibendum non at massa. Phasellus dictum varius nibh vel scelerisque. Curabitur sollicitudin purus urna, ac ullamcorper magna.</dd>
+	<dd>Phasellus accumsan risus id lacus cursus vitae fringilla sapien pulvinar. Duis viverra consectetur quam vitae pellentesque. Donec iaculis diam eget sem bibendum consequat. Nullam rhoncus bibendum lobortis. Sed consequat sagittis pharetra. Pellentesque accumsan, felis ut venenatis semper, metus odio sollicitudin libero, nec vestibulum lectus nibh vel libero. Fusce iaculis lectus vel ipsum auctor porta. Proin nec lectus augue, varius cursus orci.</dd>
+</dl>
+</section></div>
+
+<div class="clear"></div>
+
+<h3>Avis concernant les listes</h3>
+
+<p>Les classes &#171;&#160;<code lang="en">alterwg</code>&#160;&#187; et &#171;&#160;<code lang="en">nohover</code>&#160;&#187; peuvent être appliqué au liste non ordonnée (<em>ul</em>), au liste ordonnée (<em>ol</em>) et au liste de définition (<em>dl</em>).</p>
+
+<p>La classe &#171;&#160;<code lang="en">nomargin</code>&#160;&#187; peut être utilisé dans les version antérieur de la WxT 3.0.3 afin d'enlever l'espacement à gauche de la liste.</p>
+
+
+</section>
+
+
+</body>
+</html>
