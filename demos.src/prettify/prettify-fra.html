@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Prettify (code source)</title>
+</head>
+<body>
+<ul class="button-group">
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Prettify-%28code-source%29" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions ou commentaires?</a></li>
+</ul>
+
+<p>Mise en surbrillance de syntaxe des extraits de code source dans une page html en utilisant <a href="http://code.google.com/p/google-code-prettify/" rel="external">google-code-prettify</a>.</p>
+
+<section>
+	<h2>Comment utiliser</h2>
+	<ol>
+	<li>Appliquer <code>class="wet-boew-prettify"</code> à un élément sur la page pour charger le composant (une fois par page).</li>
+	<li>Appliquer <code>class="prettyprint"</code> à un élément <code>pre</code> ou <code>code</code> pour appliquer la mise en surbrillance de syntaxe. Comme alternative utiliser <code>class="wet-boew-prettify all-pre"</code> pour appliquer la mise en surbrillance de syntaxe à tous les éléments <code>pre</code> sur la page.</li>
+	<li>Appliquer <code>class="linenums"</code> à un élément <code>pre</code> ou <code>code</code> pour ajouter les nombres de ligne. Comme alternative utiliser <code>class="wet-boew-prettify linenums"</code> à tous les éléments <code>pre</code> applicables. Spécifier le nombre commençant en ajoutant <code>linenums:#</code> avant <code>linenums</code>.</li>
+	<li>Ajouter le soutien supplémentaire de langage de programmation avec <code>class="wet-boew-prettify lang-*"</code> (p. ex., <code>class="wet-boew-prettify lang-css"</code>) et en ajoutant <code>class="lang-*"</code> à chaque élément <code>pre</code> ou <code>code</code> applicable.</li> 
+	</ol>
+</section>
+
+<section>
+	<h2 id="examples" class="wet-boew-prettify all-pre">Exemples</h2>
+	<section>
+		<h3>HTML</h3>
+		<pre class="prettyprint"><code>&lt;form action="#" method="post"&gt;
+	&lt;div&gt;
+		&lt;label for="data1"&gt;Formulaire - Entrée - apparence par défaut&#160;:&lt;/label&gt;
+		&lt;input name="data1" type="text" id="data1" /&gt;
+	&lt;/div&gt;
+	&lt;div&gt;
+		&lt;label for="data2"&gt;Formulaire - Zone texte - apparence par défaut&#160;:&lt;/label&gt;
+		&lt;textarea name="data2" cols="15" rows="3" id="data2"&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+	&lt;div&gt;
+		&lt;label for="data4"&gt;Formulaire - Sélection - apparence par défaut&#160;:&lt;/label&gt; 
+		&lt;select id="data4" name="data4"&gt;
+			&lt;option value="Option 1"&gt;Option 1&lt;/option&gt;
+			&lt;option value="Option 2"&gt;Option 2&lt;/option&gt;
+			&lt;option value="Option 3"&gt;Option 3&lt;/option&gt;
+			&lt;option value="Option 4"&gt;Option 4&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+	&lt;fieldset&gt;
+		&lt;legend&gt;Formulaire - &lt;code lang="en"&gt;legend&lt;/code&gt;, &lt;code lang="en"&gt;fieldset&lt;/code&gt; et case à cocher - apparence par défaut&lt;/legend&gt;
+		&lt;div&gt;
+			&lt;input name="checkbox" type="checkbox" id="data5" value="checkbox" /&gt;&#160;&lt;label for="data5"&gt;Option 1&lt;/label&gt;&#160;&#160;
+			&lt;input name="checkbox" type="checkbox" id="data6" value="checkbox" /&gt;&#160;&lt;label for="data6"&gt;Option 2&lt;/label&gt;&#160;&#160;
+			&lt;input name="checkbox" type="checkbox" id="data7" value="checkbox" /&gt;&#160;&lt;label for="data7"&gt;Option 3&lt;/label&gt;&#160;&#160;
+			&lt;input name="checkbox" type="checkbox" id="data8" value="checkbox" /&gt;&#160;&lt;label for="data8"&gt;Option 4&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/fieldset&gt;
+	&lt;div&gt;
+		&lt;input name="submit" type="submit" id="submit" value="Soumettre - apparence par défaut" /&gt;
+		&lt;input name="reset" type="reset" id="reset" value="Réinitialiser - apparence par défaut" /&gt;
+	&lt;/div&gt;
+&lt;/form&gt;</code></pre>
+	</section>
+	<section>
+		<h3>CSS (utilise linenums)</h3>
+		<pre class="prettyprint lang-css linenums"><code>#gcwu-date-mod dt,#gcwu-date-mod dd{
+	float:left;
+}
+
+#gcwu-date-mod dd{
+	margin:0 0 0 10px;
+}
+
+#gcwu-content h2,#gcwu-priorities h3{
+	color:#333;
+	font-weight:400;
+}
+
+#gcwu-content h2,#gcwu-priorities h3{
+	border:none;
+	margin-bottom:5px;
+	font-size:1.6em;
+}
+
+div#gcwu-headlines ul li,div#gcwu-headlines ul{
+	list-style:none !important;
+	margin:0 !important;
+	padding:0 !important;
+}</code></pre>
+	</section>
+	<section>
+		<h3>JavaScript (utilise linenums:15 et linenums)</h3>
+		<pre class="prettyprint linenums:15 linenums"><code>_pe.fn.prettify = {
+	type: 'plugin',
+	depends : ['prettify'],
+	executed : false,
+	_exec: function (elm) {
+		// Make sure only executes once
+		if (!pe.fn.prettify.executed) {
+			var opts,
+				overrides,
+				pre = $('body').find('pre'),
+				classes = elm.attr('class').split(' '),
+				i;
+
+			// Load language extensions as needed (called by adding lang-* in class, e.g., lang-css)
+			for (i = 0; i &lt; classes.length; i += 1) {
+				if (classes[i].length &lt; 12 && classes[i].indexOf('lang-') === 0) {
+					pe.add._load([pe.add.liblocation + 'dependencies/prettify/' + classes[i] + pe.suffix + '.js']);
+				}
+			}</code></pre>
+	</section>
+</section>
+</body>
+</html>
