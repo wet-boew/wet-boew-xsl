@@ -17,7 +17,7 @@
 	<li>Apply <code>class="wet-boew-prettify"</code> to an element on the page to load the component (once per page).</li>
 	<li>Apply <code>class="prettyprint"</code> to a <code>pre</code> or <code>code</code> element to apply syntax highlighting. Alternatively use <code>class="wet-boew-prettify all-pre"</code> to apply syntax highlighting to all <code>pre</code> elements on the page.</li>
 	<li>Apply <code>class="linenums"</code> to a <code>pre</code> or <code>code</code> element to add line numbers. Alternatively use <code>class="wet-boew-prettify linenums"</code> to all applicable <code>pre</code> elements. Specify the starting number by adding <code>linenums:#</code> before <code>linenums</code>.</li>
-	<li>Add extra language support by using <code>class="wet-boew-prettify lang-*"</code> (e.g., <code>class="wet-boew-prettify lang-css"</code>) and applying <code>class="lang-*"</code> to each applicable <code>pre</code> or <code>code</code> element.</li> 
+	<li>Add extra language support by using <code>class="wet-boew-prettify lang-*"</code> (e.g., <code>class="wet-boew-prettify lang-css"</code>) and applying <code>class="lang-*"</code> to each applicable <code>pre</code> or <code>code</code> element.</li>
 	</ol>
 </section>
 
@@ -35,7 +35,7 @@
 		&lt;textarea name="data2" cols="15" rows="3" id="data2"&gt;&lt;/textarea&gt;
 	&lt;/div&gt;
 	&lt;div&gt;
-		&lt;label for="data4"&gt;Form &lt;code&gt;select&lt;/code&gt; default appearance:&lt;/label&gt; 
+		&lt;label for="data4"&gt;Form &lt;code&gt;select&lt;/code&gt; default appearance:&lt;/label&gt;
 		&lt;select id="data4" name="data4"&gt;
 			&lt;option value="Option 1"&gt;Option 1&lt;/option&gt;
 			&lt;option value="Option 2"&gt;Option 2&lt;/option&gt;
@@ -102,7 +102,7 @@ div#gcwu-headlines ul li,div#gcwu-headlines ul{
 
 			// Load language extensions as needed (called by adding lang-* in class, e.g., lang-css)
 			for (i = 0; i &lt; classes.length; i += 1) {
-				if (classes[i].length &lt; 12 && classes[i].indexOf('lang-') === 0) {
+				if (classes[i].length &lt; 12 &amp;&amp; classes[i].indexOf('lang-') === 0) {
 					pe.add._load([pe.add.liblocation + 'dependencies/prettify/' + classes[i] + pe.suffix + '.js']);
 				}
 			}</code></pre>

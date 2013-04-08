@@ -11,8 +11,8 @@
 			<li><a href="#features">Features</a></li>
 			<li><a href="#usage">Usage</a>
 				<ul>
-					<li><a href="#markup">Markup</a></li>					
-				</ul>			
+					<li><a href="#markup">Markup</a></li>
+				</ul>
 			</li>
 			<li><a href="#examples">Examples</a>
 				<ul>
@@ -36,13 +36,13 @@
 	<h3 id="markup">Markup</h3>
 	<p>The following creates a single responsive image using a <a href="http://www.w3.org/TR/css3-mediaqueries/#width">min-width</a> media query:</p>
 	<pre class="wet-boew-prettify all-pre linenums">
-&lt;div data-picture data-alt="Alt text" class="wet-boew-responsiveimg"&gt;
+&lt;div data-picture="data-picture" data-alt="Alt text" class="wet-boew-responsiveimg"&gt;
    &lt;!-- Default image: &lt;div [data-src]&gt; with no data-media
         attribute is displayed when:
         1. None of the other &lt;div [data-src]&gt; media queries match.
         2. The browser doesn't support media queries  --&gt;
    &lt;div data-src="large.jpg"&gt;&lt;/div&gt;
-	
+
    &lt;!-- Images for browsers with CSS media query support --&gt;
    &lt;div data-src="small.jpg" data-media="(min-width: 0px)"&gt;&lt;/div&gt;
    &lt;div data-src="medium.jpg" data-media="(min-width: 500px)"&gt;&lt;/div&gt;
@@ -52,8 +52,8 @@
    &lt;!-- Fallback content for non-JS browsers. --&gt;
    &lt;noscript&gt;&lt;img src="large.jpg" alt="Alt text"&gt;&lt;/noscript&gt;
 &lt;/div&gt;</pre>
-	
-	
+
+
 	<table class="table-simplify">
 		<caption>
 		Data Attributes
@@ -79,80 +79,80 @@
 		<tr>
 			<td><code>data-media</code></td>
 			<td>CSS media query that determines when the image source is used. If not specified, this is the default image to display for browsers that don't support CSS media queries.</td>
-		</tr>					
-	</table>	
+		</tr>
+	</table>
 </div>
-<div class="clear"></div> 
+<div class="clear"></div>
 
 <div class="span-8">
 	<h2 id="examples">Examples</h2>
 	<h3 id="example1">Browser Width</h3>
 	<p>This example uses <a href="http://www.w3.org/TR/css3-mediaqueries/#width">min-width</a> to determine which image should be displayed.  Resize the browser window to see the different images load.</p>
-	<div data-picture data-alt="Parliament Hill" class="wet-boew-responsiveimg">	
-		<!-- Default image: <div [data-src]> with no data-media attribute is displayed when:		
+	<div data-picture="data-picture" data-alt="Parliament Hill" class="wet-boew-responsiveimg">
+		<!-- Default image: <div [data-src]> with no data-media attribute is displayed when:
 		     1. None of the other <div [data-src]> media queries match.
 		     2. The browser doesn't support media queries  -->
 		<div data-src="images/parliament-hill-large.jpg"></div>
-		
-		<!-- Images for browsers with CSS media query support -->		
+
+		<!-- Images for browsers with CSS media query support -->
 		<div data-src="images/parliament-hill-small.jpg" data-media="(min-width: 0px)"></div>
 		<div data-src="images/parliament-hill-medium.jpg" data-media="(min-width: 500px)"></div>
 		<div data-src="images/parliament-hill-large.jpg" data-media="(min-width: 960px)"></div>
 		<div data-src="images/parliament-hill-extralarge.jpg" data-media="(min-width: 1200px)"></div>
-	
+
 		<!-- Fallback content for non-JS browsers. -->
-		<noscript><img src="images/parliament-hill-large.jpg" alt="Parliament Hill"></noscript>
-	</div>	
+		<noscript><img src="images/parliament-hill-large.jpg" alt="Parliament Hill"/></noscript>
+	</div>
 	<p class="font-xsmall margin-top-none">Photo by <a href="http://www.flickr.com/photos/intercultura/6130311384">Noema Pérez</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en_CA">Creative Commons</a>.</p>
 	<details class="wet-boew-prettify all-pre linenums">
 		<summary>View code</summary>
 		<pre>
-&lt;div data-picture data-alt="Parliament Hill" class="wet-boew-responsiveimg"&gt;	
-   &lt;!-- Default image: &lt;div [data-src]&gt; with no data-media attribute is displayed when:	
+&lt;div  data-picture="data-picture" data-alt="Parliament Hill" class="wet-boew-responsiveimg"&gt;
+   &lt;!-- Default image: &lt;div [data-src]&gt; with no data-media attribute is displayed when:
            1. None of the other &lt;div [data-src]&gt; media queries match.
            2. The browser doesn't support media queries  --&gt;
    &lt;div data-src="images/parliament-hill-large.jpg"&gt;&lt;/div&gt;
-	
-   &lt;!-- Images for browsers with CSS media query support --&gt;		
+
+   &lt;!-- Images for browsers with CSS media query support --&gt;
    &lt;div data-src="images/parliament-hill-small.jpg" data-media="(min-width: 0px)"&gt;&lt;/div&gt;
    &lt;div data-src="images/parliament-hill-medium.jpg" data-media="(min-width: 500px)"&gt;&lt;/div&gt;
    &lt;div data-src="images/parliament-hill-large.jpg" data-media="(min-width: 960px)"&gt;&lt;/div&gt;
    &lt;div data-src="images/parliament-hill-extralarge.jpg" data-media="(min-width: 1200px)"&gt;&lt;/div&gt;
 
    &lt;!-- Fallback content for non-JS browsers. --&gt;
-   &lt;noscript&gt;&lt;img src="images/parliament-hill-large.jpg" alt="Parliament Hill"&gt;&lt;/noscript&gt;
+   &lt;noscript&gt;&lt;img src="images/parliament-hill-large.jpg" alt="Parliament Hill"/&gt;&lt;/noscript&gt;
 &lt;/div&gt;</pre>
-	</details>	
-	
+	</details>
+
 	<h3 id="example2">High Pixel Density</h3>
 	<p>This example uses <a href="http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/" title="Read about high resolution media queries">two media queries</a> to serve high resolution images to devices that will benefit from them (i.e. Retina displays).</p>
 	<div class="span-2 row-start margin-bottom-none">
-		<div data-picture data-alt="False Kiva in the Canyonlands">
+		<div data-picture="data-picture" data-alt="False Kiva in the Canyonlands">
 			<!-- Images for different device resolutions -->
 		    <div data-src="images/cave-low-res.jpg"></div>
 		    <div data-src="images/cave-high-res.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)"></div>
-		
+
 		    <!-- Fallback content for non-JS browsers -->
-		    <noscript><img src="images/cave-low-res.jpg" alt="False Kiva in the Canyonlands"></noscript>
-	    </div>	    
+		    <noscript><img src="images/cave-low-res.jpg" alt="False Kiva in the Canyonlands"/></noscript>
+	    </div>
     </div>
     <div class="clear"></div>
     <p class="font-xsmall margin-top-none">Photo by <a href="http://www.flickr.com/photos/snowpeak/7351510924/">snowpeak</a>, licensed under <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons</a>.</p>
 	<details class="wet-boew-prettify all-pre linenums">
 		<summary>View code</summary>
 		<pre>
-&lt;div data-picture data-alt="False Kiva in the Canyonlands"&gt;
+&lt;div  data-picture="data-picture" data-alt="False Kiva in the Canyonlands"&gt;
    &lt;!-- Images for different device resolutions --&gt;
    &lt;div data-src="images/cave-low-res.jpg"&gt;&lt;/div&gt;
    &lt;div data-src="images/cave-high-res.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)"&gt;&lt;/div&gt;
 
    &lt;!-- Fallback content for non-JS browsers --&gt;
-   &lt;noscript&gt;&lt;img src="images/cave-low-res.jpg" alt="False Kiva in the Canyonlands"&gt;&lt;/noscript&gt;
+   &lt;noscript&gt;&lt;img src="images/cave-low-res.jpg" alt="False Kiva in the Canyonlands"/&gt;&lt;/noscript&gt;
 &lt;/div&gt;</pre>
-	</details>	  
-    
-    
+	</details>
+
+
 </div>
-<div class="clear"></div> 
+<div class="clear"></div>
 </body>
 </html>
