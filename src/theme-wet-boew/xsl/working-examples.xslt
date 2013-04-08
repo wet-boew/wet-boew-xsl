@@ -64,6 +64,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;!--&lt;![endif]--&gt;
 
 &lt;!-- CustomCSSStart --&gt;
+<xsl:apply-templates select="head" mode="custom_styles"/>
 &lt;!-- CustomCSSEnd --&gt;
 &lt;/head&gt;
 
@@ -132,9 +133,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
 &lt;h1 id="wb-cont"&gt;<xsl:value-of select="/html/head/title"/>&lt;/h1&gt;
-<xsl:for-each select="/html/body/node()">
-	<xsl:value-of select="saxon:serialize(., 'html')"/>
-</xsl:for-each>
+<xsl:apply-templates select="/html/body/node()"/>
 &lt;dl id="wet-date-mod" role="contentinfo"&gt;
 &lt;dt&gt;<xsl:value-of select="$strings/string[@id='%tmpl-date-mod']/value[lang(current()/@lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;2012-09-17&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
 &lt;/dl&gt;
@@ -198,8 +197,30 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;!-- ScriptsEnd --&gt;
 
 &lt;!-- CustomScriptsStart --&gt;
+<xsl:apply-templates select="." mode="custom_script"/>
 &lt;!-- CustomScriptsEnd --&gt;
 &lt;/body&gt;
 &lt;/html&gt;</xsl:template>
 
+<xsl:template match="/html" mode="custom_script">
+	<xsl:for-each select="body/script">
+		<xsl:value-of select="saxon:serialize(., 'html')"/>
+		<xsl:if test="position() &lt; last()">
+			<xsl:value-of select="following-sibling::text()"/>
+		</xsl:if>
+	</xsl:for-each>
+</xsl:template>
+
+<xsl:template match="head" mode="custom_styles">
+	<xsl:for-each select="./link[@rel='stylesheet'] | ./style">
+		<xsl:value-of select="saxon:serialize(., 'html')"/>
+		<xsl:if test="position() &lt; last()">
+			<xsl:value-of select="following-sibling::text()"/>
+		</xsl:if>
+	</xsl:for-each>
+</xsl:template>
+
+<xsl:template match="node()"><xsl:value-of select="saxon:serialize(., 'html')"/></xsl:template>
+
+<xsl:template match="script"><!--Suppress script tags from the body and add them to the custom script section--></xsl:template>
 </xsl:stylesheet>
