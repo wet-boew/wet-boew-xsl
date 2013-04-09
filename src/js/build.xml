@@ -8,7 +8,7 @@
 	<target name="default" depends="clean,build" description="Performs a clean and build when calling ant without any target"></target>
 
 	<target name="-transform" extensionOf="build">
-		<xslt_saxon basedir="${demo.src.dir}" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
+		<xslt_saxon basedir="${demo.src.dir}" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt" excludes="**/ajax*.html **/menu*.html">
 			<mapper type="glob" from="*.html" to="*.html"/>
 		</xslt_saxon>
 	</target>
