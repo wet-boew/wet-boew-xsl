@@ -31,6 +31,12 @@
 					<xsl:value-of select="@lang"/>
 				</xsl:otherwise>
 			</xsl:choose>
+		</xsl:param>
+		<xsl:param name="body_type">
+			<xsl:choose>
+				<xsl:when test="exists(body/@data-leftnav)">wb-body-sec</xsl:when>
+				<xsl:otherwise>wb-body</xsl:otherwise>
+			</xsl:choose>
 		</xsl:param>&lt;!DOCTYPE html&gt;
 &lt;!--[if IE 7]&gt;&lt;html <xsl:if test="not($strings/string[@id='%lang-dir']/value[lang(current()/@lang)] = 'ltr')"><xsl:if test="not($strings/string[@id='%lang-dir']/value[lang(current()/@lang)] = 'ltr')">dir="<xsl:value-of select="$strings/string[@id='%lang-dir']/value[lang(current()/@lang)]"/>" </xsl:if></xsl:if>lang="<xsl:value-of select="./@lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
 &lt;!--[if IE 8]&gt;&lt;html <xsl:if test="not($strings/string[@id='%lang-dir']/value[lang(current()/@lang)] = 'ltr')">dir="<xsl:value-of select="$strings/string[@id='%lang-dir']/value[lang(current()/@lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
@@ -68,7 +74,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;!-- CustomCSSEnd --&gt;
 &lt;/head&gt;
 
-&lt;body&gt;&lt;div id="wb-body"&gt;
+&lt;body&gt;&lt;div id="<xsl:value-of select="$body_type"/>"&gt;
 &lt;div id="wb-skip"&gt;
 &lt;ul id="wb-tphp"&gt;
 &lt;li id="wb-skip1"&gt;&lt;a href="#wb-cont"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-skip-main']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
@@ -135,14 +141,25 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;h1 id="wb-cont"&gt;<xsl:value-of select="/html/head/title"/>&lt;/h1&gt;
 <xsl:apply-templates select="/html/body/node()"/>
 &lt;dl id="wet-date-mod" role="contentinfo"&gt;
-&lt;dt&gt;<xsl:value-of select="$strings/string[@id='%tmpl-date-mod']/value[lang(current()/@lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;2012-09-17&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
+&lt;dt&gt;<xsl:value-of select="$strings/string[@id='%tmpl-date-mod']/value[lang(current()/@lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;<xsl:value-of select="adjust-date-to-timezone(current-date(), null)"/>&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;div class="clear"&gt;&lt;/div&gt;
 &lt;!-- MainContentEnd --&gt;
 &lt;/div&gt;&lt;/div&gt;
+<xsl:if test="$body_type = 'wb-body-sec'">
+
+&lt;div id="wb-sec"&gt;&lt;div id="wb-sec-in"&gt;&lt;nav role="navigation"&gt;&lt;h2 id="wb-nav"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;div class="wb-sec-def"&gt;
+&lt;!-- SecNavStart --&gt;
+<xsl:apply-templates select="body" mode="left_nav"/>
+&lt;!-- SecNavEnd --&gt;
+&lt;/div&gt;
+&lt;/nav&gt;&lt;/div&gt;&lt;/div&gt;
+
+</xsl:if>
 &lt;/div&gt;&lt;/div&gt;
 
-&lt;div id="wb-foot"&gt;&lt;div id="wb-foot-in"&gt;&lt;footer&gt;&lt;h2 id="wb-nav"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-foot']/value[lang(current()/@lang)]"/>&lt;/h2&gt;
+&lt;div id="wb-foot"&gt;&lt;div id="wb-foot-in"&gt;&lt;footer&gt;&lt;h2<xsl:if test="$body_type = 'wb-body'"> id="wb-nav"</xsl:if>&gt;<xsl:value-of select="$strings/string[@id='%tmpl-foot']/value[lang(current()/@lang)]"/>&lt;/h2&gt;
 &lt;!-- FooterStart --&gt;
 &lt;nav role="navigation"&gt;&lt;div id="wet-sft"&gt;&lt;h3&gt;<xsl:value-of select="$strings/string[@id='%tmpl-site-foot']/value[lang(current()/@lang)]"/>&lt;/h3&gt;&lt;div id="wet-sft-in"&gt;
 &lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-about-us']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/h4&gt;
@@ -218,6 +235,10 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 			<xsl:value-of select="following-sibling::text()"/>
 		</xsl:if>
 	</xsl:for-each>
+</xsl:template>
+
+<xsl:template match="body" mode="left_nav">
+	<xsl:value-of select="unparsed-text(resolve-uri(@data-leftnav, base-uri()), 'UTF-8')"/>
 </xsl:template>
 
 <xsl:template match="node()"><xsl:value-of select="saxon:serialize(., 'html')"/></xsl:template>
