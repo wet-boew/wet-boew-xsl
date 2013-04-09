@@ -135,7 +135,7 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 &lt;h1 id="wb-cont"&gt;<xsl:value-of select="/html/head/title"/>&lt;/h1&gt;
 <xsl:apply-templates select="/html/body/node()"/>
 &lt;dl id="wet-date-mod" role="contentinfo"&gt;
-&lt;dt&gt;<xsl:value-of select="$strings/string[@id='%tmpl-date-mod']/value[lang(current()/@lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;2012-09-17&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
+&lt;dt&gt;<xsl:value-of select="$strings/string[@id='%tmpl-date-mod']/value[lang(current()/@lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;<xsl:value-of select="adjust-date-to-timezone(current-date(), null)"/>&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;div class="clear"&gt;&lt;/div&gt;
 &lt;!-- MainContentEnd --&gt;
