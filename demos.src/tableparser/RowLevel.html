@@ -2,27 +2,8 @@
 <html lang="en">
 <head>
 <title>Row Group Level - Table Usability</title>
-
-<!-- CustomCSSStart -->
-<!-- The following script are for the try it button -->
-<script>
-	//<![CDATA[
-
-	$(document).ready(function(){
-		$('input.tryit').click(function(){
-			eval($(this).prev().val());
-		});
-
-	});
-
-	//]]>
-</script>
-<!-- END of Try it button -->
-<!-- CustomCSSEnd -->
-
 </head>
 <body>
-
 <table>
 
  <caption>Example Table: Number of PPH requests</caption>
@@ -604,12 +585,16 @@
 		<td>0</td>
 	</tr>
 	</tbody>
-
-
 </table>
-
-
 <p><label for="tryit0">Try it:</label> <input id="tryit0" type="text" style="width:450px;" value="$('table:eq(2):data').css('background-color', 'yellow');" /> <input class="tryit" style="margin-top:0px;" type="button" value="Go" /></p>
-
+<script>
+/* <![CDATA[ */
+(function ($) {
+	$('input.tryit').click(function(){
+		eval($(this).prev().val());
+	});
+}(jQuery));
+/* ]]> */
+</script>
 </body>
 </html>
