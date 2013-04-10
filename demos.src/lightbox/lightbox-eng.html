@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
 <title>Light Box</title>
+<style>
+	.wet-boew-lightbox > ul {margin-left:0;}
+	.wet-boew-lightbox > ul > li {list-style-type:none;float:left;margin: 0 5px 0 0;}
+	.wet-boew-lightbox ul li.box {margin-bottom: 0.4em;}
+	.wet-boew-lightbox li img {margin-bottom:0;}
+	.wet-boew-lightbox > ul > li > a {text-decoration: none;}
+	.box > a, .lb-hidden-gallery li:first-child.box > a {display: block; width: 148px; height: 148px; border: 1px solid #000; text-align: center; line-height: 148px; background: #EEE;}
+	.box > a:hover, .box > a:focus, .box > a:active {text-decoration: underline; background: #FFF;}
+	.lb-hidden-gallery .box > a {display: none;}
+</style>
 </head>
 <body>
 <ul class="button-group">
@@ -98,7 +108,7 @@
         &lt;img src="images/image_source.jpg" alt="Alt text for the image" class="image-actual" /&gt;
       &lt;/a&gt;
     &lt;/li&gt;
-    ...	
+    ...
     &lt;li&gt;
       &lt;a class="lb-item" title="Example of AJAX content" href="ajax/ajax-eng.html"&gt;AJAX content&lt;/a&gt;
     &lt;/li&gt;
@@ -176,7 +186,7 @@
     &lt;li&gt;
 	  &lt;a class="lb-item-gal" title="Example of inline content" href="#inline_content2"&gt;Inline content&lt;/a&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;	
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 			</section>
 		</div>
@@ -247,13 +257,13 @@
     &lt;li&gt;
       &lt;a class="lb-item-gal" title="Example of inline content" href="#inline_content2"&gt;Inline content&lt;/a&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;	
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 			</section>
 		</div>
 	</section>
 	<div class="clear"></div>
-	
+
 	<section>
 		<h3 id="examples4">Alternative image title (v3.1 Beta)</h3>
 		<div class="span-4">
@@ -274,10 +284,10 @@
 					</ul>
 					<div class="clear"></div>
 				</div>
-				
+
 				<p id="image_1_b"><strong>Image 1:</strong> Lorem ipsum consectetur <em>adipiscing elit</em>.</p>
 				<p id="image_2_b"><strong>Image 2:</strong> Nulla mollis dolor leo. Quisque laoreet tincidunt mollis. Duis posuere scelerisque lectus quis lobortis. </p>
-				
+
 			</section>
 		</div>
 		<div class="span-4">
@@ -291,14 +301,14 @@
 	  &lt;/a&gt;
     &lt;/li&gt;
     ...
-  &lt;/ul&gt;	
+  &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p id="element_id"&gt;Title of the image&lt;/p&gt;</code></pre>
 			</section>
 		</div>
 	</section>
-	<div class="clear"></div>		
-	
+	<div class="clear"></div>
+
 </section>
 </div>
 </body>
