@@ -14,5 +14,33 @@
 <h2>Vue d'ensemble</h2>
 <p>L'objet HTML5 <code lang="en">localStorage</code> est utilisé pour maintenir les données avec persistance (sans date d'expiration). Ce composant ajoute le soutien pour ces éléments dans les navigateurs qui n'ont pas déjà la prise en charge native.</p>
 <p>Cet exemple pratique démontre comment fonctionne l'objet HTML5 <span lang="en">localStorage</span>. Il commence une session et maintient les données pendant la session, même après avoir navigué à une autre page.</p>
+<script>
+/* <![CDATA[ */
+(function ($) {
+	var $status = $('#process-status'),
+		$document = $(document);
+	$document.on('localstorage-loaded status-change', function() {
+		var processStatus = localStorage.getItem('processStatus');
+		if (processStatus && processStatus === 'deactivated') {
+			$status.html('<div class="module-attention span-4"><section><h2>Attention</h2><p>Processus désactivé <a class="button button-confirm">Activer le processus</a></p></section></div><div class="clear"></div>');
+		} else {
+			$status.html('<div class="module-note span-4"><section><h2>Nota</h2><p>Processus activé <a class="button button-attention">Déactiver le process</a></p></section></div><div class="clear"></div>');
+		}
+		$status.find('a').one('click vclick', function() {
+			var processStatus = localStorage.getItem('processStatus');
+			if (processStatus && processStatus === 'deactivated') {
+				localStorage.setItem('processStatus', 'activated');
+			} else {
+				localStorage.setItem('processStatus', 'deactivated');
+			}
+			$document.trigger('status-change');
+		});
+	});
+	if (window.localStorage) {
+		$document.trigger('localstorage-loaded');
+	}
+}(jQuery));
+/* ]]> */
+</script>
 </body>
 </html>
