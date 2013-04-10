@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Gadget des fils de syndication</title>
+</head>
+<body>
+<ul class="button-group">
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Gadget-des-fils-de-syndication" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions ou commentaires?</a></li>
+</ul>
+
+<p>Cette composante est un gadget logiciel permettant de regrouper et d’afficher des données d'un ou plusieurs fils de syndication. Les formats soutenus sont Atom, RSS et Media RSS.</p>
+
+<section><h2>Avantages</h2>
+<ul>
+<li>Affichage des données d'un ou plusiers fils Atom, RSS ou Media RSS dans une page Web sans agrégateur de fil Web</li>
+<li>Récupération dynamique des cinq derniers éléments de n’importe quel fil public d'Atom, RSS ou Media RSS</li>
+<li>Fonctionnalité de promotion croisée et de partage d’information entre sites Web</li>
+<li>Conformes à WCAG 2.0 AA</li>
+<li>Recours aux WAI-ARIA pour accroître l’accessibilité</li>
+<li>Approche d'amélioration progressive</li>
+<li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+</li>
+</ul>
+</section>
+
+<section><h2>Exemples</h2>
+<div class="grid-12">
+<div class="wet-boew-webwidget span-4"><div class="widget-container">
+	<section>
+	<h3 class="backgrounnd-medium">Météo d'Ottawa</h3>
+	<ul class="widget-content">
+	<li><a href="http://www.weatheroffice.gc.ca/city/pages/on-118_metric_f.html" rel="external">Ottawa Ontario</a></li>
+	</ul>
+	</section>
+</div></div>
+<div class="wet-boew-webwidget limit-5 span-4"><div class="widget-container">
+	<section>
+	<h3 class="background-dark">Fils RSS</h3>
+	<ul class="widget-content">
+	<li><a href="http://www.tc.gc.ca/medias/rss/routier.xml" rel="external">Communiqués de presse routière (Tous)</a></li>
+	<li><a href="http://wwwapps.tc.gc.ca/Saf-Sec-Sur/7/VRDB-BDRV/Search/Rss-Search.aspx?lang=fra" rel="external">Rappels de la Sécurité Routière</a></li>
+	</ul>
+	</section>
+</div></div>
+<div class="wet-boew-webwidget limit-5 span-4"><div class="widget-container">
+	<section>
+	<h3 class="background-accent">Fils Twitter</h3>
+	<ul class="widget-content">
+	<li><a href="http://twitter.com/#!/transports_gc" rel="external">Transports Canada</a></li>
+	<li><a href="http://twitter.com/#!/CitImmCanada" rel="external">Citoyenneté et Immigration Canada</a></li>
+	</ul>
+	</section>
+</div></div>
+</div>
+<div class="clear"></div>
+</section>
+
+<section><h2>Paramètres</h2>
+<table>
+<caption>Paramètres et détails pour le gadget Web</caption>
+<thead>
+<tr>
+<th scope="col">Classe (paramètre)</th>
+<th scope="col">R&#244;le</th>
+<th scope="col">Détails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wet-boew-webwidget</code></td>
+<td><span class="color-accent">identificateur</span></td>
+<td>classe principale qui identifie le code utilisé pour le gadget des fils de syndication</td>
+</tr>
+<tr>
+<td><code>limit-<em>xxx</em></code></td>
+<td>affichage</td>
+<td>contrôle la quantité d'articles que le gadget des fils de syndication affichera</td>
+</tr>
+</tbody>
+</table>
+</section>
+</body>
+</html>

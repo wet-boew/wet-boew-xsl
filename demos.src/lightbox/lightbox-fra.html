@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Lightbox</title>
+</head>
+<body>
+<ul class="button-group">
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Lightbox" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions ou commentaires?</a></li>
+</ul>
+
+<section>
+	<div class="span-4 module-table-contents">
+		<h2>Table des matières</h2>
+		<ul>
+			<li><a href="#features">Caractéristiques</a></li>
+			<li><a href="#examples">Exemples</a>
+				<ul>
+					<li><a href="#examples1">Articles seules</a></li>
+					<li><a href="#examples2">Galeries d'articles</a></li>
+					<li><a href="#examples3">Galeries d'articles cachées</a></li>
+					<li><a href="#examples4">Titre de l'image alternative</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</section>
+<div class="clear"></div>
+
+<div class="span-8">
+	<section>
+		<h2 id="features">Caractéristiques</h2>
+			
+		<ul>
+			<li>Affiche les images dans l'outil <a href="http://www.jacklmoore.com/colorbox" lang="en" rel="external">ColorBox</a></li>
+			<li>Utilisation d'un souris, écran tactile ou clavier pour une navigation facile.</li>
+		</ul>
+	</section>
+</div>
+<div class="clear"></div>
+
+<div class="wet-boew-prettify all-pre">
+<section>
+	<h2 id="examples">Exemples</h2>
+	<section>
+		<h3 id="examples1">Images seules</h3>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Exemple</h4>
+				<div class="wet-boew-lightbox">
+					<ul>
+						<li>
+							<a class="lb-item" href="images/1_b.jpg" title="Image 1">
+								<img src="images/1_s.jpg" alt="Image 1" class="image-actual" />
+							</a>
+						</li>
+						<li>
+							<a class="lb-item" href="images/2_b.jpg" title="Image 2">
+								<img src="images/2_s.jpg" alt="Image 2" class="image-actual" />
+							</a>
+						</li>
+						<li class="box">
+							<a class="lb-item" title="Exemple de contenu AJAX" href="ajax/ajax-fra.html">Contenu AJAX</a>
+						</li>
+						<li class="box">
+							<a class="lb-item" title="Exemple de contenu incorporé" href="#inline_content1">Contenu incorporé</a>
+							<div class="lb-inline">
+								<div id="inline_content1">
+									<ol>
+									<li>liste ordonnée (<code>ol</code>) premier niveau - apparence par défaut</li>
+									<li>liste ordonnée (<code>ol</code>) premier niveau - apparence par défaut
+										<ol>
+										<li>liste ordonnée (<code>ol</code>) deuxième niveau - apparence par défaut</li>
+										<li>liste ordonnée (<code>ol</code>) deuxième niveau - apparence par défaut
+											<ol>
+											<li>liste ordonnée (<code>ol</code>) troisième niveau - apparence par défaut</li>
+											<li>liste ordonnée (<code>ol</code>) troisième niveau - apparence par défaut</li>
+											</ol>
+										</li>
+										</ol>
+									</li>
+									</ol>
+									<p><a href="#">Lien - apparence par défaut</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
+		</div>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Codage</h4>
+				<pre><code>&lt;div class="wet-boew-lightbox"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a class="lb-item" href="images/image_source.jpg" title="Texte alternatif pour l'image"&gt;
+        &lt;img src="images/image_source.jpg" alt="Texte alternatif pour l'image" class="image-actual" /&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    ...	
+    &lt;li&gt;
+      &lt;a class="lb-itemquot; title="Exemple de contenu AJAX" href="ajax/ajax-fra.html"&gt;Contenu AJAX&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="lb-item" title="Exemple de contenu incorporé" href="#inline_content1"&gt;Contenu incorporé&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+			</section>
+		</div>
+	</section>
+	<div class="clear"></div>
+
+	<section>
+		<h3 id="examples2">Galerie d'articles</h3>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Exemple</h4>
+				<div class="wet-boew-lightbox">
+					<ul class="lb-gallery">
+						<li>
+							<a class="lb-item-gal" href="images/1_b.jpg" title="Image 1">
+								<img src="images/1_s.jpg" alt="Image 1" class="image-actual" />
+							</a>
+						</li>
+						<li>
+							<a class="lb-item-gal" href="images/2_b.jpg" title="Image 2">
+								<img src="images/2_s.jpg" alt="Image 2" class="image-actual" />
+							</a>
+						</li>
+						<li class="box">
+							<a class="lb-item-gal" title="Exemple de contenu AJAX" href="ajax/ajax-fra.html">Contenu AJAX</a>
+						</li>
+						<li class="box">
+							<a class="lb-item-gal" title="Exemple de contenu incorporé" href="#inline_content2">Contenu incorporé</a>
+							<div class="lb-inline">
+								<div id="inline_content2">
+									<ol>
+									<li>liste ordonnée (<code>ol</code>) premier niveau - apparence par défaut</li>
+									<li>liste ordonnée (<code>ol</code>) premier niveau - apparence par défaut
+										<ol>
+										<li>liste ordonnée (<code>ol</code>) deuxième niveau - apparence par défaut</li>
+										<li>liste ordonnée (<code>ol</code>) deuxième niveau - apparence par défaut
+											<ol>
+											<li>liste ordonnée (<code>ol</code>) troisième niveau - apparence par défaut</li>
+											<li>liste ordonnée (<code>ol</code>) troisième niveau - apparence par défaut</li>
+											</ol>
+										</li>
+										</ol>
+									</li>
+									</ol>
+									<p><a href="#">Lien - apparence par défaut</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
+		</div>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Codage</h4>
+				<pre><code>&lt;div class="wet-boew-lightbox"&gt;
+  &lt;ul class="lb-gallery"&gt;
+	&lt;li&gt;
+	  &lt;a class="lb-item-gal" href="images/image_source.jpg" title="Texte alternatif pour l'image"&gt;
+		&lt;img src="images/image_source.jpg" alt="Texte alternatif pour l'image" class="image-actual" /&gt;
+	  &lt;/a&gt;
+	&lt;/li&gt;
+	...
+	&lt;li&gt;
+	  &lt;a class="lb-item-gal" title="Exemple de contenu AJAX" href="ajax/ajax-fra.html"&gt;Contenu AJAX&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	  &lt;a class="lb-item-gal" title="Exemple de contenu incorporé" href="#inline_content2"&gt;Contenu incorporé&lt;/a&gt;
+	&lt;/li&gt;
+  &lt;/ul&gt;	
+&lt;/div&gt;</code></pre>
+			</section>
+		</div>
+	</section>
+	<div class="clear"></div>
+
+	<section>
+		<h3 id="examples3">Galeries d'articles cachés</h3>
+		<div class="span-4">
+			<h4 class="background-dark margin-bottom-medium">Exemple</h4>
+			<section>
+				<div class="wet-boew-lightbox">
+					<ul class="lb-hidden-gallery">
+						<li>
+							<a class="lb-item-gal" href="images/1_b.jpg" title="Image 1">
+								<img src="images/1_s.jpg" alt="Image 1" class="image-actual" />
+							</a>
+						</li>
+						<li>
+							<a class="lb-item-gal" href="images/2_b.jpg" title="Image 2">
+								<img src="images/2_s.jpg" alt="Image 2" class="image-actual" />
+							</a>
+						</li>
+						<li class="box">
+							<a class="lb-item-gal" title="Exemple de contenu AJAX" href="ajax/ajax-fra.html">Contenu AJAX</a>
+						</li>
+						<li class="box">
+							<a class="lb-item-gal" title="Exemple de contenu incorporé" href="#inline_content3">Contenu incorporé</a>
+							<div class="lb-inline">
+								<div id="inline_content3">
+									<ol>
+									<li>liste ordonnée (<code>ol</code>) premier niveau - apparence par défaut</li>
+									<li>liste ordonnée (<code>ol</code>) premier niveau - apparence par défaut
+										<ol>
+										<li>liste ordonnée (<code>ol</code>) deuxième niveau - apparence par défaut</li>
+										<li>liste ordonnée (<code>ol</code>) deuxième niveau - apparence par défaut
+											<ol>
+											<li>liste ordonnée (<code>ol</code>) troisième niveau - apparence par défaut</li>
+											<li>liste ordonnée (<code>ol</code>) troisième niveau - apparence par défaut</li>
+											</ol>
+										</li>
+										</ol>
+									</li>
+									</ol>
+									<p><a href="#">Lien - apparence par défaut</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
+		</div>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Codage</h4>
+				<pre><code>&lt;div class="wet-boew-lightbox"&gt;
+  &lt;ul class="lb-hidden-gallery"&gt;
+	&lt;li&gt;
+	  &lt;a class="lb-item-gal" href="images/image_source.jpg" title="Texte alternatif pour l'image"&gt;
+		&lt;img src="images/image_source.jpg" alt="Texte alternatif pour l'image" class="image-actual" /&gt;
+	  &lt;/a&gt;
+	&lt;/li&gt;
+	...
+	&lt;li&gt;
+	  &lt;a class="lb-item-gal" title="Exemple de contenu AJAX" href="ajax/ajax-fra.html"&gt;Contenu AJAX&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	  &lt;a class="lb-item-gal" title="Exemple de contenu incorporé" href="#inline_content3"&gt;Contenu incorporé&lt;/a&gt;
+	&lt;/li&gt;
+  &lt;/ul&gt;	
+&lt;/div&gt;</code></pre>
+			</section>
+		</div>
+	</section>
+	<div class="clear"></div>
+	
+	<section>
+		<h3 id="examples4">Titre de l'image alternative (v3.1 Bêta)</h3>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Exemple</h4>
+				<div class="wet-boew-lightbox">
+					<ul class="lb-gallery">
+						<li>
+							<a class="lb-item-gal" href="images/1_b.jpg" title="Image 1" data-title="image_1_b">
+								<img src="images/1_s.jpg" alt="Image 1" class="image-actual" />
+							</a>
+						</li>
+						<li>
+							<a class="lb-item-gal" href="images/2_b.jpg" title="Image 2" data-title="image_2_b">
+								<img src="images/2_s.jpg" alt="Image 2" class="image-actual" />
+							</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				
+				<p id="image_1_b"><strong>Image 1:</strong> Lorem ipsum consectetur <em>adipiscing elit</em>.</p>
+				<p id="image_2_b"><strong>Image 2:</strong> Nulla mollis dolor leo. Quisque laoreet tincidunt mollis. Duis posuere scelerisque lectus quis lobortis. </p>
+				
+			</section>
+		</div>
+		<div class="span-4">
+			<section>
+				<h4 class="background-dark margin-bottom-medium">Codage</h4>
+				<pre><code>&lt;div class="wet-boew-lightbox"&gt;
+  &lt;ul class="lb-gallery"&gt;
+    &lt;li&gt;
+	  &lt;a class="lb-item-gal" href="images/image_source.jpg" title="Texte alternatif pour l'image"&gt;
+		&lt;img src="images/image_source.jpg" alt="Texte alternatif pour l'image" class="image-actual" data-title="element_id" /&gt;
+	  &lt;/a&gt;
+    &lt;/li&gt;
+    ...
+  &lt;/ul&gt;	
+&lt;/div&gt;
+&lt;p id="element_id"&gt;Titre de l'image&lt;/p&gt;</code></pre>
+			</section>
+		</div>
+	</section>
+	<div class="clear"></div>	
+	
+</section>
+</div>
+</body>
+</html>

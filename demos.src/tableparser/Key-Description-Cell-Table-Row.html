@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>&#8220;Keys&#8221; and &#8220;Description&#8221; cell in a table row - Table Usability</title>
+</head>
+<body>
+
+<h2>Key Cell</h2>
+
+<p>Defined by a data cell element (td), a <em>key cell</em> can by compared to a primary key in a relational database. A <em>key cell</em> are always associated to a row cell header (th). The key cell concept don't apply to column cell header. Only one key cell can be associated to a header but two key cell can co-exist in the same table row. A key cell is always at the left of his cell header.</p>
+
+
+<table class="wet-boew-zebra">
+	<caption>Basic &quot;Key Cell&quot; Example</caption>
+
+
+    <thead>
+    	<tr>
+        	<th>Product ID</th>
+            <th>Product Name</th>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+            <th>Col 4</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	<tr>
+        	<td>66-A</td>
+            <th>Famous</th>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+        </tr>
+    	<tr>
+        	<td>94-C</td>
+            <th>Interresting</th>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+        </tr>
+    	<tr>
+        	<td>27-F</td>
+            <th>Misterious</th>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+        </tr>
+    	<tr>
+        	<td>68-H</td>
+            <th>Questionable</th>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+        </tr>
+    	<tr>
+        	<td>30-S</td>
+            <th>Hottest</th>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+        </tr>
+    	<tr>
+        	<td>04-W</td>
+            <th>Passable</th>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+            <td>++++</td>
+        </tr>
+
+	</tbody>
+</table>
+
+
+<details>
+	<summary>Source code</summary>
+
+<pre><code>
+&lt;table&gt;
+	&lt;caption&gt;Basic &amp;quot;Key Cell&amp;quot; Example&lt;/caption&gt;
+
+    &lt;thead&gt;
+    	&lt;tr&gt;
+        	&lt;th&gt;Product ID&lt;/th&gt;
+            &lt;th&gt;Product Name&lt;/th&gt;
+            &lt;th&gt;Col 1&lt;/th&gt;
+            &lt;th&gt;Col 2&lt;/th&gt;
+            &lt;th&gt;Col 3&lt;/th&gt;
+            &lt;th&gt;Col 4&lt;/th&gt;
+    	&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;66-A&lt;/td&gt;
+            &lt;th&gt;Famous&lt;/th&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;94-C&lt;/td&gt;
+            &lt;th&gt;Interresting&lt;/th&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;27-F&lt;/td&gt;
+            &lt;th&gt;Misterious&lt;/th&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;68-H&lt;/td&gt;
+            &lt;th&gt;Questionable&lt;/th&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;30-S&lt;/td&gt;
+            &lt;th&gt;Hottest&lt;/th&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;04-W&lt;/td&gt;
+            &lt;th&gt;Passable&lt;/th&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+            &lt;td&gt;++++&lt;/td&gt;
+        &lt;/tr&gt;
+
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<p>As you can see in the previous table, the first table column are used to associate a product ID information to the product name. The intention about of the key cell concept is to quickly identify a cell header. The cell header are the meaniful name of the key cell.</p>
+
+<table class="wet-boew-zebra">
+	<caption>Another &quot;Key Cell&quot; Example - Android (Operating system) Release date</caption>
+
+    <thead>
+    	<tr>
+        	<th>ID</th>
+            <th>Version</th>
+            <th>Release date</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	<tr>
+        	<td>4.0.x</td>
+            <th>Ice Cream Sandwich</th>
+            <td>October 19, 2011</td>
+        </tr>
+    	<tr>
+        	<td>3.x.x</td>
+            <th>Honeycomb</th>
+            <td>February 22, 2011</td>
+        </tr>
+    	<tr>
+        	<td>2.3.x</td>
+            <th>Gingerbread</th>
+            <td>December 6, 2010</td>
+        </tr>
+    	<tr>
+        	<td>2.2</td>
+            <th>Froyo</th>
+            <td>May 20, 2010</td>
+        </tr>
+    	<tr>
+        	<td>2.0, 2.1</td>
+            <th>Eclair</th>
+            <td>October 26, 2009</td>
+        </tr>
+    	<tr>
+        	<td>1.6</td>
+            <th>Donut</th>
+            <td>September 15, 2009</td>
+        </tr>
+    	<tr>
+        	<td>1.5</td>
+            <th>Cupcake</th>
+            <td>April 30, 2009</td>
+        </tr>
+
+	</tbody>
+</table>
+
+<details>
+	<summary>Source Code</summary>
+
+<pre><code>
+
+&lt;table&gt;
+	&lt;caption&gt;Another &amp;quot;Key Cell&amp;quot; Example - Android (Operating system) Release date&lt;/caption&gt;
+
+    &lt;thead&gt;
+    	&lt;tr&gt;
+        	&lt;th&gt;ID&lt;/th&gt;
+            &lt;th&gt;Version&lt;/th&gt;
+            &lt;th&gt;Release date&lt;/th&gt;
+    	&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;4.0.x&lt;/td&gt;
+            &lt;th&gt;Ice Cream Sandwich&lt;/th&gt;
+            &lt;td&gt;October 19, 2011&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;3.x.x&lt;/td&gt;
+            &lt;th&gt;Honeycomb&lt;/th&gt;
+            &lt;td&gt;February 22, 2011&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;2.3.x&lt;/td&gt;
+            &lt;th&gt;Gingerbread&lt;/th&gt;
+            &lt;td&gt;December 6, 2010&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;2.2&lt;/td&gt;
+            &lt;th&gt;Froyo&lt;/th&gt;
+            &lt;td&gt;May 20, 2010&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;2.0, 2.1&lt;/td&gt;
+            &lt;th&gt;Eclair&lt;/th&gt;
+            &lt;td&gt;October 26, 2009&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;1.6&lt;/td&gt;
+            &lt;th&gt;Donut&lt;/th&gt;
+            &lt;td&gt;September 15, 2009&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr&gt;
+        	&lt;td&gt;1.5&lt;/td&gt;
+            &lt;th&gt;Cupcake&lt;/th&gt;
+            &lt;td&gt;April 30, 2009&lt;/td&gt;
+        &lt;/tr&gt;
+
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+</code></pre>
+
+</details>
+
+
+<p>If you check the similar table in <a href="http://en.wikipedia.org/wiki/Android_%28operating_system%29">wikipedia on the Adroid webpage</a>, you will see the same relationship but displayed along with the cell header. They use emphasis to distinguish the key cell versus the row header.</p>
+
+<img src="img-keycell.jpg" alt="For the example see the Adroid webpage on Wikipedia" />
+
+<h3>Complex Key Cell Structure</h3>
+<p>Imagine you have serveral products and you want them to be classified by sector. You have an ID for each sector and an ID for each product. With this concept you would have a table similar like this:</p>
+
+<table class="wet-boew-zebra">
+	<caption>Product Listing</caption>
+
+    <thead>
+		<tr>
+			<th colspan="2">Sector</th>
+			<th colspan="2">Product Name</th>
+			<th>Customer Price</th>
+			<th>Distributor Price</th>
+		</tr>
+    </thead>
+
+    <tbody>
+    	<tr>
+        	<td rowspan="3">ABC</td>
+            <th rowspan="3">Exterior</th>
+
+            <td>2C57-ABC</td>
+            <th>BBQ</th>
+            <td>135 $</td>
+            <td>83 $</td>
+        </tr>
+
+        <tr>
+            <td>3C57-ABC</td>
+            <th>Mowers</th>
+            <td>256 $</td>
+            <td>199 $</td>
+        </tr>
+
+        <tr>
+            <td>A584-ABC</td>
+            <th>Tractors</th>
+            <td>2145 $</td>
+            <td>1687 $</td>
+        </tr>
+
+
+    	<tr>
+        	<td rowspan="3">XYZ</td>
+            <th rowspan="3">Interior</th>
+
+            <td>2C57-XYZ</td>
+            <th>Table</th>
+            <td>257 $</td>
+            <td>205 $</td>
+        </tr>
+
+        <tr>
+            <td>3C57-XYZ</td>
+            <th>Chair</th>
+            <td>49 $</td>
+            <td>20 $</td>
+        </tr>
+
+        <tr>
+            <td>A584-XYZ</td>
+            <th>Recycling Center</th>
+            <td>91 $</td>
+            <td>56 $</td>
+        </tr>
+	</tbody>
+</table>
+
+<details>
+	<summary>Source Code</summary>
+
+<pre><code>
+
+&lt;table&gt;
+	&lt;caption&gt;Product Listing&lt;/caption&gt;
+
+    &lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th colspan=&quot;2&quot;&gt;Sector&lt;/th&gt;
+			&lt;th colspan=&quot;2&quot;&gt;Product Name&lt;/th&gt;
+			&lt;th&gt;Customer Price&lt;/th&gt;
+			&lt;th&gt;Distributor Price&lt;/th&gt;
+		&lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+    	&lt;tr&gt;
+        	&lt;td rowspan=&quot;3&quot;&gt;ABC&lt;/td&gt;
+            &lt;th rowspan=&quot;3&quot;&gt;Exterior&lt;/th&gt;
+
+            &lt;td&gt;2C57-ABC&lt;/td&gt;
+            &lt;th&gt;BBQ&lt;/th&gt;
+            &lt;td&gt;135 $&lt;/td&gt;
+            &lt;td&gt;83 $&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3C57-ABC&lt;/td&gt;
+            &lt;th&gt;Mowers&lt;/th&gt;
+            &lt;td&gt;256 $&lt;/td&gt;
+            &lt;td&gt;199 $&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;A584-ABC&lt;/td&gt;
+            &lt;th&gt;Tractors&lt;/th&gt;
+            &lt;td&gt;2145 $&lt;/td&gt;
+            &lt;td&gt;1687 $&lt;/td&gt;
+        &lt;/tr&gt;
+
+
+    	&lt;tr&gt;
+        	&lt;td rowspan=&quot;3&quot;&gt;XYZ&lt;/td&gt;
+            &lt;th rowspan=&quot;3&quot;&gt;Interior&lt;/th&gt;
+
+            &lt;td&gt;2C57-XYZ&lt;/td&gt;
+            &lt;th&gt;Table&lt;/th&gt;
+            &lt;td&gt;257 $&lt;/td&gt;
+            &lt;td&gt;205 $&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3C57-XYZ&lt;/td&gt;
+            &lt;th&gt;Chair&lt;/th&gt;
+            &lt;td&gt;49 $&lt;/td&gt;
+            &lt;td&gt;20 $&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;A584-XYZ&lt;/td&gt;
+            &lt;th&gt;Recycling Center&lt;/th&gt;
+            &lt;td&gt;91 $&lt;/td&gt;
+            &lt;td&gt;56 $&lt;/td&gt;
+        &lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+</code></pre>
+
+</details>
+
+
+<h2>Description Cell</h2>
+
+
+<p>There exist a few technique on how to add descriptive cell to a cell header. One of those techniques is to add inside the cell header a footnote. An other technique is to use the &quot;details/summary&quot; HTLM5 element in the cell header. Those two technique can be applied to any data cell in a table. But when we look at the cell header (th), now a thrid technique can be used. That technique is to add a data cell directly in the next column of (right of) the cell heading. A cell header can only have one descriptive data cell associated to.</p>
+
+
+<table class="wet-boew-zebra">
+	<caption>&quot;Description Cell&quot; example</caption>
+
+    <thead>
+    	<tr>
+            <th>Group</th>
+            <th>Description</th>
+            <th>Item</th>
+            <th>Col 1</th>
+            <th>Col 2</th>
+		    <th>Col 3</th>
+    	</tr>
+    </thead>
+
+    <tbody>
+    	<tr>
+        	<th rowspan="6">Heading&#160;1</th>
+            <td rowspan="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lorem magna, mollis ac tempor id, bibendum ut turpis. Pellentesque odio ligula, egestas eu viverra ut, sodales vel sem. Nunc eu. </td>
+            <th>Sub&#160;Heading&#160;1a</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;1b</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;1c</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;1d</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;1e</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;1f</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+
+
+   	<tr>
+        	<th rowspan="6">Heading&#160;2</th>
+            <td rowspan="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lorem magna, mollis ac tempor id, bibendum ut turpis. Pellentesque odio ligula, egestas eu viverra ut, sodales vel sem. Nunc eu. </td>
+            <th>Sub&#160;Heading&#160;2a</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;2b</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;2c</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;2d</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;2e</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Sub&#160;Heading&#160;2f</th>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<details>
+	<summary>Source Code</summary>
+<pre><code>
+
+
+&lt;table&gt;
+	&lt;caption&gt;&amp;quot;Description Cell&amp;quot; example&lt;/caption&gt;
+
+    &lt;thead&gt;
+    	&lt;tr&gt;
+            &lt;th&gt;Group&lt;/th&gt;
+            &lt;th&gt;Description&lt;/th&gt;
+            &lt;th&gt;Item&lt;/th&gt;
+            &lt;th&gt;Col 1&lt;/th&gt;
+            &lt;th&gt;Col 2&lt;/th&gt;
+		    &lt;th&gt;Col 3&lt;/th&gt;
+    	&lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+    	&lt;tr&gt;
+        	&lt;th rowspan=&quot;6&quot;&gt;Heading&amp;nbsp;1&lt;/th&gt;
+            &lt;td rowspan=&quot;6&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lorem magna, mollis ac tempor id, bibendum ut turpis. Pellentesque odio ligula, egestas eu viverra ut, sodales vel sem. Nunc eu. &lt;/td&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;1a&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;1b&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;1c&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;1d&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;1e&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;1f&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+
+
+   	&lt;tr&gt;
+        	&lt;th rowspan=&quot;6&quot;&gt;Heading&amp;nbsp;2&lt;/th&gt;
+            &lt;td rowspan=&quot;6&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lorem magna, mollis ac tempor id, bibendum ut turpis. Pellentesque odio ligula, egestas eu viverra ut, sodales vel sem. Nunc eu. &lt;/td&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;2a&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;2b&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;2c&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;2d&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;2e&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Sub&amp;nbsp;Heading&amp;nbsp;2f&lt;/th&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+</code></pre>
+</details>
+
+
+<p>The previous description cell are explicited defined when it is located between two cell header. If you do not have a hiarchical header cell structure it still possible to define the descriptive cell. That method use the column group (<em>colgroup</em> element).</p>
+
+<h3>Column Group Header (<em>colgroup</em> element)</h3>
+
+<p>Rarely used, the column grouping can become very useful if we need to have a distinction between the data column group and the header column group. As the row group header <em>thead</em> element is the first row group in a table, the same sequence is applied to the column group. So if there is row header, the first column group would represent the column header group.</p>
+
+
+
+<p>The following table is a quick example of the use of the column group to define the existance of a descriptive cell to the row header.</p>
+
+<pre><code>&lt;colgroup span=&quot;2&quot; /&gt;&lt;colgroup span=&quot;3&quot; /&gt;</code></pre>
+
+
+<table class="wet-boew-zebra">
+	<caption>&quot;Description Cell&quot; example - with one header per row</caption>
+
+    <colgroup span="2"></colgroup>
+	<colgroup span="3"></colgroup>
+
+    <thead>
+    	<tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Col 1</th>
+            <th>Col 2</th>
+		    <th>Col 3</th>
+    	</tr>
+    </thead>
+
+    <tbody>
+    	<tr>
+            <th>Heading&#160;1</th>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Heading&#160;2</th>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Heading&#160;3</th>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Heading&#160;4</th>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Heading&#160;5</th>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <th>Heading&#160;6</th>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<details>
+	<summary>Source Code</summary>
+<pre><code>
+
+&lt;table&gt;
+	&lt;caption&gt;&amp;quot;Description Cell&amp;quot; example - with one header per row&lt;/caption&gt;
+
+    &lt;colgroup span=&quot;2&quot; /&gt;&lt;colgroup span=&quot;3&quot; /&gt;
+
+    &lt;thead&gt;
+    	&lt;tr&gt;
+            &lt;th&gt;Item&lt;/th&gt;
+            &lt;th&gt;Description&lt;/th&gt;
+            &lt;th&gt;Col 1&lt;/th&gt;
+            &lt;th&gt;Col 2&lt;/th&gt;
+		    &lt;th&gt;Col 3&lt;/th&gt;
+    	&lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+    	&lt;tr&gt;
+            &lt;th&gt;Heading&amp;nbsp;1&lt;/th&gt;
+            &lt;td&gt;Lorem ipsum dolor sit amet.&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&amp;nbsp;2&lt;/th&gt;
+            &lt;td&gt;Lorem ipsum dolor sit amet.&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&amp;nbsp;3&lt;/th&gt;
+            &lt;td&gt;Lorem ipsum dolor sit amet.&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&amp;nbsp;4&lt;/th&gt;
+            &lt;td&gt;Lorem ipsum dolor sit amet.&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&amp;nbsp;5&lt;/th&gt;
+            &lt;td&gt;Lorem ipsum dolor sit amet.&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&amp;nbsp;6&lt;/th&gt;
+            &lt;td&gt;Lorem ipsum dolor sit amet.&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+</code></pre>
+</details>
+
+
+
+<h2>Column Grouping</h2>
+
+<p>In this article you have see how to identify a key cell and how to define a description for a row cell header. Now in the next article you will see the how you can use multiple column group to represent data group and summary group..</p>
+
+<p><a href="columngroup.html">Column Grouping</a></p>
+
+</body>
+</html>

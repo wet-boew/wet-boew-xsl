@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Row Group Level - Table Usability</title>
+
+<!-- CustomCSSStart -->
+<!-- The following script are for the try it button -->
+<script>
+	//<![CDATA[
+
+	$(document).ready(function(){
+		$('input.tryit').click(function(){
+			eval($(this).prev().val());
+		});
+
+	});
+
+	//]]>
+</script>
+<!-- END of Try it button -->
+<!-- CustomCSSEnd -->
+
+</head>
+<body>
+
+<table>
+
+ <caption>Example Table: Number of PPH requests</caption>
+
+
+	<colgroup>
+		<col/>
+	</colgroup>
+
+
+	<colgroup span="2" />
+	<colgroup />
+	<colgroup />
+
+	<thead>
+		<tr>
+			<th>Country</th>
+			<th>Number of Requests A</th>
+			<th>Number of Requests B</th>
+			<th>subTotal</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th colspan="5">Header Level 1</th>
+	</tr>
+	<tr>
+		<th>United States    (USPTO)</th>
+		<td>533</td>
+		<td>533</td>
+		<td>1253</td>
+		<td>1253</td>
+	</tr>
+	<tr>
+		<th>Japan (JPO)</th>
+		<td>36</td>
+		<td>54</td>
+		<td>533</td>
+		<td>533</td>
+	</tr>
+	<tr>
+		<th>Korea    (KIPO)</th>
+		<td>3</td>
+		<td>533</td>
+		<td>533</td>
+		<td>533</td>
+	</tr>
+	<tr>
+		<th>Finland    (NBPR)</th>
+		<td>1</td>
+		<td>533</td>
+		<td>533</td>
+		<td>533</td>
+	</tr>
+	<tr>
+		<th>Germany    (DPMA)</th>
+		<td>1</td>
+		<td>533</td>
+		<td>533</td>
+		<td>533</td>
+	</tr>
+	<tr>
+		<th>Denmark    (DKPTO)</th>
+		<td>0</td>
+		<td>533</td>
+		<td>533</td>
+		<td>533</td>
+	</tr>
+	<tr>
+		<th>Spain    (SPTO)</th>
+		<td>533</td>
+		<td>533</td>
+		<td>0</td>
+		<td>533</td>
+	</tr>
+	<tr>
+		<th>PCT-PPH    (CA ISA/IPEA)</th>
+		<td>1</td>
+		<td>533</td>
+		<td>533</td>
+		<td>533</td>
+	</tr>
+	</tbody>
+	<tbody>
+	<tr>
+		<th>Total</th>
+		<td>1</td>
+		<td>533</td>
+		<td></td>
+		<td>533</td>
+	</tr>
+	</tbody>
+
+</table>
+
+<p><label for="tryit0">Try it:</label> <input id="tryit0" type="text" style="width:450px;" value="$('table:eq(0):data').css('background-color', 'yellow');" /> <input class="tryit" style="margin-top:0px;" type="button" value="Go" /></p>
+<p><label for="tryit0">Try it:</label> <input id="tryit0" type="text" style="width:450px;" value="$('table:eq(0):summary:collevel(1)').css('background-color', 'pink');" /> <input class="tryit" style="margin-top:0px;" type="button" value="Go" /></p>
+<p><label for="tryit0">Try it:</label> <input id="tryit0" type="text" style="width:450px;" value="$('table:eq(0):summary:collevel(0)').css('background-color', 'cyan');" /> <input class="tryit" style="margin-top:0px;" type="button" value="Go" /></p>
+
+
+
+
+
+
+
+
+
+<h2>Working Sample</h2>
+
+
+<p>no tbody</p>
+<table>
+	<caption>Row group header (Level 0)</caption>
+
+	<colgroup><col /></colgroup>
+	<colgroup><col /><col /><col /><col /></colgroup>
+	<colgroup><col /></colgroup>
+
+<!--
+	<tr>
+		<td>Colgroup</td>
+		<td colspan="5">Colgroup</td>
+	</tr>
+-->
+	<tr>
+		<th>Layout Cell</th>
+		<th>Column header</th>
+		<th>Column header</th>
+		<th>Column header</th>
+		<th>Column header</th>
+		<th>Column header</th>
+	</tr>
+
+	<tr>
+		<th colspan="6">Row group header (Level 1)</th>
+    </tr>
+
+    <tr>
+		<th colspan="6">Row group header (Level 2)</th>
+    </tr>
+
+    <tr>
+		<th>Row header (Level 3)</th>
+		<td>66</td>
+		<td>64</td>
+		<td>20</td>
+		<td>87%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>34</td>
+		<td>31</td>
+		<td>20</td>
+		<td>84%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>36</td>
+		<td>36</td>
+		<td>42</td>
+		<td>92%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>19</td>
+		<td>23</td>
+		<td>66</td>
+		<td>96%</td>
+		<td>0</td>
+	</tr>
+
+
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>297</td>
+		<td>297</td>
+		<td>66</td>
+		<td>84%</td>
+		<td>1</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>396</td>
+		<td>381</td>
+		<td>67</td>
+		<td>88%</td>
+		<td>3</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>422</td>
+		<td>437</td>
+		<td>111</td>
+		<td>93%</td>
+		<td>1</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>626</td>
+		<td>654</td>
+		<td>99</td>
+		<td>99%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th colspan="6">Row Group header (Level 1)</th>
+    </tr>
+
+
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+    <tr>
+		<th>Row header (Level 3)</th>
+		<td>12</td>
+		<td>11</td>
+		<td>11</td>
+		<td>100%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>0</td>
+		<td>0</td>
+		<td>n/a</td>
+		<td>n/a</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>3</td>
+		<td>4</td>
+		<td>17</td>
+		<td>100%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>8</td>
+		<td>8</td>
+		<td>33</td>
+		<td>100%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>89</td>
+		<td>99</td>
+		<td>50</td>
+		<td>96%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>1</td>
+		<td>2</td>
+		<td>46</td>
+		<td>50%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>107</td>
+		<td>104</td>
+		<td>64</td>
+		<td>97%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>527</td>
+		<td>599</td>
+		<td>66</td>
+		<td>98%</td>
+		<td>0</td>
+	</tr>
+
+</table>
+
+
+<p><label for="tryit0">Try it:</label> <input id="tryit0" type="text" style="width:450px;" value="$('table:eq(1):data').css('background-color', 'yellow');" /> <input class="tryit" style="margin-top:0px;" type="button" value="Go" /></p>
+
+
+<p>with tbody</p>
+<table>
+	<caption>Row group header (Level 0)</caption>
+
+	<colgroup><col /></colgroup>
+	<colgroup><col /><col /><col /><col /></colgroup>
+	<colgroup><col /></colgroup>
+
+<!--
+	<tr>
+		<td>Colgroup</td>
+		<td colspan="5">Colgroup</td>
+	</tr>
+-->
+	<thead>
+		<tr>
+			<th>Layout Cell</th>
+			<th>Column header</th>
+			<th>Column header</th>
+			<th>Column header</th>
+			<th>Column header</th>
+			<th>Column header</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th colspan="6">Row group header (Level 1)</th>
+    </tr>
+
+    <tr>
+		<th colspan="6">Row group header (Level 2)</th>
+    </tr>
+
+    <tr>
+		<th>Row header (Level 3)</th>
+		<td>66</td>
+		<td>64</td>
+		<td>20</td>
+		<td>87%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>34</td>
+		<td>31</td>
+		<td>20</td>
+		<td>84%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>36</td>
+		<td>36</td>
+		<td>42</td>
+		<td>92%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>19</td>
+		<td>23</td>
+		<td>66</td>
+		<td>96%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+
+	<tbody>
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>297</td>
+		<td>297</td>
+		<td>66</td>
+		<td>84%</td>
+		<td>1</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>396</td>
+		<td>381</td>
+		<td>67</td>
+		<td>88%</td>
+		<td>3</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>422</td>
+		<td>437</td>
+		<td>111</td>
+		<td>93%</td>
+		<td>1</td>
+	</tr>
+  </tbody>
+
+	<tbody>
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>626</td>
+		<td>654</td>
+		<td>99</td>
+		<td>99%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+
+	<tbody>
+	<tr>
+		<th colspan="6">Row Group header (Level 1)</th>
+    </tr>
+
+
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+    <tr>
+		<th>Row header (Level 3)</th>
+		<td>12</td>
+		<td>11</td>
+		<td>11</td>
+		<td>100%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>0</td>
+		<td>0</td>
+		<td>n/a</td>
+		<td>n/a</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>3</td>
+		<td>4</td>
+		<td>17</td>
+		<td>100%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+
+	<tbody>
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>8</td>
+		<td>8</td>
+		<td>33</td>
+		<td>100%</td>
+		<td>0</td>
+	</tr>
+  </tbody>
+
+	<tbody>
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>89</td>
+		<td>99</td>
+		<td>50</td>
+		<td>96%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>1</td>
+		<td>2</td>
+		<td>46</td>
+		<td>50%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>107</td>
+		<td>104</td>
+		<td>64</td>
+		<td>97%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+
+	<tbody>
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>527</td>
+		<td>599</td>
+		<td>66</td>
+		<td>98%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+	<tbody>
+	<tr>
+		<th colspan="6">Row Group header (Level 2)</th>
+    </tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>89</td>
+		<td>99</td>
+		<td>50</td>
+		<td>96%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>1</td>
+		<td>2</td>
+		<td>46</td>
+		<td>50%</td>
+		<td>0</td>
+	</tr>
+
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>107</td>
+		<td>104</td>
+		<td>64</td>
+		<td>97%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+
+	<tbody>
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>527</td>
+		<td>599</td>
+		<td>66</td>
+		<td>98%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+		<tbody>
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>527</td>
+		<td>599</td>
+		<td>66</td>
+		<td>98%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+	<tbody>
+	<tr>
+		<th>Row header (Level 3)</th>
+		<td>527</td>
+		<td>599</td>
+		<td>66</td>
+		<td>98%</td>
+		<td>0</td>
+	</tr>
+	</tbody>
+
+
+</table>
+
+
+<p><label for="tryit0">Try it:</label> <input id="tryit0" type="text" style="width:450px;" value="$('table:eq(2):data').css('background-color', 'yellow');" /> <input class="tryit" style="margin-top:0px;" type="button" value="Go" /></p>
+
+</body>
+</html>

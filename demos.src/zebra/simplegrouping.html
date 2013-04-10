@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simple Grouping Table - Zebra striping</title>
+</head>
+<body>
+<ul class="button-group">
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Zebra-striping" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions or comments?</a></li>
+</ul>
+
+<h2>Example without any headers</h2>
+
+<p>The following Sudoku table example was taken from the <a href="http://www.w3.org/TR/html5/tabular-data.html#the-table-element" rel="external">HTLM5 Specification - 4.9.1 The table element - revision 1.5697</a>.</p>
+
+<p>The class <code>columnhighlight</code> is used in combinaison of the class <code>wet-boew-zebra</code></p>
+
+<table class="wet-boew-zebra columnhighlight">
+  <colgroup><col /><col /><col /></colgroup>
+  <colgroup><col /><col /><col /></colgroup>
+  <colgroup><col /><col /><col /></colgroup>
+  <tbody>
+   <tr> <td> 1 </td><td>   </td><td> 3 </td><td> 6 </td><td>   </td><td> 4 </td><td> 7 </td><td>   </td><td> 9 </td> </tr>
+   <tr> <td>   </td><td> 2 </td><td>   </td><td>   </td><td> 9 </td><td>   </td><td>   </td><td> 1 </td><td>   </td> </tr>
+   <tr> <td> 7 </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td><td> 6 </td> </tr>
+  </tbody>
+  <tbody>
+   <tr> <td> 2 </td><td>   </td><td> 4 </td><td>   </td><td> 3 </td><td>   </td><td> 9 </td><td>   </td><td> 8 </td> </tr>
+   <tr> <td> &#160; </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td><td>   </td> </tr>
+   <tr> <td> 5 </td><td>   </td><td>   </td><td> 9 </td><td>   </td><td> 7 </td><td>   </td><td>   </td><td> 1 </td> </tr>
+  </tbody>
+  <tbody>
+   <tr> <td> 6 </td><td>   </td><td>   </td><td>   </td><td> 5 </td><td>   </td><td>   </td><td>   </td><td> 2 </td> </tr>
+   <tr> <td>   </td><td>   </td><td>   </td><td>   </td><td> 7 </td><td>   </td><td>   </td><td>   </td><td>   </td> </tr>
+   <tr> <td> 9 </td><td>   </td><td>   </td><td> 8 </td><td>   </td><td> 2 </td><td>   </td><td>   </td><td> 5 </td> </tr>
+  </tbody>
+ </table>
+
+
+<h2>Column Headers, Multiple Row Group</h2>
+
+
+<table class="wet-boew-zebra">
+    <thead>
+    	<tr>
+        	<th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+	</tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table class="wet-boew-zebra vectorstripe">
+	<caption>With the class <code>vectorstripe</code></caption>
+    <thead>
+    	<tr>
+        	<th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+	</tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table class="wet-boew-zebra columnhighlight">
+	<caption>With the class <code>columnhighlight</code></caption>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+    <thead>
+    	<tr>
+        	<th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+	</tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<table class="wet-boew-zebra columnhighlight vectorstripe">
+	<caption>With the class <code>columnhighlight</code> and the class <code>vectorstripe</code></caption>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+    <thead>
+    	<tr>
+        	<th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+	</tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+	<tbody>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>Row Headers, Multiple Column Group</h2>
+
+<table class="wet-boew-zebra">
+	<colgroup><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</table>
+
+
+<table class="wet-boew-zebra columnhighlight">
+	<caption>With the class <code>columnhighlight</code></caption>
+	<colgroup><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</table>
+
+
+
+<table class="wet-boew-zebra columnhighlight vectorstripe">
+	<caption>With the class <code>columnhighlight</code> and <code>vectorstripe</code></caption>
+	<colgroup><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<colgroup><col /><col /></colgroup>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th>Header</th>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</table>
+</body>
+</html>

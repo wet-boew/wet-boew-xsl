@@ -1,0 +1,9 @@
+<div class="span-8"><section><h2>Título del mensaje (h2)</h2>
+<p>Mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje mensaje.</p>
+<ul>
+<li><a href="../../../index-eng.html">Página de Inicio</a></li>
+<li><a href="#">Contáctenos</a></li>
+</ul>
+</section></div>
+<div  id="gcwu-bar" class="span-8"></div>
+<div class="clear"></div>

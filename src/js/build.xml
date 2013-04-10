@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wet-boew.js" default="default" basedir=".">
+	<description>WET-BOEW Base Theme</description>
+
+	<property file="build.properties"/>
+	<import file="${build.dir}/../build-tasks.xml"/>
+
+	<target name="default" depends="clean,build" description="Performs a clean and build when calling ant without any target"></target>
+
+	<target name="-transform" extensionOf="build">
+		<xslt_saxon basedir="${demo.src.dir}" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
+			<patternset>
+				<include name="**/*.html" />
+				<exclude name="**/menu*.html"/>
+				<exclude name="**/ajax*.html"/>
+			</patternset>
+			<mapper type="glob" from="*.html" to="*.html"/>
+		</xslt_saxon>
+	</target>
+</project>
