@@ -19,5 +19,36 @@
 <p>L'objet HTML5 <code lang="en">sessionStorage</code> est utilisé pour maintenir les données pour la session actuelle. Ce composant ajoute le soutien pour ces éléments dans les navigateurs qui n'ont pas déjà la prise en charge native.</p>
 <p>Cet exemple pratique démontre comment fonctionne l'objet HTML5 <span lang="en">sessionStorage</span>. Il commence une session et maintient les données pendant la session, même après avoir navigué à une autre page.
 Essayer ceci en naviguant à une nouvelle page (dans la même onglet/fenêtre) et après frappé le bouton arrière ou navigué manuellement à la page originelle. Au retour, le minuteur continuera à montrer combien de temps a passé depuis l'initialisation de la session.</p>
+<script>
+/* <![CDATA[ */
+(function ($) {
+	/* Based on the demo for http://code.google.com/p/sessionstorage/ */
+	var update = document.getElementById('update'),
+		$document = $(document);
+	$document.on('sessionstorage-loaded', function() {
+		if(typeof sessionStorage === 'undefined' || sessionStorage.disabled)
+			update.innerHTML = '<strong>Erreur :</strong> Le correctif pour <span lang="en">sessionStorage</span> ne fonctionne pas quand témoins sont désactivés.';
+		else {
+			update.setAttribute('role', 'timer');
+			if(sessionStorage.getItem('sessionStarted')){
+				function showInfo(){
+					update.innerHTML = 'Votre session a commencé il y a ' + Math.floor((new Date - sessionStarted) / 1000) + ' secondes.';
+					return showInfo;
+				};
+				var sessionStarted  = new Date(parseInt(sessionStorage.getItem('sessionStarted'), 0));
+				setInterval(showInfo(), 250);
+			}
+			else {
+				sessionStorage.clear();
+				sessionStorage.setItem('sessionStarted', new Date().getTime());
+			}
+		}
+	});
+	if(window.sessionStorage) {
+		$document.trigger('sessionstorage-loaded');
+	}
+}(jQuery));
+/* ]]> */
+</script>
 </body>
 </html>

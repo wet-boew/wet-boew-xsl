@@ -2,22 +2,8 @@
 <html lang="en">
 <head>
 <title>&#8220;Summarys&#8221; Cell - Table Usability</title>
-<!-- CustomCSSStart -->
-<!-- The following script are for the try it button -->
-<script>
-	//<![CDATA[
-	$(document).ready(function(){
-		$('input.tryit').click(function(){
-			eval($(this).prev().val());
-		});
-	});
-	//]]>
-</script>
-<!-- END of Try it button -->
-<!-- CustomCSSEnd -->
 </head>
 <body>
-
 <p><em>This article about a table usability guideline. The purpose of the table usability guideline is to explain how you can create usable complex table. The HTLM5 markup are used to illustrate the guideline methodology. This documentation/guideline are supported by a javascript table parser. Anything regards of HTML accessibility are not discussed here because with the javascript table parser it would be possible to auto setup the accessibility requirement on the fly, that for a complex usable table.</em></p>
 
 <h2>Summary Cell</h2>
@@ -1709,6 +1695,14 @@ Caption
 	<li><a href="Data-Cell.html">&#8220;Data&#8221; Cell</a></li>
 	<li><a href="Key-Description-Cell-Table-Row.html">&#8220;Keys&#8221; and &#8220;Description&#8221; cell in a table row</a></li>
 </ul>
-
+<script>
+/* <![CDATA[ */
+(function ($) {
+	$('input.tryit').click(function(){
+		eval($(this).prev().val());
+	});
+}(jQuery));
+/* ]]> */
+</script>
 </body>
 </html>

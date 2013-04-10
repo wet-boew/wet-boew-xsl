@@ -2,6 +2,70 @@
 <html lang="fr">
 <head>
 <title>Répartition des responsabilités d'accessibilité (WCAG 2.0)</title>
+<style>
+#tsrw td {
+	text-align: center;
+}
+#tsrw td.wcagsc {
+	text-align: left;
+}
+
+@media screen and (min-width: 260px) {
+	#tsrw th.ui-table-priority-arb, #tsrw td.ui-table-priority-arb {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 370px) {
+	#tsrw th.ui-table-priority-arb2, #tsrw td.ui-table-priority-arb2 {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 400px) {
+	.ui-table-columntoggle-btn {
+		position: absolute;
+	}
+}
+@media screen and (min-width: 480px) {
+	#tsrw th.ui-table-priority-arb3, #tsrw td.ui-table-priority-arb3 {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 580px) {
+	#tsrw th.ui-table-priority-arb4, #tsrw td.ui-table-priority-arb4 {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 690px) {
+	#tsrw th.ui-table-priority-arb5, #tsrw td.ui-table-priority-arb5 {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 800px) {
+	#tsrw th.ui-table-priority-arb6, #tsrw td.ui-table-priority-arb6 {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 920px) {
+	#tsrw th.ui-table-priority-arb7, #tsrw td.ui-table-priority-arb7 {
+		display: table-cell;
+	}
+}
+@media screen and (min-width: 1020px) {
+	#tsrw th.ui-table-priority-arb8, #tsrw td.ui-table-priority-arb8 {
+		display: table-cell;
+	}
+}
+
+#tsrw [class*="ui-table-priority"], #tsrw th.ui-table-cell-hidden, #tsrw td.ui-table-cell-hidden {
+	display: none;
+}
+#tsrw .ui-table-priority-arb1, #tsrw th.ui-table-cell-visible, #tsrw td.ui-table-cell-visible {
+	display: table-cell;
+}
+#tsrw-overflow {
+	overflow: auto;
+}
+</style>
 </head>
 <body>
 <ul class="button-group">
@@ -43,7 +107,7 @@
 							<li>Évaluer l’impact des plateformes technologiques</li>
 						</ul>
 						<p>Pour plus de détails sur les facteurs à considérer pour atteindre les objectifs d’accessibilité du point de vue d’un chargé de projets, consulter l’article «&#160;<a href="arb-rra-planAccess-fra.html">Planifier&#160;l’accessibilité</a>&#160;».</p>
-					</section>			
+					</section>
 				</div>
 			</div>
 			<div id="a1b">
@@ -320,11 +384,11 @@
 			</div>
 		</div>
 	</div>
-</section>		
+</section>
 
 <section>
 	<h2 id="a2">Tableau synthèse de la répartition WCAG 2.0</h2>
-	
+
 	<table id="tsrw" class="wet-boew-zebra">
 	<thead>
 		<tr>
