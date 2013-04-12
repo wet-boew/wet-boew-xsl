@@ -298,16 +298,6 @@
 </table>
 </div>
 <div class="clear"></div>
-<script>
-/* <![CDATA[ */
-(function ($) {
-	$('#wb-main-in #rde a').each(function () {
-		var $this = $(this),
-			url = window.location.href;
-		$this.attr('href', $this.attr('href') + '?' + url.substring(0, url.lastIndexOf('/') + 1) + $this.attr('data-url'));
-	});
-}(jQuery));
-/* ]]> */
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>
