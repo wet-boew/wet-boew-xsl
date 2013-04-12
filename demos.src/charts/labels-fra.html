@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<title>Labels - Charts and graphs - Working examples  - Web Experience Toolkit (WET)</title>
+<title>Étiquettes - Graphiques - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)</title>
 </head>
 <body>
 <ul class="button-group">
-<li><a href="https://github.com/wet-boew/wet-boew/wiki/Charts-and-graphs" class="button button-info">Documentation</a></li>
-<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions or comments?</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Graphiques" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions ou commentaires?</a></li>
 </ul>
 
 <div class="module-info span-2 float-right">
-<h3>Requirement</h3>
-<p>WET v3.1 or later</p>
+<h3>Pré requis</h3>
+<p>Version 3.1 de la BOEW ou plus récente</p>
 </div>
 
 
-<h2>Position</h2>
+<h2>Positionnement</h2>
+<p>Il est possible de spécifier la rangée ou la colonne qui sera utilisée pour étiqueter le graphiques. Seulement lorsque le tableau est inversé que le positionnement de l'étiquette est représenté par la colonne.</p>
 
-<p>This is how you specify which row or column will be used to label the charts. The column is only available when the table is reversed.</p>
+<p><code>wb-charts-labelposition-<strong>x</strong></code> où <strong>x</strong> représente un nombre positif associé à la rangée ou la colonne dans le tableau. La première rangée ou la première colonne est représenté par le chiffre 1. La valeur par défaut est la rangée ou la colonne qui représente les données de façons la plus précise.</p>
 
-<p><code>wb-charts-labelposition-<strong>x</strong></code> Where <strong>x</strong> represent a positive number associated to the row/col position of the table. The first row/col is represented by the number 1. The default value is the deppest row/col used in the heading group.</p>
 
-<h3>Exemples</h3>
+
+
+<h3>Examples</h3>
 
 <table class="wet-boew-charts wb-charts-line wb-chart-labelposition-1 wb-charts-noencapsulation-true">
-	<caption>First row used to label the chart - <code>wb-charts-labelposition-1</code> </caption>
+	<caption>Première rangée utilisée pour étiqueter le graphique - <code>wb-charts-labelposition-1</code> </caption>
 	<thead>
 		<tr>
 			<th rowspan="2"></th>
-			<th id="tbl1363314652944-6" colspan="3">Group 1</th>
-			<th id="tbl1363314652944-7" colspan="2">Group 2</th>
-			<th id="tbl1363314652944-8" rowspan="2">bath</th>
+			<th id="tbl1363314652944-6" colspan="3">Groupe 1</th>
+			<th id="tbl1363314652944-7" colspan="2">Groupe 2</th>
+			<th id="tbl1363314652944-8" rowspan="2">bain</th>
 		</tr>
 		<tr>
-			<th headers="tbl1363314652944-6" id="tbl1363314652944-11">food</th>
+			<th headers="tbl1363314652944-6" id="tbl1363314652944-11">nourriture</th>
 			<th headers="tbl1363314652944-6" id="tbl1363314652944-12">auto</th>
-			<th headers="tbl1363314652944-6" id="tbl1363314652944-13">household</th>
-			<th headers="tbl1363314652944-7" id="tbl1363314652944-14">furniture</th>
-			<th headers="tbl1363314652944-7" id="tbl1363314652944-15">kitchen</th>
+			<th headers="tbl1363314652944-6" id="tbl1363314652944-13">domestique</th>
+			<th headers="tbl1363314652944-7" id="tbl1363314652944-14">meuble</th>
+			<th headers="tbl1363314652944-7" id="tbl1363314652944-15">cuisine</th>
 		</tr>
 	</thead><tbody>
 		<tr>
@@ -81,20 +83,20 @@
 <hr />
 
 <table class="wet-boew-charts wb-charts-line wb-charts-labelposition-2 wb-charts-noencapsulation-true">
-	<caption>Second row used to label the chart - <code>wb-charts-labelposition-2</code></caption>
+	<caption>Deuxième rangée utilisée pour étiqueter le graphique - <code>wb-charts-labelposition-2</code></caption>
 	<thead>
 		<tr>
 			<th rowspan="2"></th>
-			<th id="tbl1363314702030-6" colspan="3">Group 1</th>
-			<th id="tbl1363314702030-7" colspan="2">Group 2</th>
-			<th id="tbl1363314702030-8" rowspan="2">bath</th>
+			<th id="tbl1363314702030-6" colspan="3">Groupe 1</th>
+			<th id="tbl1363314702030-7" colspan="2">Groupe 2</th>
+			<th id="tbl1363314702030-8" rowspan="2">bain</th>
 		</tr>
 		<tr>
-			<th headers="tbl1363314702030-6" id="tbl1363314702030-11">food</th>
+			<th headers="tbl1363314702030-6" id="tbl1363314702030-11">nourriture</th>
 			<th headers="tbl1363314702030-6" id="tbl1363314702030-12">auto</th>
-			<th headers="tbl1363314702030-6" id="tbl1363314702030-13">household</th>
-			<th headers="tbl1363314702030-7" id="tbl1363314702030-14">furniture</th>
-			<th headers="tbl1363314702030-7" id="tbl1363314702030-15">kitchen</th>
+			<th headers="tbl1363314702030-6" id="tbl1363314702030-13">domestique</th>
+			<th headers="tbl1363314702030-7" id="tbl1363314702030-14">meuble</th>
+			<th headers="tbl1363314702030-7" id="tbl1363314702030-15">cuisine</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -140,16 +142,16 @@
 <hr />
 
 <table class="wet-boew-charts wb-charts-line wb-charts-labelposition-1 wb-charts-noencapsulation-true wb-charts-parsedirection-y">
-	<caption>First column used to label the chart - <code>wb-charts-labelposition-1</code> </caption>
+	<caption>Première colonne utilisée pour étiqueter le graphique - <code>wb-charts-labelposition-1</code> </caption>
 	<thead>
 		<tr>
 			<th colspan="2"></th>
-			<th id="tbl1363314739889-6">food</th>
+			<th id="tbl1363314739889-6">nourriture</th>
 			<th id="tbl1363314739889-7">auto</th>
-			<th id="tbl1363314739889-8">household</th>
-			<th id="tbl1363314739889-9">furniture</th>
-			<th id="tbl1363314739889-10">kitchen</th>
-			<th id="tbl1363314739889-11">bath</th>
+			<th id="tbl1363314739889-8">domestique</th>
+			<th id="tbl1363314739889-9">meuble</th>
+			<th id="tbl1363314739889-10">cuisine</th>
+			<th id="tbl1363314739889-11">bain</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -163,7 +165,7 @@
 			<td headers="tbl1363314739889-11 tbl1363314739889-15">70</td>
 		</tr>
 		<tr>
-			<th id="tbl1363314739889-35" rowspan="2">Group</th>
+			<th id="tbl1363314739889-35" rowspan="2">Groupe</th>
 			<th headers="tbl1363314739889-35" id="tbl1363314739889-36">Tom</th>
 			<td headers="tbl1363314739889-6 tbl1363314739889-35 tbl1363314739889-36">3</td>
 			<td headers="tbl1363314739889-7 tbl1363314739889-35 tbl1363314739889-36">40</td>
@@ -196,16 +198,16 @@
 <hr />
 
 <table class="wet-boew-charts wb-charts-line wb-charts-labelposition-2 wb-charts-noencapsulation-true wb-charts-parsedirection-y">
-	<caption>Second column used to label the chart - <code>wb-charts-labelposition-2</code> </caption>
+	<caption>Deuxième rangée utilisée pour étiqueter le graphique - <code>wb-charts-labelposition-2</code> </caption>
 	<thead>
 		<tr>
 			<th colspan="2"></th>
-			<th id="tbl1363314789868-6">food</th>
+			<th id="tbl1363314789868-6">nourriture</th>
 			<th id="tbl1363314789868-7">auto</th>
-			<th id="tbl1363314789868-8">household</th>
-			<th id="tbl1363314789868-9">furniture</th>
-			<th id="tbl1363314789868-10">kitchen</th>
-			<th id="tbl1363314789868-11">bath</th>
+			<th id="tbl1363314789868-8">domestique</th>
+			<th id="tbl1363314789868-9">meuble</th>
+			<th id="tbl1363314789868-10">cuisine</th>
+			<th id="tbl1363314789868-11">bain</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -219,7 +221,7 @@
 			<td headers="tbl1363314789868-11 tbl1363314789868-15">70</td>
 		</tr>
 		<tr>
-			<th id="tbl1363314789868-35" rowspan="2">Group</th>
+			<th id="tbl1363314789868-35" rowspan="2">Groupe</th>
 			<th headers="tbl1363314789868-35" id="tbl1363314789868-36">Tom</th>
 			<td headers="tbl1363314789868-6 tbl1363314789868-35 tbl1363314789868-36">3</td>
 			<td headers="tbl1363314789868-7 tbl1363314789868-35 tbl1363314789868-36">40</td>
@@ -251,63 +253,62 @@
 
 <hr />
 
-<h2>Uniform Tick options</h2>
+<h2>Positionnement par intervale uniformes</h2>
 
-<p>By default, the tick is uniform because each table slot would have the same value (uniform value between slots). When deactivated, only the highest header row or column would get the uniform value. Child cells would get devised value attribution.</p>
+<p>Par défaut, le positionnement des données du graphique est par intervale uniforme qui veux dire que chaque colonne du tableau occupe un espace equivalente dans le graphique. Lorsque le positionnement par intervale est désactivé, <code>wb-charts-uniformtick-false</code>, l'imbrication de la colonne à l'intérieur de d'autre groupe va influencer le positionnement des étiquettes, avec leurs données, par rapport à l'axe des x (horizontal).</p>
 
-
-<h3>Examples</h3> 
+<h3>Exemples</h3> 
 
 <table class="wet-boew-charts wb-charts-uniformtick-false wb-charts-noencapsulation-true">
-<caption>Uniform Tick deactivated <code>wb-charts-uniformtick-false</code></caption>
+<caption>Intervale uniformes désactivé <code>wb-charts-uniformtick-false</code></caption>
 <thead>
 <tr>
 <th rowspan="3" colspan="2"></th>
-<th id="tbl1363314833611-6" colspan="6">Previous Year</th>
-<th id="tbl1363314833611-7" rowspan="3">2008 - Q1</th>
-<th id="tbl1363314833611-8" rowspan="3">2008 - Q1</th>
+<th id="tbl1363314833611-6" colspan="6">Année précédente</th>
+<th id="tbl1363314833611-7" rowspan="3">2008 - T1</th>
+<th id="tbl1363314833611-8" rowspan="3">2008 - T1</th>
 </tr>
 <tr>
 <th headers="tbl1363314833611-6" id="tbl1363314833611-11" colspan="2">2006</th>
 <th headers="tbl1363314833611-6" id="tbl1363314833611-12" colspan="4">2007</th>
 </tr>
 <tr>
-<th headers="tbl1363314833611-6 tbl1363314833611-11" id="tbl1363314833611-15">Q3</th>
-<th headers="tbl1363314833611-6 tbl1363314833611-11" id="tbl1363314833611-16">Q4</th>
-<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-17">Q1</th>
-<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-18">Q2</th>
-<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-19">Q3</th>
-<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-20">Q4</th>
+<th headers="tbl1363314833611-6 tbl1363314833611-11" id="tbl1363314833611-15">T3</th>
+<th headers="tbl1363314833611-6 tbl1363314833611-11" id="tbl1363314833611-16">T4</th>
+<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-17">T1</th>
+<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-18">T2</th>
+<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-19">T3</th>
+<th headers="tbl1363314833611-6 tbl1363314833611-12" id="tbl1363314833611-20">T4</th>
 </tr>
 </thead><tbody>
 <tr>
-<th id="tbl1363314833611-24" colspan="2" class="wb-charts-stacked">Goods</th>
-<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-15 tbl1363314833611-24">11.406</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-16 tbl1363314833611-24">12.139</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-17 tbl1363314833611-24">13.563</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-18 tbl1363314833611-24">$15.134</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-19 tbl1363314833611-24">9.510 $</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-20 tbl1363314833611-24">9.230</td>
-<td headers="tbl1363314833611-7 tbl1363314833611-24">12.551</td>
-<td headers="tbl1363314833611-8 tbl1363314833611-24">12.551</td>
+<th id="tbl1363314833611-24" colspan="2" class="wb-charts-stacked">Biens</th>
+<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-15 tbl1363314833611-24">11,406</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-16 tbl1363314833611-24">12,139</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-17 tbl1363314833611-24">13,563</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-18 tbl1363314833611-24">$15,134</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-19 tbl1363314833611-24">9,510 $</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-20 tbl1363314833611-24">9,230</td>
+<td headers="tbl1363314833611-7 tbl1363314833611-24">12,551</td>
+<td headers="tbl1363314833611-8 tbl1363314833611-24">12,551</td>
 </tr>
 <tr>
-<th id="tbl1363314833611-48" rowspan="2" class="wb-charts-line">Test Group</th>
-<th headers="tbl1363314833611-48" id="tbl1363314833611-49" class="wb-charts-stacked">Other current account</th>
-<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-15 tbl1363314833611-48 tbl1363314833611-49">-7.010</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-16 tbl1363314833611-48 tbl1363314833611-49">-7.437</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-17 tbl1363314833611-18 tbl1363314833611-19 tbl1363314833611-48 tbl1363314833611-59 tbl1363314833611-59" rowspan="2" colspan="3">-10.231</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-20 tbl1363314833611-48 tbl1363314833611-49">-7.009</td>
-<td headers="tbl1363314833611-7 tbl1363314833611-48 tbl1363314833611-49">-6.387</td>
-<td headers="tbl1363314833611-8 tbl1363314833611-48 tbl1363314833611-49">-6.387</td>
+<th id="tbl1363314833611-48" rowspan="2" class="wb-charts-line">Groupe de test</th>
+<th headers="tbl1363314833611-48" id="tbl1363314833611-49" class="wb-charts-stacked">Autre compte courant</th>
+<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-15 tbl1363314833611-48 tbl1363314833611-49">-7,010</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-16 tbl1363314833611-48 tbl1363314833611-49">-7,437</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-17 tbl1363314833611-18 tbl1363314833611-19 tbl1363314833611-48 tbl1363314833611-59 tbl1363314833611-59" rowspan="2" colspan="3">-10,231</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-20 tbl1363314833611-48 tbl1363314833611-49">-7,009</td>
+<td headers="tbl1363314833611-7 tbl1363314833611-48 tbl1363314833611-49">-6,387</td>
+<td headers="tbl1363314833611-8 tbl1363314833611-48 tbl1363314833611-49">-6,387</td>
 </tr>
 <tr>
 <th headers="tbl1363314833611-48" id="tbl1363314833611-59" class="wb-charts-area">Total</th>
-<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-15 tbl1363314833611-48 tbl1363314833611-59">4.396</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-16 tbl1363314833611-48 tbl1363314833611-59">4.702</td>
-<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-20 tbl1363314833611-48 tbl1363314833611-59">2.221</td>
-<td headers="tbl1363314833611-7 tbl1363314833611-48 tbl1363314833611-59">-6.164</td>
-<td headers="tbl1363314833611-8 tbl1363314833611-48 tbl1363314833611-59">6.164</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-15 tbl1363314833611-48 tbl1363314833611-59">4,396</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-11 tbl1363314833611-16 tbl1363314833611-48 tbl1363314833611-59">4,702</td>
+<td headers="tbl1363314833611-6 tbl1363314833611-12 tbl1363314833611-20 tbl1363314833611-48 tbl1363314833611-59">2,221</td>
+<td headers="tbl1363314833611-7 tbl1363314833611-48 tbl1363314833611-59">-6,164</td>
+<td headers="tbl1363314833611-8 tbl1363314833611-48 tbl1363314833611-59">6,164</td>
 </tr>
 </tbody>
 </table>
@@ -315,59 +316,60 @@
 <hr />
 
 <table class="wet-boew-charts  wb-charts-noencapsulation-true wb-charts-uniformtick-true">
-<caption>Uniform Tick activated (Default or <code>wb-charts-uniformtick-true</code>)</caption>
+<caption>Intervale uniformes activé (par défaut ou avec <code>wb-charts-uniformtick-true</code>)</caption>
 <thead>
 <tr>
 <th rowspan="3" colspan="2"></th>
-<th id="tbl1363314869184-6" colspan="6">Previous Year</th>
-<th id="tbl1363314869184-7" rowspan="3">2008 - Q1</th>
-<th id="tbl1363314869184-8" rowspan="3">2008 - Q1</th>
+<th id="tbl1363314869184-6" colspan="6">Année précédente</th>
+<th id="tbl1363314869184-7" rowspan="3">2008 - T1</th>
+<th id="tbl1363314869184-8" rowspan="3">2008 - T1</th>
 </tr>
 <tr>
-<th headers="tbl1363314869184-6" id="tbl1363314869184-11" colspan="2" >2006</th>
+<th headers="tbl1363314869184-6" id="tbl1363314869184-11" colspan="2">2006</th>
 <th headers="tbl1363314869184-6" id="tbl1363314869184-12" colspan="4">2007</th>
 </tr>
 <tr>
-<th headers="tbl1363314869184-6 tbl1363314869184-11" id="tbl1363314869184-15">Q3</th>
-<th headers="tbl1363314869184-6 tbl1363314869184-11" id="tbl1363314869184-16">Q4</th>
-<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-17">Q1</th>
-<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-18">Q2</th>
-<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-19">Q3</th>
-<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-20">Q4</th>
+<th headers="tbl1363314869184-6 tbl1363314869184-11" id="tbl1363314869184-15">T3</th>
+<th headers="tbl1363314869184-6 tbl1363314869184-11" id="tbl1363314869184-16">T4</th>
+<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-17">T1</th>
+<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-18">T2</th>
+<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-19">T3</th>
+<th headers="tbl1363314869184-6 tbl1363314869184-12" id="tbl1363314869184-20">T4</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th id="tbl1363314869184-24" colspan="2" class="wb-charts-stacked">Goods</th>
-<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-15 tbl1363314869184-24">11.406</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-16 tbl1363314869184-24">12.139</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-17 tbl1363314869184-24">13.563</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-18 tbl1363314869184-24">$15.134</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-19 tbl1363314869184-24">9.510 $</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-20 tbl1363314869184-24">9.230</td>
-<td headers="tbl1363314869184-7 tbl1363314869184-24">12.551</td>
-<td headers="tbl1363314869184-8 tbl1363314869184-24">12.551</td>
+<th id="tbl1363314869184-24" colspan="2" class="wb-charts-stacked">Biens</th>
+<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-15 tbl1363314869184-24">11,406</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-16 tbl1363314869184-24">12,139</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-17 tbl1363314869184-24">13,563</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-18 tbl1363314869184-24">$15,134</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-19 tbl1363314869184-24">9,510 $</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-20 tbl1363314869184-24">9,230</td>
+<td headers="tbl1363314869184-7 tbl1363314869184-24">12,551</td>
+<td headers="tbl1363314869184-8 tbl1363314869184-24">12,551</td>
 </tr>
 <tr>
-<th id="tbl1363314869184-48" rowspan="2" class="wb-charts-line">Test Group</th>
-<th headers="tbl1363314869184-48" id="tbl1363314869184-49" class="wb-charts-stacked">Other current account</th>
-<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-15 tbl1363314869184-48 tbl1363314869184-49">-7.010</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-16 tbl1363314869184-48 tbl1363314869184-49">-7.437</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-17 tbl1363314869184-18 tbl1363314869184-19 tbl1363314869184-48 tbl1363314869184-59 tbl1363314869184-59" rowspan="2" colspan="3">-10.231</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-20 tbl1363314869184-48 tbl1363314869184-49">-7.009</td>
-<td headers="tbl1363314869184-7 tbl1363314869184-48 tbl1363314869184-49">-6.387</td>
-<td headers="tbl1363314869184-8 tbl1363314869184-48 tbl1363314869184-49">-6.387</td>
+<th id="tbl1363314869184-48" rowspan="2" class="wb-charts-line">Groupe de test</th>
+<th headers="tbl1363314869184-48" id="tbl1363314869184-49" class="wb-charts-stacked">Autre compte courant</th>
+<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-15 tbl1363314869184-48 tbl1363314869184-49">-7,010</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-16 tbl1363314869184-48 tbl1363314869184-49">-7,437</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-17 tbl1363314869184-18 tbl1363314869184-19 tbl1363314869184-48 tbl1363314869184-59 tbl1363314869184-59" rowspan="2" colspan="3">-10,231</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-20 tbl1363314869184-48 tbl1363314869184-49">-7,009</td>
+<td headers="tbl1363314869184-7 tbl1363314869184-48 tbl1363314869184-49">-6,387</td>
+<td headers="tbl1363314869184-8 tbl1363314869184-48 tbl1363314869184-49">-6,387</td>
 </tr>
 <tr>
 <th headers="tbl1363314869184-48" id="tbl1363314869184-59" class="wb-charts-area">Total</th>
-<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-15 tbl1363314869184-48 tbl1363314869184-59">4.396</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-16 tbl1363314869184-48 tbl1363314869184-59">4.702</td>
-<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-20 tbl1363314869184-48 tbl1363314869184-59">2.221</td>
-<td headers="tbl1363314869184-7 tbl1363314869184-48 tbl1363314869184-59">-6.164</td>
-<td headers="tbl1363314869184-8 tbl1363314869184-48 tbl1363314869184-59">6.164</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-15 tbl1363314869184-48 tbl1363314869184-59">4,396</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-11 tbl1363314869184-16 tbl1363314869184-48 tbl1363314869184-59">4,702</td>
+<td headers="tbl1363314869184-6 tbl1363314869184-12 tbl1363314869184-20 tbl1363314869184-48 tbl1363314869184-59">2,221</td>
+<td headers="tbl1363314869184-7 tbl1363314869184-48 tbl1363314869184-59">-6,164</td>
+<td headers="tbl1363314869184-8 tbl1363314869184-48 tbl1363314869184-59">6,164</td>
 </tr>
 </tbody>
 </table>
+
 
 </body>
 </html>
