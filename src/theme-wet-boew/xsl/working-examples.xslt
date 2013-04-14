@@ -12,6 +12,7 @@
 		<xsl:param name="path_correction">
 			<xsl:if test="tokenize(base-uri(), '/')[last()-1] != 'demos.src'">../</xsl:if>
 		</xsl:param>
+		<xsl:param name="path_correction_lang"/>
 		<xsl:param name="wet_fallback_language">
 			<xsl:choose>
 				<xsl:when test="@lang = 'fr'">
@@ -88,13 +89,13 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wet-fullhd-in"&gt;
 &lt;ul&gt;
 <xsl:choose>
-	<xsl:when test="@lang = 'en'">&lt;li id="wet-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
+	<xsl:when test="@lang = 'en'">&lt;li id="wet-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction_lang"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="wet-fullhd-lang-current"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang(current()/@lang)]"/>&lt;/li&gt;</xsl:when>
 	<xsl:when test="@lang = 'fr'">&lt;li id="wet-fullhd-lang-current"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang(current()/@lang)]"/>&lt;/li&gt;
-&lt;li id="wet-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:when>
+&lt;li id="wet-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction_lang"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:when>
 	<xsl:otherwise>&lt;li id="wet-fullhd-lang-current"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang(current()/@lang)]"/>&lt;/li&gt;
-&lt;li id="wet-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li id="wet-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:otherwise>
+&lt;li id="wet-fullhd-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction_lang"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="wet-fullhd-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction_lang"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="$strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:otherwise>
 </xsl:choose>
 &lt;/ul&gt;
 &lt;/div&gt;

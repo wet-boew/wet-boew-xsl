@@ -188,7 +188,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;li&gt;&lt;a rel="external" href="http://www.guichetemplois.gc.ca/Intro-fra.aspx"&gt;&lt;span&gt;Emplois&lt;/span&gt;&lt;br /&gt;guichetemplois.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://plandaction.gc.ca/fr"&gt;&lt;span&gt;Économie&lt;/span&gt;&lt;br /&gt;plandaction.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-fra.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:when>
-	<xsl:otherwise>&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:otherwise>
+	<xsl:otherwise>&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-fra.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:otherwise>
 </xsl:choose>
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
