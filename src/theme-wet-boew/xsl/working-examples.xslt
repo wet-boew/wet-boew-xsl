@@ -11,6 +11,7 @@
 	<xsl:character-map name="codepages">
 		<xsl:output-character character="&#x00A0;" string="&#xA0;"/>
 		<xsl:output-character character="&#x0021;" string="&#x21;"/>
+		<xsl:output-character character="&#x0022;" string="&#x22;"/>
 	</xsl:character-map>
 
 	<xsl:template match="/html">
