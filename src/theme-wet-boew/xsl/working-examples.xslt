@@ -4,9 +4,15 @@
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 	wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 	<xsl:output method="text" encoding="utf-8"/>
-	<xsl:output method="html" name="html" indent="no" omit-xml-declaration="yes" encoding="utf-8"/>
+	<xsl:output method="html" name="html" indent="no" omit-xml-declaration="yes" encoding="utf-8" use-character-maps="codepages"/>
 	<xsl:variable name="root" select="string-join(tokenize(tokenize(base-uri(), '/')[last()], '-')[position() &lt; last()],'-')"/>
 	<xsl:variable name="strings" select="document('../../base/xsl/i18n.xml')/strings"/>
+
+	<xsl:character-map name="codepages">
+		<xsl:output-character character="&#x00A0;" string="&#xA0;"/>
+		<xsl:output-character character="&#x0021;" string="&#x21;"/>
+		<xsl:output-character character="&#x0022;" string="&#x22;"/>
+	</xsl:character-map>
 
 	<xsl:template match="/html">
 		<xsl:param name="path_correction">
