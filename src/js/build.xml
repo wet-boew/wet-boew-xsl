@@ -8,7 +8,14 @@
 	<target name="default" depends="clean,build" description="Performs a clean and build when calling ant without any target"></target>
 
 	<target name="-transform" extensionOf="build">
-		<xslt_saxon basedir="${demo.src.dir}" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${demo.src.dir}/pre-transform"/>
+		</delete>
+		<copy todir="${demo.src.dir}/pre-transform" encoding="UTF-8">
+			<fileset dir="${demo.src.dir}"/>
+		</copy>
+		<replace dir="${demo.src.dir}/pre-transform" token="&#38;#" value="wb-suppress-entity-expand#" includes="**/*.html" encoding="UTF-8"/>
+		<xslt_saxon basedir="${demo.src.dir}/pre-transform" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
 			<patternset>
 				<include name="**/*.html" />
 				<exclude name="**/menu*.html"/>
@@ -16,5 +23,9 @@
 			</patternset>
 			<mapper type="glob" from="*.html" to="*.html"/>
 		</xslt_saxon>
+		<replace dir="${demo.dir}" token="wb-suppress-entity-expand#" value="&#38;#" encoding="UTF-8"/>
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${demo.src.dir}/pre-transform"/>
+		</delete>
 	</target>
 </project>
