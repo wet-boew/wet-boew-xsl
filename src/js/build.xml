@@ -8,18 +8,21 @@
 	<target name="default" depends="clean,build" description="Performs a clean and build when calling ant without any target"></target>
 
 	<target name="-transform" extensionOf="build">
+		<!-- Make sure pre-transform sub-directory is not left around from a previous failed build -->
 		<delete includeemptydirs="true" failonerror="false">
 			<fileset dir="${demo.src.dir}/pre-transform"/>
 		</delete>
+		<!-- Copy files to a temporary directory for the string replacements -->
 		<copy todir="${demo.src.dir}/pre-transform" encoding="UTF-8">
 			<fileset dir="${demo.src.dir}"/>
 		</copy>
+		<!-- String replacements for suppressing numeric entity expansion -->
 		<replace dir="${demo.src.dir}/pre-transform" includes="**/*.html" encoding="UTF-8">
 			<!-- Needed to compensate for character mapping workaround in working-examples.xslt -->
 			<replacefilter token="&#38;quot;" value="wb-suppress-entity-expand#34;"/>
 			<replacefilter token="&#38;apos;" value="wb-suppress-entity-expand#39;"/>
 			<replacefilter token="&#38;nbsp;" value="wb-suppress-entity-expand#160;"/>
-			<!-- Suppress numeric entity expansion -->
+			<!-- Alter numeric entities to suppress their expansion -->
 			<replacefilter token="&#38;#" value="wb-suppress-entity-expand#"/>
 		</replace>
 		<xslt_saxon basedir="${demo.src.dir}/pre-transform" destdir="${demo.dir}" style="../theme-wet-boew/xsl/working-examples.xslt">
@@ -30,7 +33,9 @@
 			</patternset>
 			<mapper type="glob" from="*.html" to="*.html"/>
 		</xslt_saxon>
+		<!-- Return numeric entities to their original forms -->
 		<replace dir="${demo.dir}" token="wb-suppress-entity-expand" value="&#38;" encoding="UTF-8"/>
+		<!-- Delete the temporary directory -->
 		<delete includeemptydirs="true" failonerror="false">
 			<fileset dir="${demo.src.dir}/pre-transform"/>
 		</delete>
