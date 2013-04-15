@@ -29,7 +29,7 @@ General (i18n),%all,All,Tous,Alle,Të gjithë,جميع,Բոլորը,Всички
 ,%hyphen, - , - , - , - , - , - , - , - , - , - , - , - , - , - , - , - , - , - , - , - , -, - , - , - , - , - , - , - , - , - , - , - , - 
 ,%full-stop,.,.,.,.,.,.,.,。,。,.,.,.,.,.,.,.,.,.,.,。,.,.,.,.,.,.,.,.,.,.,.,.,.
 ,%list-comma-space,", ",", ",", ",", ",، ,", ",", ",，,，,", ",", ",", ",", ",", ",", ",", ",", ",", ",", ",、,", ",", ",", ",", ",", ",", ",", ",", ",", ",", ",", ",", ",", "
-,%interword-space,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,,,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,,&#32;,&#32;,&#32;
+,%interword-space,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#173;,&#173;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#173;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#32;,&#173;,&#32;,&#32;,&#32;
 ,%start,Start,Lancer,Begin,Fillim,بداية,Սկիզբ,Начало,開始,开始,Zahájit,Beginnen,Alusta,Starten,Εκκίνηση,प्रारंभ,Indítás,Byrja,Mulai,Inizio,開始,출발,Sākt,Pradėti,Rozpocząć,Iniciar,Iniciar,Начать,Začať,Iniciar,เริ่มต้น,Başla,Старт,Bắt đầu
 ,%stop,Stop,Arrêter,Stop,Stop,توقف,Կանգառեք,Спиране,停止,停止,Zastavit,Stoppen,Lõpeta,Stoppen,Σταματήστε,रोक,Leállítás,Stöðva,Stop,Stop,終了,정지,Pārtraukt,Sustoti,Zatrzymaj,Parar,Parar,Стоп,Stop,Detener,หยุด,Bitir,Стоп,Thôi
 ,%back,Back,Précédent,Terug,Prapa,ظهر,Վերադառնալ,Назад,返回,返回,Zpátky,Terug,Tagasi,Zurück,Πίσω,वापस,Vissza,Til baka,Kembali,Indietro,戻る,뒤로,Atpakaļ,Atgal,Wstecz,Anterior,Anterior,Назад,Staré,Volver,กลับ,Geri,Повернутися,Lưng
