@@ -11,7 +11,11 @@
 	<xsl:template match="value" mode="output">
 		<xsl:param name="path_correction"/>
 		<xsl:param name="wet_fallback_language"/>
-		<xsl:param name="menu_language"/>&lt;!DOCTYPE html&gt;
+		<xsl:param name="menu_language"/>
+		<xsl:param name="interword-space"/>
+		<xsl:param name="hyphen"/>
+		<xsl:param name="tmpl-section"/>
+		<xsl:param name="tmpl-item"/>&lt;!DOCTYPE html&gt;
 &lt;!--[if IE 7]&gt;&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
 &lt;!--[if IE 8]&gt;&lt;html <xsl:if test="not(/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)] = 'ltr')">dir="<xsl:value-of select="/strings/string[@id='%lang-dir']/value[lang(current()/@xml:lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@xml:lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
@@ -21,7 +25,7 @@
 &lt;meta charset="utf-8" /&gt;
 &lt;!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt --&gt;
-&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/> 2 - <xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
+&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>2<xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
 
 &lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/images/favicon.ico" /&gt;
 &lt;meta name="description" content="<xsl:value-of select="/strings/string[@id='%lang-eng']/value[lang(current()/@xml:lang)]"/> description / Description en <xsl:value-of select="/strings/string[@id='%lang-fra']/value[lang(current()/@xml:lang)]"/>" /&gt;
@@ -90,12 +94,12 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wet-psnb"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-menu']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;&lt;div id="wet-psnb-in"&gt;&lt;div class="wet-boew-menubar mb-mega"&gt;&lt;div&gt;
 &lt;ul class="mb-menu" data-ajax-replace="<xsl:value-of select="$path_correction"/>../includes/menu-<xsl:value-of select="$menu_language"/>.txt"&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-project']/value[lang($wet_fallback_language)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -104,9 +108,9 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%home']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="section4/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="section4/section43/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/> 2&lt;/li&gt;
+&lt;li&gt;&lt;a href="section4/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="section4/section43/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>2&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;/nav&gt;
@@ -116,7 +120,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/> 2 - <xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>2<xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-wet-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
 <xsl:apply-templates select="." mode="content_output"/>
 
@@ -130,39 +134,39 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wb-sec"&gt;&lt;div id="wb-sec-in"&gt;&lt;nav role="navigation"&gt;&lt;h2 id="wb-nav"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sec-menu']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;div class="wb-sec-def"&gt;
 &lt;!-- SecNavStart --&gt;
-&lt;section&gt;&lt;h3 class="top-section"&gt;&lt;a href="section4/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4&lt;/a&gt;&lt;/h3&gt;
+&lt;section&gt;&lt;h3 class="top-section"&gt;&lt;a href="section4/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/h3&gt;
 &lt;div&gt;&lt;ul&gt;
-&lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4a&lt;/a&gt;&lt;/li&gt;
-&lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4b&lt;/a&gt;&lt;/li&gt;
-&lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4c&lt;/a&gt;&lt;/li&gt;
+&lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4a&lt;/a&gt;&lt;/li&gt;
+&lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4b&lt;/a&gt;&lt;/li&gt;
+&lt;li class="top-level"&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4c&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;section&gt;&lt;h4&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.1&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;h4&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4.1&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.1.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.1.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.1.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.1.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.1.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.1.3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
-&lt;section&gt;&lt;h4&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.2&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;h4&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4.2&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.2.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.2.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.2.3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.2.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.2.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.2.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.2.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.2.4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
-&lt;section&gt;&lt;h4&gt;&lt;a href="section4/section43/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.3&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;h4&gt;&lt;a href="section4/section43/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4.3&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.3.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.3.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.3.2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
-&lt;section&gt;&lt;h4&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.4&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;h4&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4.4&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.4.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.4.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.4.3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)]"/>4.4.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.4.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.4.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.4.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-item"/><xsl:value-of select="$interword-space"/>4.4.4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
 &lt;/section&gt;

@@ -44,7 +44,12 @@
 				<xsl:when test="exists(body/@data-leftnav)">wb-body-sec</xsl:when>
 				<xsl:otherwise>wb-body</xsl:otherwise>
 			</xsl:choose>
-		</xsl:param>&lt;!DOCTYPE html&gt;
+		</xsl:param>
+		<xsl:param name="interword-space">
+			<xsl:if test="$strings/string[@id='%interword-space']/value[lang(current()/@lang)] = '&amp;#32;'"><xsl:text> </xsl:text></xsl:if>
+		</xsl:param>
+		<xsl:param name="hyphen" select="$strings/string[@id='%hyphen']/value[lang(current()/@lang)]"/>
+		<xsl:param name="tmpl-section" select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/>&lt;!DOCTYPE html&gt;
 &lt;!--[if IE 7]&gt;&lt;html <xsl:if test="not($strings/string[@id='%lang-dir']/value[lang(current()/@lang)] = 'ltr')"><xsl:if test="not($strings/string[@id='%lang-dir']/value[lang(current()/@lang)] = 'ltr')">dir="<xsl:value-of select="$strings/string[@id='%lang-dir']/value[lang(current()/@lang)]"/>" </xsl:if></xsl:if>lang="<xsl:value-of select="./@lang"/>" class="no-js ie7"&gt;&lt;![endif]--&gt;
 &lt;!--[if IE 8]&gt;&lt;html <xsl:if test="not($strings/string[@id='%lang-dir']/value[lang(current()/@lang)] = 'ltr')">dir="<xsl:value-of select="$strings/string[@id='%lang-dir']/value[lang(current()/@lang)]"/>" </xsl:if>lang="<xsl:value-of select="./@lang"/>" class="no-js ie8"&gt;&lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;
@@ -54,7 +59,7 @@
 &lt;meta charset="utf-8" /&gt;
 &lt;!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt --&gt;
-&lt;title&gt;<xsl:value-of select="/html/head/title"/> - <xsl:value-of select="$strings/string[@id='%tmpl-work-examples']/value[lang(current()/@lang)]"/> - <xsl:value-of select="$strings/string[@id='%tmpl-wet']/value[lang(current()/@lang)]"/>&lt;/title&gt;
+&lt;title&gt;<xsl:value-of select="/html/head/title"/><xsl:value-of select="$hyphen"/><xsl:value-of select="$strings/string[@id='%tmpl-work-examples']/value[lang(current()/@lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="$strings/string[@id='%tmpl-wet']/value[lang(current()/@lang)]"/>&lt;/title&gt;
 
 &lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../dist/theme-wet-boew/images/favicon.ico" /&gt;
 &lt;meta name="description" content="<xsl:value-of select="$strings/string[@id='%lang-eng']/value[lang(current()/@lang)]"/> description / Description en <xsl:value-of select="$strings/string[@id='%lang-fra']/value[lang(current()/@lang)]"/>" /&gt;
@@ -122,12 +127,12 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wet-psnb"&gt;&lt;h2&gt;<xsl:value-of select="$strings/string[@id='%tmpl-site-menu']/value[lang(current()/@lang)]"/>&lt;/h2&gt;&lt;div id="wet-psnb-in"&gt;&lt;div class="wet-boew-menubar mb-mega"&gt;&lt;div&gt;
 &lt;ul class="mb-menu" data-ajax-replace="<xsl:value-of select="$path_correction"/>includes/menu-<xsl:value-of select="$menu_language"/>.txt"&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:value-of select="$strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="$strings/string[@id='%tmpl-wet-project']/value[lang($wet_fallback_language)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="$strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/><xsl:value-of select="$strings/string[@id='%interword-space']/value[lang(current()/@lang)]"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/><xsl:value-of select="$strings/string[@id='%interword-space']/value[lang(current()/@lang)]"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/><xsl:value-of select="$strings/string[@id='%interword-space']/value[lang(current()/@lang)]"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/><xsl:value-of select="$strings/string[@id='%interword-space']/value[lang(current()/@lang)]"/>5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/><xsl:value-of select="$strings/string[@id='%interword-space']/value[lang(current()/@lang)]"/>6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-section']/value[lang(current()/@lang)]"/><xsl:value-of select="$strings/string[@id='%interword-space']/value[lang(current()/@lang)]"/>7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="$strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 

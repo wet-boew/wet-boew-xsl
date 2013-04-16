@@ -33,11 +33,12 @@
 			</patternset>
 			<mapper type="glob" from="*.html" to="*.html"/>
 		</xslt_saxon>
-		<!-- Return numeric entities to their original forms -->
-		<replace dir="${demo.dir}" token="wb-suppress-entity-expand" value="&#38;" encoding="UTF-8"/>
-		<!-- Delete the temporary directory -->
+		<!-- Delete the temporary directories -->
 		<delete includeemptydirs="true" failonerror="false">
 			<fileset dir="${demo.src.dir}/pre-transform"/>
+			<fileset dir="${demo.dir}/pre-transform"/>
 		</delete>
+		<!-- Return numeric entities to their original forms -->
+		<replace dir="${demo.dir}" token="wb-suppress-entity-expand" value="&#38;" encoding="UTF-8"/>
 	</target>
 </project>
