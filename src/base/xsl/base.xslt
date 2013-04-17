@@ -104,14 +104,14 @@
 &lt;/ul&gt;
 
 &lt;ol&gt;
-&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ul&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>1<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
-&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ul&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>1<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>
+&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ol&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>1<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
+&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ol&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>1<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>
 	&lt;ol&gt;
-	&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ul&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>2<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
-	&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ul&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>2<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
+	&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ol&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>2<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
+	&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ol&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>2<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>
 		&lt;ol&gt;
-		&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ul&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>3<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
-		&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ul&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>3<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
+		&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ol&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>3<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
+		&lt;li&gt;<xsl:value-of select="$tmpl-ol"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;ol&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-level"/><xsl:value-of select="$interword-space"/>3<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/li&gt;
 		&lt;/ol&gt;
 	&lt;/li&gt;
 	&lt;/ol&gt;
@@ -144,7 +144,7 @@
 &lt;option value="<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>3"&gt;<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>3&lt;/option&gt;
 &lt;option value="<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>4"&gt;<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>4&lt;/option&gt;
 &lt;/select&gt;&lt;/div&gt;
-&lt;fieldset&gt;&lt;legend&gt;&lt;label for="data1"&gt;<xsl:value-of select="$tmpl-form"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;legend&lt;/code&gt;<xsl:value-of select="$list-comma-space"/>&lt;code&gt;fieldset&lt;/code&gt;<xsl:value-of select="/strings/string[@id='%tmpl-and']/value[lang(current()/@xml:lang)]"/>&lt;code&gt;checkbox&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/legend&gt;
+&lt;fieldset&gt;&lt;legend&gt;<xsl:value-of select="$tmpl-form"/><xsl:value-of select="$interword-space"/>(&lt;code&gt;legend&lt;/code&gt;<xsl:value-of select="$list-comma-space"/>&lt;code&gt;fieldset&lt;/code&gt;<xsl:value-of select="/strings/string[@id='%tmpl-and']/value[lang(current()/@xml:lang)]"/>&lt;code&gt;checkbox&lt;/code&gt;)<xsl:value-of select="$hyphen"/><xsl:value-of select="$tmpl-default-app"/>&lt;/legend&gt;
 &lt;div&gt;&lt;input name="checkbox" type="checkbox" id="data5" value="checkbox" /&gt;&#160;&lt;label for="data5"&gt;<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>1&lt;/label&gt;&#160;&#160;
 &lt;input name="checkbox" type="checkbox" id="data6" value="checkbox" /&gt;&#160;&lt;label for="data6"&gt;<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>2&lt;/label&gt;&#160;&#160;
 &lt;input name="checkbox" type="checkbox" id="data7" value="checkbox" /&gt;&#160;&lt;label for="data7"&gt;<xsl:value-of select="$tmpl-option"/><xsl:value-of select="$interword-space"/>3&lt;/label&gt;&#160;&#160;
