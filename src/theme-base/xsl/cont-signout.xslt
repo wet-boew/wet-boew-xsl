@@ -117,15 +117,15 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
-
 &lt;div id="wb-session"&gt;&lt;aside&gt;
 &lt;h2 class="wb-invisible"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-myaccount']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;ul class="button-group"&gt;
-&lt;li class="settings"&gt;&lt;a class="button button-accent" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-accountsettings']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li class="session"&gt;&lt;a class="button button-accent" href="cont-signin-<xsl:value-of select="$menu_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li class="settings"&gt;&lt;a class="button" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-accountsettings']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li class="session"&gt;&lt;a class="button" href="cont-signin-<xsl:value-of select="$menu_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/aside&gt;&lt;/div&gt;
+
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-base-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
 <xsl:apply-templates select="." mode="content_output"/>
 
