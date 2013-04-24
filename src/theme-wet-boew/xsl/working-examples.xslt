@@ -127,12 +127,12 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wet-psnb"&gt;&lt;h2&gt;<xsl:value-of select="$strings/string[@id='%tmpl-site-menu']/value[lang(current()/@lang)]"/>&lt;/h2&gt;&lt;div id="wet-psnb-in"&gt;&lt;div class="wet-boew-menubar mb-mega"&gt;&lt;div&gt;
 &lt;ul class="mb-menu" data-ajax-replace="<xsl:value-of select="$path_correction"/>includes/menu-<xsl:value-of select="$menu_language"/>.txt"&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:value-of select="$strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="$strings/string[@id='%tmpl-wet-project']/value[lang($wet_fallback_language)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="$strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+<xsl:choose>
+	<xsl:when test="@lang = 'fr'">&lt;li&gt;&lt;div&gt;&lt;a href="https://github.com/wet-boew/wet-boew/wiki/Mise-en-%C5%93uvre-de-la-BOEW"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-implement-wet']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="https://github.com/wet-boew/wet-boew/wiki/Lignes-directrices-pour-les-contributeurs"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-contribute-wet']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:when>
+	<xsl:otherwise>&lt;li&gt;&lt;div&gt;&lt;a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-implement-wet']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="https://github.com/wet-boew/wet-boew/wiki/Contributor-guidelines"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-contribute-wet']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:otherwise>
+</xsl:choose>
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -174,32 +174,26 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wb-foot"&gt;&lt;div id="wb-foot-in"&gt;&lt;footer&gt;&lt;h2<xsl:if test="$body_type = 'wb-body'"> id="wb-nav"</xsl:if>&gt;<xsl:value-of select="$strings/string[@id='%tmpl-foot']/value[lang(current()/@lang)]"/>&lt;/h2&gt;
 &lt;!-- FooterStart --&gt;
 &lt;nav role="navigation"&gt;&lt;div id="wet-sft"&gt;&lt;h3&gt;<xsl:value-of select="$strings/string[@id='%tmpl-site-foot']/value[lang(current()/@lang)]"/>&lt;/h3&gt;&lt;div id="wet-sft-in"&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-about-us']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;<xsl:value-of select="$strings/string[@id='%about']/value[lang(current()/@lang)]"/>&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-our-mandate']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-our-history']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:choose><xsl:when test="@lang = 'fr'">fra.html#apropos</xsl:when><xsl:otherwise>eng.html#about</xsl:otherwise></xsl:choose>"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-about-wet']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tbs-sct.gc.ca/ws-nw/index-<xsl:value-of select="$strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.asp"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-about-web-standards']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-news']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-news']/value[lang(current()/@lang)]"/>&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-news-rel']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-media-avisories']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-multimedia']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wet-boew/wet-boew/pulse"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-recent-project-activity']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wet-boew/wet-boew/graphs"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-project-stats']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-contact-us']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/h4&gt;
-&lt;address&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-contact-us']/value[lang(current()/@lang)]"/>&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-phone-nums']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-office-loc']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wet-boew/wet-boew/issues/new"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-questions-comments']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/address&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/h4&gt;
+&lt;section&gt;&lt;div class="span-2"&gt;&lt;h4 class="wet-col-head"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@lang)]"/>&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel="external" href="#"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a rel="external" href="#"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;<xsl:value-of select="$strings/string[@id='%tmpl-feeds']/value[lang(current()/@lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel="external" href="https://twitter.com/<xsl:choose><xsl:when test="@lang = 'fr'">BoiteExpWeb</xsl:when><xsl:otherwise>WebExpToolkit</xsl:otherwise></xsl:choose>"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
