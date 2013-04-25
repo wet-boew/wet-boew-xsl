@@ -6,7 +6,7 @@
 
 	<xsl:import href="../../base/xsl/base.xslt"/>
 	<xsl:output method="text" encoding="utf-8"/>
-	<xsl:variable name="root" select="'cont-fixed-header'"/>
+	<xsl:variable name="root" select="'cont-fixedmobileheader'"/>
 
 	<xsl:template match="value" mode="output">
 		<xsl:param name="path_correction"/>
