@@ -125,8 +125,8 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;!-- MainContentStart --&gt;
 &lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-home-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
-&lt;div id="gcwu-content" class="span-6"&gt;
-&lt;div id="gcwu-headlines" class="span-3 row-start"&gt;&lt;section&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-headlines']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;div id="gcwu-content"&gt;
+&lt;div id="gcwu-headlines" class="span-3"&gt;&lt;section&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-headlines']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;ul class="wet-boew-zebra"&gt;
 &lt;li&gt;&lt;section&gt;&lt;h3&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>1&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-read-more']/value[lang(current()/@xml:lang)]"/>&lt;span class="wb-invisible"&gt;<xsl:value-of select="/strings/string[@id='%hyphen']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="/strings/string[@id='%tmpl-news']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>1&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
@@ -140,7 +140,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/ul&gt;
 &lt;/section&gt;&lt;/div&gt;
 
-&lt;div id="gcwu-video" class="span-3 row-end"&gt;&lt;section&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-videos']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;div id="gcwu-video" class="span-3"&gt;&lt;section&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-videos']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;div id="gcwu-bg-dark"&gt;
 &lt;img class="posterimg" src="<xsl:value-of select="$path_correction"/>images/video.png" alt="<xsl:value-of select="/strings/string[@id='%tmpl-sample-player']/value[lang(current()/@xml:lang)]"/>" title="<xsl:value-of select="/strings/string[@id='%tmpl-sample-player']/value[lang(current()/@xml:lang)]"/>" /&gt;
 &lt;p&gt;&lt;strong&gt;<xsl:value-of select="/strings/string[@id='%tmpl-video-title']/value[lang(current()/@xml:lang)]"/>&lt;/strong&gt;&lt;/p&gt;
@@ -152,7 +152,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/ul&gt;
 &lt;/section&gt;&lt;/div&gt;
 
-&lt;div id="gcwu-connect" class="span-6 row-start row-end"&gt;&lt;section&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;div id="gcwu-connect" class="span-6"&gt;&lt;section&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-stay-connected']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#"&gt;&lt;img class="image-actual" src="<xsl:value-of select="$path_correction"/>../../dist/theme-gcwu-fegc/images/sl_twitter.png" alt="Twitter" title="Twitter" /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;&lt;img class="image-actual" src="<xsl:value-of select="$path_correction"/>../../dist/theme-gcwu-fegc/images/sl_youtube.png" alt="YouTube" title="YouTube" /&gt;&lt;/a&gt;&lt;/li&gt;
@@ -160,7 +160,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/ul&gt;
 &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div id="gcwu-aside" class="span-2"&gt;&lt;aside role="complementary"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sup-cont']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;aside role="complementary"&gt;&lt;div id="gcwu-aside"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sup-cont']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;section&gt;&lt;div id="gcwu-priorities"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-priorities']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div id="gcwu-priorities-inner"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;img src="<xsl:value-of select="$path_correction"/>images/prio1.png" width="220" height="70" alt="<xsl:value-of select="/strings/string[@id='%tmpl-priority']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>1" title="<xsl:value-of select="/strings/string[@id='%tmpl-priority']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/>1" /&gt;&lt;/li&gt;
@@ -170,7 +170,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
 
 &lt;section&gt;&lt;div class="gcwu-minister"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-meet-minister']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div class="gcwu-minister-in"&gt;
-&lt;div class="gcwu-minister-img"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>images/minister.JPG" width="99" height="149" class="image-actual" alt="<xsl:value-of select="/strings/string[@id='%tmpl-honourable']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-minister-name']/value[lang(current()/@xml:lang)]"/>" /&gt;&lt;/div&gt;
+&lt;div class="gcwu-minister-img"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>images/minister.JPG" width="99" height="149" alt="<xsl:value-of select="/strings/string[@id='%tmpl-honourable']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$interword-space"/><xsl:value-of select="/strings/string[@id='%tmpl-minister-name']/value[lang(current()/@xml:lang)]"/>" /&gt;&lt;/div&gt;
 &lt;div class="gcwu-minister-info"&gt;
 &lt;p&gt;<xsl:value-of select="/strings/string[@id='%tmpl-honourable']/value[lang(current()/@xml:lang)]"/>&lt;br /&gt;&lt;strong&gt;<xsl:value-of select="/strings/string[@id='%tmpl-minister-name']/value[lang(current()/@xml:lang)]"/>&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -179,7 +179,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
-&lt;/aside&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/aside&gt;
 &lt;div class="clear"&gt;&lt;/div&gt;
 
 &lt;dl id="gcwu-date-mod" role="contentinfo"&gt;
