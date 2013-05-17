@@ -120,6 +120,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 
 &lt;div class="span-6"&gt;
 <xsl:apply-templates select="." mode="content_output"/>
+&lt;/div&gt;
 &lt;div class="span-2"&gt;
 &lt;aside role="complementary"&gt;&lt;h2 class="wb-invisible"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-sup-cont']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;section&gt;&lt;div id="gcwu-priorities"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-priorities']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;&lt;div id="gcwu-priorities-inner"&gt;
