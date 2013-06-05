@@ -61,7 +61,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 
 &lt;div id="wb-head"&gt;&lt;div id="wb-head-in"&gt;&lt;header&gt;
 &lt;!-- HeaderStart --&gt;
-&lt;section&gt;&lt;div id="wet-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-head']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;section&gt;&lt;div id="wet-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%languages']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;div id="wet-fullhd-in"&gt;
 &lt;ul&gt;
 <xsl:choose>
@@ -169,10 +169,6 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
-
-&lt;section&gt;&lt;div id="wet-fullft"&gt;&lt;h3&gt;<xsl:value-of select="/strings/string[@id='%tmpl-fullwidth-foot']/value[lang(current()/@xml:lang)]"/>&lt;/h3&gt;
-&lt;div id="wet-fullft-in"&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/section&gt;
 &lt;!-- FooterEnd --&gt;
 &lt;/footer&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
