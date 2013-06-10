@@ -96,7 +96,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 
 &lt;div id="wb-head"&gt;&lt;div id="wb-head-in"&gt;&lt;header&gt;
 &lt;!-- HeaderStart --&gt;
-&lt;section&gt;&lt;div id="wet-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="$strings/string[@id='%languages']/value[lang(current()/@lang)]"/>&lt;/h2&gt;
+&lt;section&gt;&lt;div id="wet-fullhd"&gt;&lt;h2&gt;<xsl:value-of select="$strings/string[@id='%tmpl-header-bar']/value[lang(current()/@lang)]"/>&lt;/h2&gt;
 &lt;div id="wet-fullhd-in"&gt;
 &lt;ul&gt;
 <xsl:choose>
