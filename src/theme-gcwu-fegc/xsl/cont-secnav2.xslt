@@ -71,13 +71,13 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="gcwu-sig"&gt;&lt;div id="gcwu-sig-in"&gt;&lt;object data="<xsl:value-of select="$path_correction"/>../../dist/theme-gcwu-fegc/images/sig-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.svg" role="img" tabindex="-1" aria-label="<xsl:value-of select="/strings/string[@id='%tmpl-gc-sig']/value[lang(current()/@xml:lang)]"/>" type="image/svg+xml"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>../../dist/theme-gcwu-fegc/images/sig-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.png" alt="<xsl:value-of select="/strings/string[@id='%tmpl-gc-sig']/value[lang(current()/@xml:lang)]"/>" /&gt;&lt;/object&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
 <xsl:choose>
-	<xsl:when test="lang('en')">&lt;li id="gcwu-gcnb1"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+	<xsl:when test="lang('en')">&lt;li id="gcwu-gcnb1"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/home.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="gcwu-gcnb2"&gt;&lt;a rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-services']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li id="gcwu-gcnb3"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-depts']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gcwu-gcnb3"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/depts/major/depind-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-depts']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="gcwu-gcnb-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:when>
-	<xsl:when test="lang('fr')">&lt;li id="gcwu-gcnb1"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-fra.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+	<xsl:when test="lang('fr')">&lt;li id="gcwu-gcnb1"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/accueil.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="gcwu-gcnb2"&gt;&lt;a rel="external" href="http://www.servicecanada.gc.ca/fra/accueil.shtml"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-services']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li id="gcwu-gcnb3"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-fra.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-depts']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gcwu-gcnb3"&gt;&lt;a rel="external" href="http://www.canada.gc.ca/depts/major/depind-fra.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-depts']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="gcwu-gcnb-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:when>
 	<xsl:otherwise>&lt;li id="gcwu-gcnb-lang"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-fra.html" lang="fr"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('fr')]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li id="gcwu-gcnb-lang-2"&gt;&lt;a href="<xsl:value-of select="$path_correction"/><xsl:value-of select="$root"/>-eng.html" lang="en"&gt;<xsl:value-of select="/strings/string[@id='%lang-native']/value[lang('en')]"/>&lt;/a&gt;&lt;/li&gt;</xsl:otherwise>
@@ -233,18 +233,18 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;ul&gt;
 <xsl:choose>
 	<xsl:when test="lang('en')">&lt;li&gt;&lt;a rel="external" href="http://healthycanadians.gc.ca/index-eng.php"&gt;&lt;span&gt;Health&lt;/span&gt;&lt;br /&gt;healthycanadians.gc.ca&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a rel="external" href="http://www.voyage.gc.ca/index-eng.asp"&gt;&lt;span&gt;Travel&lt;/span&gt;&lt;br /&gt;travel.gc.ca&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel="external" href="http://www.travel.gc.ca/index-eng.asp"&gt;&lt;span&gt;Travel&lt;/span&gt;&lt;br /&gt;travel.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"&gt;&lt;span&gt;Service Canada&lt;/span&gt;&lt;br /&gt;servicecanada.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://www.jobbank.gc.ca/intro-eng.aspx"&gt;&lt;span&gt;Jobs&lt;/span&gt;&lt;br /&gt;jobbank.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://actionplan.gc.ca/en"&gt;&lt;span&gt;Economy&lt;/span&gt;&lt;br /&gt;actionplan.gc.ca&lt;/a&gt;&lt;/li&gt;
-&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:when>
+&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/home.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:when>
 	<xsl:when test="lang('fr')">&lt;li&gt;&lt;a rel="external" href="http://canadiensensante.gc.ca/index-fra.php"&gt;&lt;span&gt;Santé&lt;/span&gt;&lt;br /&gt;canadiensensante.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://www.voyage.gc.ca/index-fra.asp"&gt;&lt;span&gt;Voyage&lt;/span&gt;&lt;br /&gt;voyage.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://www.servicecanada.gc.ca/fra/accueil.shtml"&gt;&lt;span&gt;Service Canada&lt;/span&gt;&lt;br /&gt;servicecanada.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://www.guichetemplois.gc.ca/Intro-fra.aspx"&gt;&lt;span&gt;Emplois&lt;/span&gt;&lt;br /&gt;guichetemplois.gc.ca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a rel="external" href="http://plandaction.gc.ca/fr"&gt;&lt;span&gt;Économie&lt;/span&gt;&lt;br /&gt;plandaction.gc.ca&lt;/a&gt;&lt;/li&gt;
-&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-fra.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:when>
-	<xsl:otherwise>&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/menu-eng.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:otherwise>
+&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/accueil.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:when>
+	<xsl:otherwise>&lt;li id="gcwu-gcft-ca"&gt;&lt;div&gt;&lt;a rel="external" href="http://www.canada.gc.ca/home.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gc-ca']/value[lang('en')]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</xsl:otherwise>
 </xsl:choose>
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
