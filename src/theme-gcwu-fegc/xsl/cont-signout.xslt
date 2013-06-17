@@ -6,7 +6,7 @@
 
 	<xsl:import href="../../base/xsl/base.xslt"/>
 	<xsl:output method="text" encoding="utf-8"/>
-	<xsl:variable name="root" select="'index'"/>
+	<xsl:variable name="root" select="'cont-signout'"/>
 
 	<xsl:template match="value" mode="output">
 		<xsl:param name="path_correction"/>
@@ -25,7 +25,7 @@
 &lt;meta charset="utf-8" /&gt;
 &lt;!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt --&gt;
-&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/> - <xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
+&lt;title&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/title&gt;
 
 &lt;link rel="shortcut icon" href="<xsl:value-of select="$path_correction"/>../../dist/theme-gcwu-fegc/images/favicon.ico" /&gt;
 &lt;meta name="description" content="<xsl:value-of select="/strings/string[@id='%lang-eng']/value[lang(current()/@xml:lang)]"/> description / Description en <xsl:value-of select="/strings/string[@id='%lang-fra']/value[lang(current()/@xml:lang)]"/>" /&gt;
@@ -54,12 +54,6 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;!--&lt;![endif]--&gt;
 
 &lt;!-- CustomCSSStart --&gt;
-&lt;style&gt;
-.languages-examples li {
-	float: left;
-	width: 50%;
-}
-&lt;/style&gt;
 &lt;!-- CustomCSSEnd --&gt;
 &lt;/head&gt;
 
@@ -107,12 +101,12 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="gcwu-psnb"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-menu']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;&lt;div id="gcwu-psnb-in"&gt;&lt;div class="wet-boew-menubar mb-mega"&gt;&lt;div&gt;
 &lt;ul class="mb-menu" data-ajax-replace="<xsl:value-of select="$path_correction"/>../includes/menu-<xsl:value-of select="$menu_language"/>.txt"&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-project']/value[lang($wet_fallback_language)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/> 7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>5&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>6&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>7&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -120,7 +114,8 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%home']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-work-examples']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/>&lt;/li&gt;
+&lt;li&gt;&lt;a href="<xsl:value-of select="$path_correction"/>index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/>&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;/nav&gt;
@@ -130,17 +125,17 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
+&lt;div id="wb-session"&gt;&lt;aside&gt;
+&lt;h2 class="wb-invisible"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-myaccount']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
+&lt;ul class="button-group"&gt;
+&lt;li class="settings"&gt;&lt;a class="button" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-accountsettings']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li class="session"&gt;&lt;a class="button" href="application-signin-<xsl:value-of select="$menu_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;&lt;/div&gt;
 
-<xsl:apply-templates select="." mode="content_output">
-	<xsl:with-param name="prefix" select="'index'"/>
-	<xsl:with-param name="lang">
-		<xsl:choose>
-			<xsl:when test=". = 'fra'"><xsl:value-of select="."/></xsl:when>
-			<xsl:otherwise>eng</xsl:otherwise>
-		</xsl:choose>
-	</xsl:with-param>
-</xsl:apply-templates>
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-cont-page']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/><xsl:value-of select="$hyphen"/><xsl:value-of select="/strings/string[@id='%tmpl-gcwu-theme']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
+
+<xsl:apply-templates select="." mode="content_output"/>
 
 &lt;dl id="gcwu-date-mod" role="contentinfo"&gt;
 &lt;dt&gt;<xsl:value-of select="/strings/string[@id='%tmpl-date-mod']/value[lang(current()/@xml:lang)]"/>&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;&lt;time&gt;<xsl:value-of select="adjust-date-to-timezone(current-date(), null)"/>&lt;/time&gt;&lt;/span&gt;&lt;/dd&gt;
