@@ -53,6 +53,7 @@
 				<xsl:if test="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)] = '&amp;#32;'"><xsl:text> </xsl:text></xsl:if>
 			</xsl:with-param>
 			<xsl:with-param name="hyphen" select="/strings/string[@id='%hyphen']/value[lang(current()/@xml:lang)]"/>
+			<xsl:with-param name="tmpl-sample-text" select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/>
 			<xsl:with-param name="tmpl-section" select="/strings/string[@id='%tmpl-section']/value[lang(current()/@xml:lang)]"/>
 			<xsl:with-param name="tmpl-item" select="/strings/string[@id='%tmpl-item']/value[lang(current()/@xml:lang)]"/>
 		</xsl:apply-templates></xsl:result-document>
@@ -63,6 +64,7 @@
 			<xsl:if test="/strings/string[@id='%interword-space']/value[lang(current()/@xml:lang)] = '&amp;#32;'"><xsl:text> </xsl:text></xsl:if>
 		</xsl:param>
 		<xsl:variable name="hyphen" select="/strings/string[@id='%hyphen']/value[lang(current()/@xml:lang)]"/>
+		<xsl:variable name="tmpl-sample-text" select="/strings/string[@id='%tmpl-sample-text']/value[lang(current()/@xml:lang)]"/>
 		<xsl:variable name="tmpl-default-app" select="/strings/string[@id='%tmpl-default-app']/value[lang(current()/@xml:lang)]"/>
 		<xsl:variable name="tmpl-link" select="/strings/string[@id='%tmpl-link']/value[lang(current()/@xml:lang)]"/>
 		<xsl:variable name="tmpl-heading" select="/strings/string[@id='%tmpl-heading']/value[lang(current()/@xml:lang)]"/>

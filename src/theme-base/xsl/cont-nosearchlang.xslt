@@ -69,13 +69,13 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/div&gt;&lt;/section&gt;
 
 &lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
-&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/> &lt;small&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-subline']/value[lang(current()/@xml:lang)]"/>&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/> &lt;small&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-subline']/value[lang(current()/@xml:lang)]"/>&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 
 &lt;nav role="navigation"&gt;
 &lt;div id="base-psnb"&gt;&lt;h2&gt;<xsl:value-of select="/strings/string[@id='%tmpl-site-menu']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;&lt;div id="base-psnb-in"&gt;&lt;div class="wet-boew-menubar mb-mega"&gt;&lt;div&gt;
 &lt;ul class="mb-menu" data-ajax-replace="<xsl:value-of select="$path_correction"/>../includes/menu-<xsl:value-of select="$menu_language"/>.txt"&gt;
-&lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-project']/value[lang($wet_fallback_language)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;&lt;a href="http://wet-boew.github.io/wet-boew/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-project']/value[lang($wet_fallback_language)]"/>&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="section2/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>2&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>3&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;<xsl:value-of select="$tmpl-section"/><xsl:value-of select="$interword-space"/>4&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;

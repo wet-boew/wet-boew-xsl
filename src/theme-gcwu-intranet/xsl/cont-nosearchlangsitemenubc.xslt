@@ -80,7 +80,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 
 &lt;div id="gcwu-bnr" role="banner"&gt;&lt;div id="gcwu-bnr-in"&gt;
-&lt;div id="gcwu-title"&gt;&lt;p id="gcwu-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"<xsl:if test="not(lang($wet_fallback_language))"> lang="<xsl:value-of select="$wet_fallback_language"/>"</xsl:if>&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="gcwu-title"&gt;&lt;p id="gcwu-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>../../index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;

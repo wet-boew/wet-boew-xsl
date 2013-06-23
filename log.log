@@ -1,0 +1,364 @@
+Buildfile: c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\build.xml
+
+clean:
+
+clean:
+
+clean:
+
+clean:
+
+clean:
+
+clean:
+
+build:
+
+-prepare-strings:
+
+-transform:
+     [copy] Copying 305 files to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Transforming into c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\arb-rra\arb-rra-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\arb-rra\arb-rra-eng.html
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\working-examples.xslt
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\arb-rra\arb-rra-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\arb-rra\arb-rra-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\arb-rra\arb-rra-planAccess-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\arb-rra\arb-rra-planAccess-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\arb-rra\arb-rra-planAccess-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\arb-rra\arb-rra-planAccess-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\archived\archived-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\archived\archived-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\archived\archived-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\archived\archived-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\complex-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\complex-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\complex-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\complex-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\index-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\index-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\index-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\index-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\labels-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\labels-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\labels-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\labels-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\pie-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\pie-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\pie-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\pie-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\simple-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\simple-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\simple-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\simple-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\simpleCustomized-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\simpleCustomized-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\charts\simpleCustomized-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\charts\simpleCustomized-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\datalist\datalist-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\datalist\datalist-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\datalist\datalist-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\datalist\datalist-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\datepicker\datepicker-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\datepicker\datepicker-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\datepicker\datepicker-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\datepicker\datepicker-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\details\details-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\details\details-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\details\details-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\details\details-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\details\expandcollapseall-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\details\expandcollapseall-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\details\expandcollapseall-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\details\expandcollapseall-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\eventscalendar\eventscalendar-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\eventscalendar\eventscalendar-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\eventscalendar\eventscalendar-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\eventscalendar\eventscalendar-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\feedback\feedback-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\feedback\feedback-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\feedback\feedback-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\feedback\feedback-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\footnotes\footnotes-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\footnotes\footnotes-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\footnotes\footnotes-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\footnotes\footnotes-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\formvalid\formvalid-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\formvalid\formvalid-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\formvalid\formvalid-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\formvalid\formvalid-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\geomap\geomap-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\geomap\geomap-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\geomap\geomap-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\geomap\geomap-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-base-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-base-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-base-full-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-base-full-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-basic-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-basic-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-border-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-border-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-button-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-button-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-color-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-color-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-form-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-form-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-icon-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-icon-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-image-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-image-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-message-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-message-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-module-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-module-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-opacity-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-opacity-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-other-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-other-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-position-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-position-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-proximity-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-proximity-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-specialty-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-specialty-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-structure-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-structure-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-table-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-table-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\grids\grid-text-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\grids\grid-text-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\guide-design\components-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\guide-design\components-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\guide-design\default-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\guide-design\default-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\guide-design\format-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\guide-design\format-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\guide-design\guide-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\guide-design\guide-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\guide-design\javascript-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\guide-design\javascript-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\guide-design\layout-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\guide-design\layout-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\index-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\index-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\index-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\index-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\langselect\lang-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\langselect\lang-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\langselect\lang-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\langselect\lang-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\langselect\lang-js-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\langselect\lang-js-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\langselect\lang-js-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\langselect\lang-js-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\lightbox\lightbox-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\lightbox\lightbox-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\lightbox\lightbox-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\lightbox\lightbox-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\mathlib\mathlib-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\mathlib\mathlib-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\mathlib\mathlib-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\mathlib\mathlib-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\menubar\hsitenavbar-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\menubar\hsitenavbar-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\menubar\hsitenavbar-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\menubar\hsitenavbar-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\menubar\megamenu-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\menubar\megamenu-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\menubar\megamenu-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\menubar\megamenu-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\meter\meter-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\meter\meter-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\meter\meter-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\meter\meter-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\multimedia\mediaplayer-transcript_captions-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\multimedia\mediaplayer-transcript_captions-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\multimedia\mediaplayer-transcript_captions-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\multimedia\mediaplayer-transcript_captions-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\multimedia\multimedia-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\multimedia\multimedia-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\multimedia\multimedia-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\multimedia\multimedia-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\app-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\app-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\clr-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\clr-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\dk-sv-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\dk-sv-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\frm-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\frm-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\hdg-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\hdg-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\img-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\img-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\img-org-desc-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\img-org-desc-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\index-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\index-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\kb-cv-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\kb-cv-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\lin-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\lin-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\qlg-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\qlg-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\smm-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\smm-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\tbl-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\tbl-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\tbl-simp-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\tbl-simp-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\opt-cont\wcag-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\opt-cont\wcag-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\php\index-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\php\index-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\php\index-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\php\index-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\prettify\prettify-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\prettify\prettify-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\prettify\prettify-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\prettify\prettify-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\progress\progress-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\progress\progress-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\progress\progress-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\progress\progress-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\responsiveimg\responsiveimg-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\responsiveimg\responsiveimg-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\sessiontimeout\sessiontimeout-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\sessiontimeout\sessiontimeout-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\sessiontimeout\sessiontimeout-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\sessiontimeout\sessiontimeout-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\share\share-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\share\share-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\share\share-filtered-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\share\share-filtered-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\share\share-filtered-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\share\share-filtered-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\share\share-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\share\share-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\slideout\slideout-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\slideout\slideout-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\slideout\slideout-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\slideout\slideout-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\slider\slider-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\slider\slider-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\slider\slider-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\slider\slider-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\ssi\index-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\ssi\index-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\ssi\index-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\ssi\index-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\About-the-Table-Usability-Concept.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\About-the-Table-Usability-Concept.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Data-Cell.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Data-Cell.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\ExtendedDefinition.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\ExtendedDefinition.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\How-to-use-colgroup-element.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\How-to-use-colgroup-element.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Key-Description-Cell-Table-Row.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Key-Description-Cell-Table-Row.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\RowLevel.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\RowLevel.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Summary-Cell.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Summary-Cell.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\SummaryRowGroup.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\SummaryRowGroup.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Table-CaseStudies-2.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Table-CaseStudies-2.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Table-CaseStudies-3.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Table-CaseStudies-3.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Table-CaseStudies.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Table-CaseStudies.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\Witch_Zebra_You_Like.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\Witch_Zebra_You_Like.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\colgroupheader-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\colgroupheader-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\colgroupsummary-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\colgroupsummary-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\colheader-description-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\colheader-description-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\columngroup.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\columngroup.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\datacolgroup-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\datacolgroup-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\docs-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\docs-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\financial.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\financial.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\headercolgroupstructure-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\headercolgroupstructure-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\headerrowgroupstructure-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\headerrowgroupstructure-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\index-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\index-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\keycell-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\keycell-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\layoutcell-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\layoutcell-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\rowgroupheader-description-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\rowgroupheader-description-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\rowgrouping-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\rowgrouping-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\rowheader-description-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\rowheader-description-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\summariesrowgroup-techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\summariesrowgroup-techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\techniques.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\techniques.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tableparser\validator-htmltable.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tableparser\validator-htmltable.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tables\tables-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tables\tables-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tabs\tabs-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tabs\tabs-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\tabs\tabs-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\tabs\tabs-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\texthighlight\texthighlight-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\texthighlight\texthighlight-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\texthighlight\texthighlight-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\texthighlight\texthighlight-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\wamethod\wamethod-AAA-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\wamethod\wamethod-AAA-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\wamethod\wamethod-AAA-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\wamethod\wamethod-AAA-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\wamethod\wamethod-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\wamethod\wamethod-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\wamethod\wamethod-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\wamethod\wamethod-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\webfeeds\webfeeds-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\webfeeds\webfeeds-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\webfeeds\webfeeds-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\webfeeds\webfeeds-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\webstorage\localstorage-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\webstorage\localstorage-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\webstorage\localstorage-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\webstorage\localstorage-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\webstorage\sessionstorage-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\webstorage\sessionstorage-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\webstorage\sessionstorage-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\webstorage\sessionstorage-fra.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\columnhightlight.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\columnhightlight.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\hover-effect-with-row-group.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\hover-effect-with-row-group.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\hover-effect.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\hover-effect.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\invoice.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\invoice.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\rowlevelwithsummary.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\rowlevelwithsummary.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\simple.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\simple.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\simplegrouping.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\simplegrouping.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\zebra-eng.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\zebra-eng.html
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos.src\pre-transform\zebra\zebra-fra.html to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\zebra\zebra-fra.html
+
+build:
+
+-prepare-strings:
+
+-transform:
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-fixedmobileheader.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-nosearchlang.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-nosearchlangsitemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-nositemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-secnav1.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-secnav2.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-signin.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-signout.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont-subsite.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-base\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-base\xsl\cont.xslt
+
+build:
+
+-prepare-strings:
+
+-transform:
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-fixedmobileheader.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-mult.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-nosearchlang.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-nosearchlangsitemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-nositemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-secnav1.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-secnav2.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-signin.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont-signout.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\cont.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\home-accueil.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-fegc\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-fegc\xsl\serv.xslt
+
+build:
+
+-prepare-strings:
+
+-transform:
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-fixedmobileheader.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-nosearchlang.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-nosearchlangsitemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-nositemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-secnav1.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-secnav2.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-signin.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-signout.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont-subsite.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\cont.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-gcwu-intranet\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-gcwu-intranet\xsl\serv.xslt
+
+build:
+
+-prepare-strings:
+
+-transform:
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-fixedmobileheader.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-nosearchlang.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-nosearchlangsitemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-nositemenubc.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-secnav1.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-secnav2.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-signin.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-signout.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont-subsite.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\cont.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\serv-mult.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\serv.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\sp-pe-mult.xslt
+[xslt_saxon] AntTransform.execute() schema-aware=false version 9.1.0.8
+[xslt_saxon] Processing c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\base\xsl\i18n.xml to c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\demos\theme-wet-boew\out.xml
+[xslt_saxon] Loading stylesheet c:\Users\Paul Jackson\GitHub\pjackson28\wet-boew-xsl\src\theme-wet-boew\xsl\working-examples.xslt
+
+build:
+
+default:
+
+BUILD SUCCESSFUL
+Total time: 41 seconds
