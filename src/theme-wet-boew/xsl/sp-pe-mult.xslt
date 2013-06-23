@@ -131,6 +131,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/div&gt;&lt;/div&gt;
 &lt;div id="wet-bnr" role="banner"&gt;&lt;div id="wet-bnr-in"&gt;
 &lt;div id="wet-title"&gt;&lt;p id="wet-title-in"&gt;&lt;object data="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/images/logo.svg" role="img" tabindex="-1" type="image/svg+xml"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>../../dist/theme-wet-boew/images/logo.png" alt="" /&gt;&lt;/object&gt; &lt;span&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/> &lt;small&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-subline']/value[lang(current()/@xml:lang)]"/>&lt;/small&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;
 
