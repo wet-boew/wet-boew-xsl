@@ -138,7 +138,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="wb-core"&gt;&lt;div id="wb-core-in" class="equalize"&gt;
 &lt;div id="wb-main" role="main"&gt;&lt;div id="wb-main-in"&gt;
 &lt;!-- MainContentStart --&gt;
-&lt;h1 id="wb-cont"&gt;Language selection&lt;/h1&gt;
+&lt;h1 id="wb-cont"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-lang-select']/value[lang(current()/@xml:lang)]"/>&lt;/h1&gt;
 
 &lt;div class="span-4"&gt;
 &lt;ul class="button-group"&gt;
