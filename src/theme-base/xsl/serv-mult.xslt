@@ -154,7 +154,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;div id="base-fullhd"&gt;&lt;div id="base-fullhd-in"&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;div id="base-bnr" role="banner"&gt;&lt;div id="base-bnr-in"&gt;
-&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;&lt;span&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/> &lt;small&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-subline']/value[lang(current()/@xml:lang)]"/>&lt;/small&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="base-title"&gt;&lt;p id="base-title-in"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet']/value[lang(current()/@xml:lang)]"/> &lt;small&gt;<xsl:value-of select="/strings/string[@id='%tmpl-wet-subline']/value[lang(current()/@xml:lang)]"/>&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;
