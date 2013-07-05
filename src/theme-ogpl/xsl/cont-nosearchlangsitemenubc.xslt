@@ -67,7 +67,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;/div&gt;&lt;/section&gt;
 
 &lt;div id="ogpl-bnr" role="banner"&gt;&lt;div id="ogpl-bnr-in"&gt;
-&lt;div id="ogpl-title"&gt;&lt;p id="ogpl-title-in"&gt;&lt;a href="<xsl:value-of select="$path_correction"/>http://ogpl.github.io/index-<xsl:value-of select="/strings/string[@id='%lang-code']/value[lang($wet_fallback_language)]"/>.html"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>../../dist/theme-ogpl/images/theme103_logo.png" alt="" /&gt; &lt;span&gt;<xsl:value-of select="/strings/string[@id='%tmpl-ogpl']/value[lang(current()/@xml:lang)]"/>&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="ogpl-title"&gt;&lt;p id="ogpl-title-in"&gt;&lt;a href="http://ogpl.github.io/index-<xsl:value-of select="/strings/string[@id='%lang-code-iso-639-2']/value[lang($wet_fallback_language)]"/>.html"&gt;&lt;img src="<xsl:value-of select="$path_correction"/>../../dist/theme-ogpl/images/theme103_logo.png" alt="" /&gt; &lt;span&gt;<xsl:value-of select="/strings/string[@id='%tmpl-ogpl']/value[lang(current()/@xml:lang)]"/>&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;!-- HeaderEnd --&gt;
 &lt;/header&gt;&lt;/div&gt;&lt;/div&gt;

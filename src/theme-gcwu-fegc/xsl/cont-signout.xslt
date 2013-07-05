@@ -129,7 +129,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 &lt;h2 class="wb-invisible"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-myaccount']/value[lang(current()/@xml:lang)]"/>&lt;/h2&gt;
 &lt;ul class="button-group"&gt;
 &lt;li class="settings"&gt;&lt;a class="button" href="#"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-accountsettings']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
-&lt;li class="session"&gt;&lt;a class="button" href="application-signin-<xsl:value-of select="$menu_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
+&lt;li class="session"&gt;&lt;a class="button" href="cont-signin-<xsl:value-of select="$menu_language"/>.html"&gt;<xsl:value-of select="/strings/string[@id='%tmpl-signout']/value[lang(current()/@xml:lang)]"/>&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/aside&gt;&lt;/div&gt;
 
